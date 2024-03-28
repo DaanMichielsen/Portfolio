@@ -14,7 +14,7 @@ export default function Map() {
     const initializeMap = async () => {
       try {
         // const apiKey = await getApiKey();
-        maptilersdk.config.apiKey = 'EB1zFd4GnAqhfRHmhykO';
+        maptilersdk.config.apiKey = '';
 
         if (!map.current) {
           map.current = new maptilersdk.Map({
