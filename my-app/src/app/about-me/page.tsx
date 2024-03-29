@@ -16,12 +16,71 @@ import {
   PopoverTrigger,
 } from '@/components/ui/popover';
 import Map from '@/components/Map';
+import Link from 'next/link';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Progress } from '@/components/ui/progress';
+import { Label } from '@/components/ui/label';
+import { Tooltip, TooltipContent, TooltipTrigger, TooltipProvider } from '@/components/ui/tooltip';
+
+type SoftSkill = {
+  name: string;
+  description: string;
+  value: number;
+};
+
+type Language = {
+  name: string;
+  level: string;
+  usage: string;
+};
+
+type hardSkill = SoftSkill & {projects: string[]};
 
 export default function AboutMe() {
-  console.log('APIKEY', process.env.MAPTILER_KEY);
+  const softSkills: SoftSkill[] = [
+    {
+      name: 'Professional communication',
+      description: 'The ability to communicate in a professional manner.',
+      value: 85,
+    },
+    {
+      name: 'Problem solving',
+      description: 'The ability to solve problems in a professional manner.',
+      value: 80,
+    },
+    {
+      name: 'Research',
+      description: 'The ability to research in a professional manner.',
+      value: 85,
+    },
+    {
+      name: 'English',
+      description: 'The ability to speak English in a professional manner.',
+      value: 80,
+    }
+  ];
+
+  const languages: Language[] = [
+    {
+      name: 'Dutch',
+      level: 'Native',
+      usage: 'Daily',
+    },
+    {
+      name: 'English',
+      level: 'Professional',
+      usage: 'Daily',
+    },
+    {
+      name: 'French',
+      level: 'Basic',
+      usage: 'Rarely',
+    },
+  ];
+  
   return (
-    <div className='mx-auto max-w-7xl px-6 pb-24 sm:pt-60 lg:px-8 lg:pt-0'>
-      <div className='mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center'>
+    <div className='mx-auto max-w-7xl px-6 pb-24  sm:pt-60 lg:px-8 lg:pt-0'>
+      <div className='mx-auto max-w-2xl gap-x-14 pt-16 lg:mx-0 lg:flex lg:max-w-none lg:items-center'>
         <div className='w-full max-w-xl lg:shrink-0 xl:max-w-2xl'>
           <h1 className='text-4xl font-bold tracking-tight text-gray-900 dark:text-slate-100 sm:text-6xl'>
             Welcome to my portfolio
@@ -35,7 +94,7 @@ export default function AboutMe() {
         </div>
         <div className='mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0'>
           <div className='ml-auto w-44 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80'>
-            <div className='relative'>
+            <div className='relative z-50'>
               <Image
                 src={'/daan.jpg'}
                 alt='Daan'
@@ -58,6 +117,13 @@ export default function AboutMe() {
               <div className='pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10' />
             </div>
             <div className='relative'>
+            <Image
+                src={'/thomas-more.png'}
+                alt='JustPils'
+                width={176}
+                height={264}
+                className='aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-contain shadow-lg'
+              />
               <img
                 src='https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=focalpoint&fp-x=.4&w=396&h=528&q=80'
                 alt=''
@@ -93,8 +159,8 @@ export default function AboutMe() {
         <p className='leading-7 [&:not(:first-child)]:mt-6'>
           My name is Daan and I am a student in Applied Computer Science at
           <HoverCard>
-            <HoverCardTrigger asChild>
-              <Button variant='link'>Thomas More</Button>
+            <HoverCardTrigger asChild className='px-2 py-0 h-0'>
+              <Button className='px-2 py-0' variant='link'>Thomas More</Button>
             </HoverCardTrigger>
             <HoverCardContent className='w-80'>
               <div className='flex justify-between space-x-4'>
@@ -103,7 +169,7 @@ export default function AboutMe() {
                   <AvatarFallback>VC</AvatarFallback>
                 </Avatar>
                 <div className='space-y-1'>
-                  <h4 className='text-sm font-semibold'>Thomas More</h4>
+                  <h4 className='text-sm font-semibold'><a className='text-blue-700 underline hover:text-blue-500' href="https://thomasmore.be/" target='_blank'>Thomas More</a></h4>
                   <p className='text-sm'>
                     The largest university of applied sciences in Flanders. A
                     community of almost 22,000 students, employees and
@@ -130,13 +196,53 @@ export default function AboutMe() {
             my parents and brother. I study Applied Computer Science at Thomas
             More in Geel. I&apos;ve always been into tech and computers when
             growing up, that is why I chose to study ACS at Thomas More. If you
-            would like to check out some of my work you can look at the projects
+            would like to check out some of my work you can look at the <Link className='underline hover:text-slate-500' href={'/projects'}>projects </Link>
             page or at my github.
           </p>
           <PopoverContent className='w-[334px]'>
             <Map></Map>
           </PopoverContent>
         </Popover>
+        <div className='flex gap-8 mt-12'>
+        <Card className="w-1/2">
+          <CardHeader>
+            <CardTitle>Soft Skills</CardTitle>
+            <CardDescription>The skills I have developped as a person through communications, projects and teamwork.</CardDescription>
+          </CardHeader>
+          <CardContent>
+            <TooltipProvider>
+            {softSkills.map((skill, index) => (
+              <div key={index}>
+                <Tooltip>
+                  <TooltipTrigger asChild>
+                    <div>
+                      <Label>{skill.name}</Label>
+                      <div className='flex items-center gap-4 justify-between'>
+                        <Progress className='w-11/12' value={skill.value}></Progress>
+                        <Label className='w-1/12 text-right'>{skill.value/10}/10</Label>
+                      </div>
+                    </div>
+                  </TooltipTrigger>
+                  <TooltipContent>
+                    <p>{skill.description}</p>
+                  </TooltipContent>
+                </Tooltip>
+              </div>
+            ))}
+          </TooltipProvider>
+          </CardContent>
+        </Card>
+        <Card className="w-1/2">
+          <CardHeader>
+            <CardTitle>Hard Skills</CardTitle>
+            <CardDescription>The technical aspect I have learned doing projects and following courses.</CardDescription>
+          </CardHeader>
+          <CardContent>
+            
+          </CardContent>
+        </Card>
+        </div>
+        
       </section>
     </div>
   );

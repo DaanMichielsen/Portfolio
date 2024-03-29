@@ -2,7 +2,7 @@
 import React, { useRef, useEffect, useState } from 'react';
 import * as maptilersdk from '@maptiler/sdk';
 import '@maptiler/sdk/dist/maptiler-sdk.css';
-import { getApiKey } from '@/app/actions/MapTiler';
+import process from 'process';
 
 export default function Map() {
   const mapContainer = useRef(null);
@@ -14,7 +14,7 @@ export default function Map() {
     const initializeMap = async () => {
       try {
         // const apiKey = await getApiKey();
-        maptilersdk.config.apiKey = '';
+        maptilersdk.config.apiKey = process.env.NEXT_PUBLIC_MAPTILER_KEY || '';
 
         if (!map.current) {
           map.current = new maptilersdk.Map({
