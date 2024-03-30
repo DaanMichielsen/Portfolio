@@ -21,39 +21,39 @@ const components: { title: string; href: string; description: string }[] = [
     description: 'An overview of all projects',
   },
   {
-    title: 'Hover Card',
-    href: '/docs/primitives/hover-card',
+    title: 'Web scraper',
+    href: '/projects/web-scraper',
     description:
-      'For sighted users to preview content available behind a link.',
+      'Web scraper for videos, job applications and e-sports data using C# and Selenium',
   },
   {
-    title: 'Progress',
-    href: '/docs/primitives/progress',
+    title: 'Staff management application',
+    href: '/projects/staff-management-application',
     description:
-      'Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.',
+      'Staff management application for au pair and elderly couple in PHP using Laravel',
   },
   {
-    title: 'Scroll-area',
-    href: '/docs/primitives/scroll-area',
-    description: 'Visually or semantically separates content.',
+    title: 'Justpils website',
+    href: '/projects/justpils-website',
+    description: 'Website about beer using HTML, SASS and JavaScript',
   },
   {
-    title: 'Tabs',
-    href: '/docs/primitives/tabs',
+    title: 'Energy subscription platform',
+    href: '/projects/energy-saas',
     description:
-      'A set of layered sections of content—known as tab panels—that are displayed one at a time.',
+      'A subscription platform for energy monitoring using NextJS, Stripe, Prisma and EMQX',
   },
   {
-    title: 'Tooltip',
-    href: '/docs/primitives/tooltip',
+    title: 'Yellow nutsedge detection application',
+    href: '/projects/yellow-nutsedge-detection-application',
     description:
-      'A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.',
+      'An application for farmers to detect yellow nutsedge using Angular, Python, Flask, FastAI and AWS',
   },
 ];
 
 export function Menu() {
   return (
-    <NavigationMenu>
+    <NavigationMenu className='z-50'>
       <NavigationMenuList>
         <NavigationMenuItem>
           <Link href='/' legacyBehavior passHref>
@@ -74,7 +74,7 @@ export function Menu() {
           <NavigationMenuContent>
             <ul className='grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] '>
               {components.map((component) => (
-                <ListItem
+                <ListItem className='dark:hover:bg-neutral-900 hover:bg-neutral-100 h-full'
                   key={component.title}
                   title={component.title}
                   href={component.href}

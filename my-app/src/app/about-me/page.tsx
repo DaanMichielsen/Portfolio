@@ -21,6 +21,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Progress } from '@/components/ui/progress';
 import { Label } from '@/components/ui/label';
 import { Tooltip, TooltipContent, TooltipTrigger, TooltipProvider } from '@/components/ui/tooltip';
+import { StarIcon } from '@heroicons/react/24/outline';
 
 type SoftSkill = {
   name: string;
@@ -32,32 +33,44 @@ type Language = {
   name: string;
   level: string;
   usage: string;
+  stars?: number;
 };
 
 type hardSkill = SoftSkill & {projects: string[]};
 
 export default function AboutMe() {
   const softSkills: SoftSkill[] = [
-    {
-      name: 'Professional communication',
-      description: 'The ability to communicate in a professional manner.',
-      value: 85,
+    
+    { 
+      name: 'Accountability', 
+      description: 'The ability to take ownership of your mistakes.', 
+      value: 90, 
     },
     {
-      name: 'Problem solving',
-      description: 'The ability to solve problems in a professional manner.',
-      value: 80,
+      name: 'Professional communication',
+      description: 'The ability to communicate in a professional manner with team members, teachers, colleagues...',
+      value: 85,
     },
     {
       name: 'Research',
-      description: 'The ability to research in a professional manner.',
+      description: 'The ability to research on the internet and finding useful information efficiently.',
       value: 85,
     },
+    { 
+      name: 'Teamwork', 
+      description: 'The ability to work together with a team to achieve a common goal.', 
+      value: 85, 
+    },
     {
-      name: 'English',
-      description: 'The ability to speak English in a professional manner.',
+      name: 'Problem solving',
+      description: 'The ability to solve technical problems in an application or project.',
       value: 80,
-    }
+    },
+    { 
+      name: 'Empathy', 
+      description: 'The ability to empathize with your team and understand the problems that they face.', 
+      value: 75, 
+    },
   ];
 
   const languages: Language[] = [
@@ -65,93 +78,24 @@ export default function AboutMe() {
       name: 'Dutch',
       level: 'Native',
       usage: 'Daily',
+      stars: 4.5,
     },
     {
       name: 'English',
       level: 'Professional',
       usage: 'Daily',
+      stars: 4,
     },
     {
       name: 'French',
       level: 'Basic',
       usage: 'Rarely',
+      stars: 2.5,
     },
   ];
   
   return (
-    <div className='mx-auto max-w-7xl px-6 pb-24  sm:pt-60 lg:px-8 lg:pt-0'>
-      <div className='mx-auto max-w-2xl gap-x-14 pt-16 lg:mx-0 lg:flex lg:max-w-none lg:items-center'>
-        <div className='w-full max-w-xl lg:shrink-0 xl:max-w-2xl'>
-          <h1 className='text-4xl font-bold tracking-tight text-gray-900 dark:text-slate-100 sm:text-6xl'>
-            Welcome to my portfolio
-          </h1>
-          <p className='relative mt-6 text-lg leading-8 text-gray-600 dark:text-slate-200 sm:max-w-md lg:max-w-none'>
-            This page will give you a brief introduction about who I am, what
-            I&apos;m passionate about and what I&apos;m currently working on.
-            I&apos;m a software engineer with a passion for creating beautiful
-            and functional applications.
-          </p>
-        </div>
-        <div className='mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0'>
-          <div className='ml-auto w-44 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80'>
-            <div className='relative z-50'>
-              <Image
-                src={'/daan.jpg'}
-                alt='Daan'
-                width={176}
-                height={264}
-                className='aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg'
-              />
-              <div className='pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10' />
-            </div>
-          </div>
-          <div className='mr-auto w-44 flex-none space-y-8 sm:mr-0 sm:pt-52 lg:pt-36'>
-            <div className='relative bg-[#c86e14] rounded-xl'>
-              <Image
-                src={'/justpils.png'}
-                alt='JustPils'
-                width={176}
-                height={264}
-                className='aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg'
-              />
-              <div className='pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10' />
-            </div>
-            <div className='relative'>
-            <Image
-                src={'/thomas-more.png'}
-                alt='JustPils'
-                width={176}
-                height={264}
-                className='aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-contain shadow-lg'
-              />
-              <img
-                src='https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=focalpoint&fp-x=.4&w=396&h=528&q=80'
-                alt=''
-                className='aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg'
-              />
-              <div className='pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10' />
-            </div>
-          </div>
-          <div className='w-44 flex-none space-y-8 pt-32 sm:pt-0'>
-            <div className='relative'>
-              <img
-                src='https://images.unsplash.com/photo-1670272504528-790c24957dda?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=left&w=400&h=528&q=80'
-                alt=''
-                className='aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg'
-              />
-              <div className='pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10' />
-            </div>
-            <div className='relative'>
-              <img
-                src='https://images.unsplash.com/photo-1670272505284-8faba1c31f7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80'
-                alt=''
-                className='aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg'
-              />
-              <div className='pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10' />
-            </div>
-          </div>
-        </div>
-      </div>
+    <div className='mx-auto max-w-7xl px-6 pb-24 pt-16 sm:pt-16 lg:px-8 lg:pt-16'>
       <section className='mt-12'>
         <h1 className='scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl'>
           Personal information
@@ -162,7 +106,7 @@ export default function AboutMe() {
             <HoverCardTrigger asChild className='px-2 py-0 h-0'>
               <Button className='px-2 py-0' variant='link'>Thomas More</Button>
             </HoverCardTrigger>
-            <HoverCardContent className='w-80'>
+            <HoverCardContent className='w-80 z-50'>
               <div className='flex justify-between space-x-4'>
                 <Avatar>
                   <AvatarImage src='/thomas-more-favicon.ico' />
@@ -203,8 +147,9 @@ export default function AboutMe() {
             <Map></Map>
           </PopoverContent>
         </Popover>
-        <div className='flex gap-8 mt-12'>
-        <Card className="w-1/2">
+        <div className='grid grid-cols-1 lg:grid-cols-2 gap-8 mt-12'>
+          <div className="w-full">
+          <Card >
           <CardHeader>
             <CardTitle>Soft Skills</CardTitle>
             <CardDescription>The skills I have developped as a person through communications, projects and teamwork.</CardDescription>
@@ -215,7 +160,7 @@ export default function AboutMe() {
               <div key={index}>
                 <Tooltip>
                   <TooltipTrigger asChild>
-                    <div>
+                    <div className='mb-2'>
                       <Label>{skill.name}</Label>
                       <div className='flex items-center gap-4 justify-between'>
                         <Progress className='w-11/12' value={skill.value}></Progress>
@@ -229,18 +174,59 @@ export default function AboutMe() {
                 </Tooltip>
               </div>
             ))}
+            <div className='mt-6'>
+              <Label>Languages</Label>
+            </div>
+            <div className='flex flex-row justify-start gap-4'>
+            {languages.map((language, index) => {
+                // Calculate whole and fractional parts of stars
+                const wholeStars = Math.floor(language.stars!);
+                const hasHalfStar = language.stars! - wholeStars >= 0.5;
+
+                return (
+                  <div key={index}>
+                    <Tooltip>
+                      <TooltipTrigger asChild>
+                        <div className='mb-2 w-auto'>
+                          <Label>{language.name}</Label>
+                          <div className="flex items-center">
+                            {/* Whole stars */}
+                            {Array.from({ length: wholeStars }, (_, i) => (
+                              <span key={i} className="text-yellow-500">★</span>
+                            ))}
+                            {/* Half star */}
+                            {hasHalfStar && <span className="text-yellow-500">★</span>}
+                            {/* Empty stars */}
+                            {Array.from({ length: Math.max(5 - wholeStars - (hasHalfStar ? 1 : 0), 0) }, (_, i) => (
+                              <span key={wholeStars + i + 1} className="text-gray-300">★</span>
+                            ))}
+                          </div>
+                        </div>
+                      </TooltipTrigger>
+                      <TooltipContent>
+                        <p>{language.level}</p>
+                      </TooltipContent>
+                    </Tooltip>
+                  </div>
+                );
+              })}
+            </div>
           </TooltipProvider>
           </CardContent>
         </Card>
-        <Card className="w-1/2">
-          <CardHeader>
-            <CardTitle>Hard Skills</CardTitle>
-            <CardDescription>The technical aspect I have learned doing projects and following courses.</CardDescription>
-          </CardHeader>
-          <CardContent>
-            
-          </CardContent>
-        </Card>
+          </div>
+
+          <div className="w-full">
+            <Card>
+              <CardHeader>
+                <CardTitle>Hard Skills</CardTitle>
+                <CardDescription>The technical aspect I have learned doing projects and following courses.</CardDescription>
+              </CardHeader>
+              <CardContent>
+                {/* Hard skill content */}
+              </CardContent>
+            </Card>
+          </div>
         </div>
         
       </section>

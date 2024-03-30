@@ -33,7 +33,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <div className='mx-auto fixed w-full py-2 items-end px-8 flex justify-center gap-1 transition-all'>
+          <div className='mx-auto fixed w-full py-2 items-end px-8 flex justify-center gap-1 transition-all z-50'>
             <Menu></Menu>
             <ModeToggle></ModeToggle>
           </div>
