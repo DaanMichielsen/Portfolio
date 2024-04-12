@@ -17,11 +17,23 @@ import {
 } from '@/components/ui/popover';
 import Map from '@/components/Map';
 import Link from 'next/link';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from '@/components/ui/card';
 import { Progress } from '@/components/ui/progress';
 import { Label } from '@/components/ui/label';
-import { Tooltip, TooltipContent, TooltipTrigger, TooltipProvider } from '@/components/ui/tooltip';
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipTrigger,
+  TooltipProvider,
+} from '@/components/ui/tooltip';
 import { StarIcon } from '@heroicons/react/24/outline';
+import ImageGallery from '@/components/ImageGallery';
 
 type SoftSkill = {
   name: string;
@@ -36,40 +48,44 @@ type Language = {
   stars?: number;
 };
 
-type hardSkill = SoftSkill & {projects: string[]};
+type hardSkill = SoftSkill & { projects: string[] };
 
 export default function AboutMe() {
   const softSkills: SoftSkill[] = [
-    
-    { 
-      name: 'Accountability', 
-      description: 'The ability to take ownership of your mistakes.', 
-      value: 90, 
+    {
+      name: 'Accountability',
+      description: 'The ability to take ownership of your mistakes.',
+      value: 90,
     },
     {
       name: 'Professional communication',
-      description: 'The ability to communicate in a professional manner with team members, teachers, colleagues...',
+      description:
+        'The ability to communicate in a professional manner with team members, teachers, colleagues...',
       value: 85,
     },
     {
       name: 'Research',
-      description: 'The ability to research on the internet and finding useful information efficiently.',
+      description:
+        'The ability to research on the internet and finding useful information efficiently.',
       value: 85,
     },
-    { 
-      name: 'Teamwork', 
-      description: 'The ability to work together with a team to achieve a common goal.', 
-      value: 85, 
+    {
+      name: 'Teamwork',
+      description:
+        'The ability to work together with a team to achieve a common goal.',
+      value: 85,
     },
     {
       name: 'Problem solving',
-      description: 'The ability to solve technical problems in an application or project.',
+      description:
+        'The ability to solve technical problems in an application or project.',
       value: 80,
     },
-    { 
-      name: 'Empathy', 
-      description: 'The ability to empathize with your team and understand the problems that they face.', 
-      value: 75, 
+    {
+      name: 'Empathy',
+      description:
+        'The ability to empathize with your team and understand the problems that they face.',
+      value: 75,
     },
   ];
 
@@ -93,7 +109,7 @@ export default function AboutMe() {
       stars: 2.5,
     },
   ];
-  
+
   return (
     <div className='mx-auto max-w-7xl px-6 pb-24 pt-16 sm:pt-16 lg:px-8 lg:pt-16'>
       <section className='mt-12'>
@@ -104,7 +120,9 @@ export default function AboutMe() {
           My name is Daan and I am a student in Applied Computer Science at
           <HoverCard>
             <HoverCardTrigger asChild className='px-2 py-0 h-0'>
-              <Button className='px-2 py-0' variant='link'>Thomas More</Button>
+              <Button className='px-2 py-0' variant='link'>
+                Thomas More
+              </Button>
             </HoverCardTrigger>
             <HoverCardContent className='w-80 z-50'>
               <div className='flex justify-between space-x-4'>
@@ -113,7 +131,15 @@ export default function AboutMe() {
                   <AvatarFallback>VC</AvatarFallback>
                 </Avatar>
                 <div className='space-y-1'>
-                  <h4 className='text-sm font-semibold'><a className='text-blue-700 underline hover:text-blue-500' href="https://thomasmore.be/" target='_blank'>Thomas More</a></h4>
+                  <h4 className='text-sm font-semibold'>
+                    <a
+                      className='text-blue-700 underline hover:text-blue-500'
+                      href='https://thomasmore.be/'
+                      target='_blank'
+                    >
+                      Thomas More
+                    </a>
+                  </h4>
                   <p className='text-sm'>
                     The largest university of applied sciences in Flanders. A
                     community of almost 22,000 students, employees and
@@ -140,7 +166,10 @@ export default function AboutMe() {
             my parents and brother. I study Applied Computer Science at Thomas
             More in Geel. I&apos;ve always been into tech and computers when
             growing up, that is why I chose to study ACS at Thomas More. If you
-            would like to check out some of my work you can look at the <Link className='underline hover:text-slate-500' href={'/projects'}>projects </Link>
+            would like to check out some of my work you can look at the{' '}
+            <Link className='underline hover:text-slate-500' href={'/projects'}>
+              projects{' '}
+            </Link>
             page or at my github.
           </p>
           <PopoverContent className='w-[334px]'>
@@ -148,87 +177,117 @@ export default function AboutMe() {
           </PopoverContent>
         </Popover>
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-8 mt-12'>
-          <div className="w-full">
-          <Card >
-          <CardHeader>
-            <CardTitle>Soft Skills</CardTitle>
-            <CardDescription>The skills I have developped as a person through communications, projects and teamwork.</CardDescription>
-          </CardHeader>
-          <CardContent>
-            <TooltipProvider>
-            {softSkills.map((skill, index) => (
-              <div key={index}>
-                <Tooltip>
-                  <TooltipTrigger asChild>
-                    <div className='mb-2'>
-                      <Label>{skill.name}</Label>
-                      <div className='flex items-center gap-4 justify-between'>
-                        <Progress className='w-11/12' value={skill.value}></Progress>
-                        <Label className='w-1/12 text-right'>{skill.value/10}/10</Label>
-                      </div>
-                    </div>
-                  </TooltipTrigger>
-                  <TooltipContent>
-                    <p>{skill.description}</p>
-                  </TooltipContent>
-                </Tooltip>
-              </div>
-            ))}
-            <div className='mt-6'>
-              <Label>Languages</Label>
-            </div>
-            <div className='flex flex-row justify-start gap-4'>
-            {languages.map((language, index) => {
-                // Calculate whole and fractional parts of stars
-                const wholeStars = Math.floor(language.stars!);
-                const hasHalfStar = language.stars! - wholeStars >= 0.5;
-
-                return (
-                  <div key={index}>
-                    <Tooltip>
-                      <TooltipTrigger asChild>
-                        <div className='mb-2 w-auto'>
-                          <Label>{language.name}</Label>
-                          <div className="flex items-center">
-                            {/* Whole stars */}
-                            {Array.from({ length: wholeStars }, (_, i) => (
-                              <span key={i} className="text-yellow-500">★</span>
-                            ))}
-                            {/* Half star */}
-                            {hasHalfStar && <span className="text-yellow-500">★</span>}
-                            {/* Empty stars */}
-                            {Array.from({ length: Math.max(5 - wholeStars - (hasHalfStar ? 1 : 0), 0) }, (_, i) => (
-                              <span key={wholeStars + i + 1} className="text-gray-300">★</span>
-                            ))}
+          <div className='w-full'>
+            <Card>
+              <CardHeader>
+                <CardTitle>Soft Skills</CardTitle>
+                <CardDescription>
+                  The skills I have developped as a person through
+                  communications, projects and teamwork.
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <TooltipProvider>
+                  {softSkills.map((skill, index) => (
+                    <div key={index}>
+                      <Tooltip>
+                        <TooltipTrigger asChild>
+                          <div className='mb-2'>
+                            <Label>{skill.name}</Label>
+                            <div className='flex items-center gap-4 justify-between'>
+                              <Progress
+                                className='w-11/12'
+                                value={skill.value}
+                              ></Progress>
+                              <Label className='w-1/12 text-right'>
+                                {skill.value / 10}/10
+                              </Label>
+                            </div>
                           </div>
-                        </div>
-                      </TooltipTrigger>
-                      <TooltipContent>
-                        <p>{language.level}</p>
-                      </TooltipContent>
-                    </Tooltip>
+                        </TooltipTrigger>
+                        <TooltipContent>
+                          <p>{skill.description}</p>
+                        </TooltipContent>
+                      </Tooltip>
+                    </div>
+                  ))}
+                  <div className='mt-6'>
+                    <Label>Languages</Label>
                   </div>
-                );
-              })}
-            </div>
-          </TooltipProvider>
-          </CardContent>
-        </Card>
+                  <div className='flex flex-row justify-start gap-4'>
+                    {languages.map((language, index) => {
+                      // Calculate whole and fractional parts of stars
+                      const wholeStars = Math.floor(language.stars!);
+                      const hasHalfStar = language.stars! - wholeStars >= 0.5;
+
+                      return (
+                        <div key={index}>
+                          <Tooltip>
+                            <TooltipTrigger asChild>
+                              <div className='mb-2 w-auto'>
+                                <Label>{language.name}</Label>
+                                <div className='flex items-center'>
+                                  {/* Whole stars */}
+                                  {Array.from(
+                                    { length: wholeStars },
+                                    (_, i) => (
+                                      <span key={i} className='text-yellow-500'>
+                                        ★
+                                      </span>
+                                    ),
+                                  )}
+                                  {/* Half star */}
+                                  {hasHalfStar && (
+                                    <span className='text-yellow-500'>★</span>
+                                  )}
+                                  {/* Empty stars */}
+                                  {Array.from(
+                                    {
+                                      length: Math.max(
+                                        5 - wholeStars - (hasHalfStar ? 1 : 0),
+                                        0,
+                                      ),
+                                    },
+                                    (_, i) => (
+                                      <span
+                                        key={wholeStars + i + 1}
+                                        className='text-gray-300'
+                                      >
+                                        ★
+                                      </span>
+                                    ),
+                                  )}
+                                </div>
+                              </div>
+                            </TooltipTrigger>
+                            <TooltipContent>
+                              <p>{language.level}</p>
+                            </TooltipContent>
+                          </Tooltip>
+                        </div>
+                      );
+                    })}
+                  </div>
+                </TooltipProvider>
+              </CardContent>
+            </Card>
           </div>
 
-          <div className="w-full">
+          <div className='w-full'>
             <Card>
               <CardHeader>
                 <CardTitle>Hard Skills</CardTitle>
-                <CardDescription>The technical aspect I have learned doing projects and following courses.</CardDescription>
+                <CardDescription>
+                  The technical aspect I have learned doing projects and
+                  following courses.
+                </CardDescription>
               </CardHeader>
               <CardContent>
-                {/* Hard skill content */}
+                <ImageGallery></ImageGallery>
               </CardContent>
             </Card>
           </div>
         </div>
-        
       </section>
     </div>
   );
