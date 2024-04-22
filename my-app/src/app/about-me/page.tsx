@@ -1,4 +1,4 @@
-'use client';
+// 'use client';
 import process from 'process';
 import React from 'react';
 import Image from 'next/image';
@@ -47,6 +47,24 @@ type Language = {
   usage: string;
   stars?: number;
 };
+
+export type ImagePath = {
+  src: string;
+  fileName: string;
+};
+
+const importAll = (r: any) =>
+  r.keys().map((fileName: string) => ({
+    src: `/technologies/${fileName.split('/').slice(-1)[0]}`,
+    fileName: fileName
+      .split('/')
+      .slice(-1)[0]
+      .replace(/\.[^/.]+$/, ''),
+  }));
+
+const imagePaths: ImagePath[] = importAll(
+  require.context('/public/technologies', false, /\.(png|jpe?g|svg)$/),
+);
 
 type hardSkill = SoftSkill & { projects: string[] };
 
@@ -283,7 +301,7 @@ export default function AboutMe() {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <ImageGallery></ImageGallery>
+                <ImageGallery imagePaths={imagePaths}></ImageGallery>
               </CardContent>
             </Card>
           </div>
