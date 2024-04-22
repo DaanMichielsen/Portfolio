@@ -1,7 +1,4 @@
-// 'use client';
-import process from 'process';
-import React from 'react';
-import Image from 'next/image';
+import React, { Suspense } from 'react';
 import {
   HoverCard,
   HoverCardContent,
@@ -32,8 +29,13 @@ import {
   TooltipTrigger,
   TooltipProvider,
 } from '@/components/ui/tooltip';
-import { StarIcon } from '@heroicons/react/24/outline';
 import ImageGallery from '@/components/ImageGallery';
+import { promises as fs } from 'fs';
+import path from 'path';
+
+import * as imagePaths from '../../../public/technologies/ASP DotNet^dark.svg';
+
+console.log(imagePaths.default);
 
 type SoftSkill = {
   name: string;
@@ -48,27 +50,18 @@ type Language = {
   stars?: number;
 };
 
-export type ImagePath = {
-  src: string;
-  fileName: string;
-};
-
-const importAll = (r: any) =>
-  r.keys().map((fileName: string) => ({
-    src: `/technologies/${fileName.split('/').slice(-1)[0]}`,
-    fileName: fileName
-      .split('/')
-      .slice(-1)[0]
-      .replace(/\.[^/.]+$/, ''),
-  }));
-
-const imagePaths: ImagePath[] = importAll(
-  require.context('/public/technologies', false, /\.(png|jpe?g|svg)$/),
-);
+async function getImagePaths() {
+  const imageDirectory = path.join(process.cwd(), '/public/technologies');
+  const imageFilenames = await fs.readdir(imageDirectory);
+  return imageFilenames.map(filename => filename);
+}
 
 type hardSkill = SoftSkill & { projects: string[] };
 
-export default function AboutMe() {
+export default async function AboutMe() {
+  const imageDirectory = path.join(process.cwd(), '/public/technologies');
+  const imageFilenames = await fs.readdir(imageDirectory);
+  console.log(imageFilenames);
   const softSkills: SoftSkill[] = [
     {
       name: 'Accountability',
@@ -128,6 +121,8 @@ export default function AboutMe() {
     },
   ];
 
+  const imagePaths = await getImagePaths();
+
   return (
     <div className='mx-auto max-w-7xl px-6 pb-24 pt-16 sm:pt-16 lg:px-8 lg:pt-16'>
       <section className='mt-12'>
@@ -179,8 +174,8 @@ export default function AboutMe() {
         </p>
         <Popover>
           <p className='leading-7 [&:not(:first-child)]:mt-6'>
-            I was born in 2003 and live in{' '}
-            <PopoverTrigger className='underline'>Beerse</PopoverTrigger> with
+            I was born in 2003 and live in{' Beerse '}
+            {/* <PopoverTrigger className='underline'>Beerse</PopoverTrigger> with */}
             my parents and brother. I study Applied Computer Science at Thomas
             More in Geel. I&apos;ve always been into tech and computers when
             growing up, that is why I chose to study ACS at Thomas More. If you
@@ -301,7 +296,9 @@ export default function AboutMe() {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <ImageGallery imagePaths={imagePaths}></ImageGallery>
+                <Suspense>
+                  <ImageGallery imagePaths={imagePaths}></ImageGallery>
+                </Suspense>
               </CardContent>
             </Card>
           </div>

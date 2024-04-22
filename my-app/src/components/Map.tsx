@@ -18,7 +18,7 @@ export default function Map() {
 
         if (!map.current) {
           map.current = new maptilersdk.Map({
-            container: mapContainer.current,
+            container: mapContainer.current!,
             style: maptilersdk.MapStyle.STREETS,
             center: [beerse.lng, beerse.lat],
             zoom: zoom,
