@@ -36,8 +36,6 @@ import ImagesLoading from '@/components/loading/ImagesLoading';
 
 import * as imagePaths from '../../../public/technologies/ASP DotNet^dark.svg';
 
-console.log(imagePaths.default);
-
 type SoftSkill = {
   name: string;
   description: string;
@@ -62,7 +60,6 @@ type hardSkill = SoftSkill & { projects: string[] };
 export default async function AboutMe() {
   const imageDirectory = path.join(process.cwd(), '/public/technologies');
   const imageFilenames = await fs.readdir(imageDirectory);
-  console.log(imageFilenames);
   const softSkills: SoftSkill[] = [
     {
       name: 'Accountability',

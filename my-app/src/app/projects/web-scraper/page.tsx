@@ -12,6 +12,7 @@ import { faGithub, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Selenium from '../../../../public/technologies/Selenium.svg';
 import CSharp from '../../../../public/technologies/CSharp.svg';
+import WebscraperJSON from '../../../../public/web_scraper_json.png';
 import Image from 'next/image';
 import {
   Tooltip,
@@ -45,8 +46,8 @@ function ICTJobs() {
               </a>
             </h4>
             <p className='text-sm'>
-              View 1000's of new IT jobs & Freelance projects in your region
-              daily.
+              View 1000&apos;s of new IT jobs & Freelance projects in your
+              region daily.
             </p>
             {/* <div className='flex items-center pt-2'>
               <CalendarDays className='mr-2 h-4 w-4 opacity-70' />{' '}
@@ -113,12 +114,14 @@ export default function WebscraperPage() {
       <div className='mt-4 flex text-gray-500 dark:text-slate-400 gap-x-4'>
         <Link
           href={'https://github.com/DaanMichielsen/Web_Scraper'}
+          target='_blank'
           className='p-2 rounded-full  hover:bg-slate-300 bg-slate-200 text-slate-800'
         >
           <FontAwesomeIcon icon={faGithub} size='xl' /> Code on GitHub
         </Link>
         <Link
-          href={'https://github.com/DaanMichielsen/Web_Scraper'}
+          href={'https://youtu.be/s-m7UdckTnM'}
+          target='_blank'
           className='p-2 rounded-full  hover:bg-slate-300 bg-slate-200 text-slate-800'
         >
           <FontAwesomeIcon
@@ -166,20 +169,18 @@ export default function WebscraperPage() {
         retrieve all possible items on a website called <HLTV /> based on title
         of article, name of player, name of event or name of team. HLTV is a
         website that covers e-sports news about a game called Counter-Strike:
-        Global Offensive which is a tactical shooter game. In case you don't
-        know, a web scraper is an application that scrapes data of the internet
-        by using the way a website is built up with tags. by finding the correct
-        elements you can retrieve the data within the tags and save them to e.g.
-        Json, CSV. Or use the data in other ways.
+        Global Offensive which is a tactical shooter game. In case you
+        don&apos;t know, a web scraper is an application that scrapes data of
+        the internet by using the way a website is built up with tags. by
+        finding the correct elements you can retrieve the data within the tags
+        and save them to e.g. Json, CSV. Or use the data in other ways.
       </p>
       <h2 className='mt-10 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0'>
         Tasks to complete
       </h2>
       <p className='leading-7 [&:not(:first-child)]:mt-6'>
-        Earlier in the year of creating this project we did an orientation
-        project where we created the blueprint of the application. We already
-        defined the use cases, we created the data model and the prototypes.
-        Which leaves us with the following tasks:
+        All of the technologies were new to me, so I had to do some
+        preparation...
       </p>
       <ul className='my-6 ml-6 list-disc [&>li]:mt-2'>
         <li className='font-semibold'>Learning about c# and Selenium:</li>
@@ -197,6 +198,27 @@ export default function WebscraperPage() {
           amount of results to return.
         </p>
       </ul>
+      <h2 className='mt-10 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0'>
+        What have I learned?
+      </h2>
+      <p className='leading-7 [&:not(:first-child)]:mt-6'>
+        I learned about C# which I had not used before. I got to learn about
+        Selenium and some law-related stuff about web-scraping which is not an
+        easy topic. It also gave me a good insight in how web scraping works and
+        why it is so powerful.
+      </p>
+      <div className='w-5/6 mx-auto mt-4'>
+        <h3 className='scroll-m-20 text-2xl font-semibold tracking-tight text-center'>
+          Scraping results
+        </h3>
+        <Image
+          src={WebscraperJSON}
+          alt='Json result'
+          width={1000}
+          height={500}
+          className='rounded-2xl'
+        ></Image>
+      </div>
     </div>
   );
 }
