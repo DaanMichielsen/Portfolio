@@ -38,7 +38,7 @@ const components: { title: string; href: string; description: string }[] = [
     description: 'Website about beer using HTML, SASS and JavaScript',
   },
   {
-    title: 'Energy subscription platform',
+    title: 'Internship | Energy subscription platform',
     href: '/projects/energy-saas',
     description:
       'A subscription platform for energy monitoring using NextJS, Stripe, Prisma and EMQX',

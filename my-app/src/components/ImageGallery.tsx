@@ -25,7 +25,7 @@ function ImageGallery({ imagePaths }: { imagePaths: string[] }) {
   });
 
   return (
-    <div className='grid grid-cols-4 md:grid-cols-6 gap-3'>
+    <div className='grid grid-cols-4 md:grid-cols-10 gap-3'>
       {filteredImages.map((image: string, index: number) => (
         <div
           key={image}

@@ -5,6 +5,9 @@ import { cn } from '@/lib/utils';
 import { ThemeProvider } from '@/components/theme-provider';
 import { ModeToggle } from '@/components/theme-toggle';
 import { Menu } from '@/components/Menu';
+import { config } from '@fortawesome/fontawesome-svg-core';
+import '@fortawesome/fontawesome-svg-core/styles.css';
+config.autoAddCss = false;
 
 const inter = Inter({ subsets: ['latin'] });
 

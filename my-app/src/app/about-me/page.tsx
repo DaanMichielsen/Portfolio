@@ -32,6 +32,7 @@ import {
 import ImageGallery from '@/components/ImageGallery';
 import { promises as fs } from 'fs';
 import path from 'path';
+import ImagesLoading from '@/components/loading/ImagesLoading';
 
 import * as imagePaths from '../../../public/technologies/ASP DotNet^dark.svg';
 
@@ -178,18 +179,19 @@ export default async function AboutMe() {
             {/* <PopoverTrigger className='underline'>Beerse</PopoverTrigger> with */}
             my parents and brother. I study Applied Computer Science at Thomas
             More in Geel. I&apos;ve always been into tech and computers when
-            growing up, that is why I chose to study ACS at Thomas More. If you
-            would like to check out some of my work you can look at the{' '}
+            growing up, that is why I chose to study ACS(Applied Computer
+            Science) at Thomas More. If you would like to check out some of my
+            work you can look at the{' '}
             <Link className='underline hover:text-slate-500' href={'/projects'}>
-              projects{' '}
-            </Link>
+              projects
+            </Link>{' '}
             page or at my github.
           </p>
           <PopoverContent className='w-[334px]'>
             <Map></Map>
           </PopoverContent>
         </Popover>
-        <div className='grid grid-cols-1 lg:grid-cols-2 gap-8 mt-12'>
+        <div className='grid grid-cols-1 gap-8 mt-12'>
           <div className='w-full'>
             <Card>
               <CardHeader>
@@ -225,7 +227,7 @@ export default async function AboutMe() {
                     </div>
                   ))}
                   <div className='mt-6'>
-                    <Label>Languages</Label>
+                    <Label className='text-xl'>Languages</Label>
                   </div>
                   <div className='flex flex-row justify-start gap-4'>
                     {languages.map((language, index) => {
@@ -296,9 +298,13 @@ export default async function AboutMe() {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <Suspense>
+                <Suspense fallback={<ImagesLoading />}>
                   <ImageGallery imagePaths={imagePaths}></ImageGallery>
                 </Suspense>
+                <p className='mt-4'>
+                  If you want to see how I used some of these technologies, I
+                  recommend you check out the projects page.
+                </p>
               </CardContent>
             </Card>
           </div>
