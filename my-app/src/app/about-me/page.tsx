@@ -34,7 +34,10 @@ import { promises as fs } from 'fs';
 import path from 'path';
 import ImagesLoading from '@/components/loading/ImagesLoading';
 
-import * as imagePaths from '../../../public/technologies/ASP DotNet^dark.svg';
+export const metadata = {
+  title: 'Daan Michielsen | About me',
+  description: 'About me page',
+};
 
 type SoftSkill = {
   name: string;
@@ -207,10 +210,12 @@ export default async function AboutMe() {
                           <div className='mb-2'>
                             <Label>{skill.name}</Label>
                             <div className='flex items-center gap-4 justify-between'>
-                              <Progress
-                                className='w-11/12'
-                                value={skill.value}
-                              ></Progress>
+                              <div className='w-11/12'>
+                                <Progress value={skill.value}></Progress>
+                                <p className='md:hidden text-sm'>
+                                  {skill.description}
+                                </p>
+                              </div>
                               <Label className='w-1/12 text-right'>
                                 {skill.value / 10}/10
                               </Label>
@@ -270,6 +275,7 @@ export default async function AboutMe() {
                                     ),
                                   )}
                                 </div>
+                                <p className='md:hidden'>{language.level}</p>
                               </div>
                             </TooltipTrigger>
                             <TooltipContent>

@@ -21,6 +21,11 @@ import {
   TooltipTrigger,
 } from '@/components/ui/tooltip';
 
+export const metadata = {
+  title: 'Daan Michielsen | Web scraper',
+  description: 'Page of the Web scraper project',
+};
+
 function ICTJobs() {
   return (
     <HoverCard>
@@ -112,25 +117,6 @@ export default function WebscraperPage() {
       </h1>
 
       <div className='mt-4 flex text-gray-500 dark:text-slate-400 gap-x-4'>
-        <Link
-          href={'https://github.com/DaanMichielsen/Web_Scraper'}
-          target='_blank'
-          className='p-2 rounded-full  hover:bg-slate-300 bg-slate-200 text-slate-800'
-        >
-          <FontAwesomeIcon icon={faGithub} size='xl' /> Code on GitHub
-        </Link>
-        <Link
-          href={'https://youtu.be/s-m7UdckTnM'}
-          target='_blank'
-          className='p-2 rounded-full  hover:bg-slate-300 bg-slate-200 text-slate-800'
-        >
-          <FontAwesomeIcon
-            icon={faYoutube}
-            size='xl'
-            className='text-red-500'
-          />{' '}
-          Video on YouTube
-        </Link>
         <div className='flex bg-slate-200  p-1 px-3 rounded-full gap-x-2'>
           <TooltipProvider>
             <Tooltip>
@@ -156,6 +142,25 @@ export default function WebscraperPage() {
             </Tooltip>
           </TooltipProvider>
         </div>
+        <Link
+          href={'https://github.com/DaanMichielsen/Web_Scraper'}
+          target='_blank'
+          className='p-2 rounded-full  hover:bg-slate-300 bg-slate-200 text-slate-800'
+        >
+          <FontAwesomeIcon icon={faGithub} size='xl' /> Code on GitHub
+        </Link>
+        <Link
+          href={'https://youtu.be/s-m7UdckTnM'}
+          target='_blank'
+          className='p-2 rounded-full  hover:bg-slate-300 bg-slate-200 text-slate-800'
+        >
+          <FontAwesomeIcon
+            icon={faYoutube}
+            size='xl'
+            className='text-red-500'
+          />{' '}
+          Video on YouTube
+        </Link>
       </div>
 
       <h2 className='mt-10 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0'>

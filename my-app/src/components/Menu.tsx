@@ -3,16 +3,15 @@ import Link from 'next/link';
 import {
   NavigationMenu,
   NavigationMenuContent,
-  NavigationMenuIndicator,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
-  NavigationMenuViewport,
   navigationMenuTriggerStyle,
 } from './ui/navigation-menu';
 import React from 'react';
 import { cn } from '@/lib/utils';
+import { redirect } from 'next/navigation';
 
 const components: { title: string; href: string; description: string }[] = [
   {
@@ -38,6 +37,18 @@ const components: { title: string; href: string; description: string }[] = [
     description: 'Website about beer using HTML, SASS and JavaScript',
   },
   {
+    title: 'Hornet tracking AI model',
+    href: '/projects/hornet-tracking-ai-model',
+    description:
+      'AI model that does object detection on hornets and bees using python',
+  },
+  {
+    title: 'Image classification AI model',
+    href: '/projects/image-classification-ai-model',
+    description:
+      'AI model that can do image classification using Python and FastAI',
+  },
+  {
     title: 'Internship | Energy subscription platform',
     href: '/projects/energy-saas',
     description:
@@ -55,21 +66,23 @@ export function Menu() {
   return (
     <NavigationMenu className='z-50'>
       <NavigationMenuList>
-        <NavigationMenuItem>
-          <Link href='/' legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              Home
-            </NavigationMenuLink>
-          </Link>
+        <NavigationMenuItem className='cursor-pointer'>
+          <NavigationMenuLink
+            className={navigationMenuTriggerStyle()}
+            href={'/'}
+          >
+            Home
+          </NavigationMenuLink>
         </NavigationMenuItem>
-        <NavigationMenuItem>
-          <Link href='/about-me' legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              About Me
-            </NavigationMenuLink>
-          </Link>
+        <NavigationMenuItem className='cursor-pointer'>
+          <NavigationMenuLink
+            className={navigationMenuTriggerStyle()}
+            href={'/about-me'}
+          >
+            About Me
+          </NavigationMenuLink>
         </NavigationMenuItem>
-        <NavigationMenuItem>
+        <NavigationMenuItem className='cursor-pointer'>
           <NavigationMenuTrigger>Projects</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className='grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] '>
@@ -85,6 +98,14 @@ export function Menu() {
               ))}
             </ul>
           </NavigationMenuContent>
+        </NavigationMenuItem>
+        <NavigationMenuItem className='cursor-pointer'>
+          <NavigationMenuLink
+            className={navigationMenuTriggerStyle()}
+            href={'/projects/energy-saas'}
+          >
+            Internship
+          </NavigationMenuLink>
         </NavigationMenuItem>
       </NavigationMenuList>
     </NavigationMenu>

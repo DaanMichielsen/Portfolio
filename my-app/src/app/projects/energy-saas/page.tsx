@@ -29,6 +29,11 @@ import {
   TooltipTrigger,
 } from '@/components/ui/tooltip';
 
+export const metadata = {
+  title: 'Daan Michielsen | Energy SaaS Platform',
+  description: 'Page of the Energy SaaS Platform project',
+};
+
 function Ismart() {
   return (
     <HoverCard>
@@ -50,7 +55,7 @@ function Ismart() {
                 href='https://www.ismart.be/'
                 target='_blank'
               >
-                ICT-Jobs
+                iSmart
               </a>
             </h4>
             <p className='text-sm'>Tailor-made digital thinking</p>
