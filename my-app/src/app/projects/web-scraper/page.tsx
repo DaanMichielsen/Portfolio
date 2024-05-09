@@ -37,8 +37,6 @@ export const metadata = {
   description: 'Page of the Web scraper project',
 };
 
-console.log(JSONVideos);
-
 function ICTJobs() {
   return (
     <HoverCard>
