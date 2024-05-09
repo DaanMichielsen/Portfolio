@@ -14,6 +14,9 @@ import Selenium from '../../../../public/technologies/Selenium.svg';
 import CSharp from '../../../../public/technologies/CSharp.svg';
 import WebscraperJSON from '../../../../public/web_scraper_json.png';
 import Image from 'next/image';
+import JSONVideos from '../../../../public/json/videos.json' assert { type: 'json' };
+import JSONJobs from '../../../../public/json/jobs.json' assert { type: 'json' };
+import JSONHLTV from '../../../../public/json/hltv.json' assert { type: 'json' };
 import {
   Tooltip,
   TooltipContent,
@@ -21,10 +24,20 @@ import {
   TooltipTrigger,
 } from '@/components/ui/tooltip';
 
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from '@/components/ui/accordion';
+import assert from 'assert';
+
 export const metadata = {
   title: 'Daan Michielsen | Web scraper',
   description: 'Page of the Web scraper project',
 };
+
+console.log(JSONVideos);
 
 function ICTJobs() {
   return (
@@ -168,17 +181,17 @@ export default function WebscraperPage() {
       </h2>
       <p className='leading-7 [&:not(:first-child)]:mt-6'>
         I was challenged to create a web scraper that can take one of 3 options
-        from a website and return it in text, Json and CSV. The first option is
+        from a website and return it in text, JSON and CSV. The first option is
         to retrieve YouTube videos based on title. The second option is to
         retrieve job offers by title from <ICTJobs />. The third option was to
         retrieve all possible items on a website called <HLTV /> based on title
-        of article, name of player, name of event or name of team. HLTV is a
-        website that covers e-sports news about a game called Counter-Strike:
-        Global Offensive which is a tactical shooter game. In case you
-        don&apos;t know, a web scraper is an application that scrapes data of
-        the internet by using the way a website is built up with tags. by
-        finding the correct elements you can retrieve the data within the tags
-        and save them to e.g. Json, CSV. Or use the data in other ways.
+        of an article, name of a player, name of an event or name of a team.
+        HLTV is a website that covers e-sports news about a game called
+        Counter-Strike:Global Offensive which is a tactical shooter game. In
+        case you don&apos;t know, a web scraper is an application that scrapes
+        data of the internet by using the way a website is built up with tags.
+        By finding the correct elements, you can retrieve the data within the
+        tags and save them to e.g. JSON, CSV. Or use the data in other ways.
       </p>
       <h2 className='mt-10 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0'>
         Tasks to complete
@@ -223,6 +236,30 @@ export default function WebscraperPage() {
           height={500}
           className='rounded-2xl'
         ></Image>
+      </div>
+      <div className='w-5/6 mx-auto mt-4'>
+        <Accordion type='single' collapsible>
+          <AccordionItem value='item-1'>
+            <AccordionTrigger>Videos | Search term: Selenium</AccordionTrigger>
+            <AccordionContent className='overflow-x-scroll'>
+              <pre>{JSON.stringify(JSONVideos, null, 2)}</pre>
+            </AccordionContent>
+          </AccordionItem>
+          <AccordionItem value='item-2'>
+            <AccordionTrigger>Jobs | Search term: Engineer</AccordionTrigger>
+            <AccordionContent className='overflow-x-scroll'>
+              <pre>{JSON.stringify(JSONJobs, null, 2)}</pre>
+            </AccordionContent>
+          </AccordionItem>
+          <AccordionItem value='item-3'>
+            <AccordionTrigger>
+              HLTV | Search term: rain(name of a player)
+            </AccordionTrigger>
+            <AccordionContent className='overflow-x-scroll'>
+              <pre>{JSON.stringify(JSONHLTV, null, 2)}</pre>
+            </AccordionContent>
+          </AccordionItem>
+        </Accordion>
       </div>
     </div>
   );

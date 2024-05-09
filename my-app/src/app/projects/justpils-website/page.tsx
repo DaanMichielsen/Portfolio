@@ -1,15 +1,3 @@
-import { Button } from '@/components/ui/button';
-import {
-  HoverCard,
-  HoverCardContent,
-  HoverCardTrigger,
-} from '@/components/ui/hover-card';
-import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
-import { CalendarDays } from 'lucide-react';
-import Link from 'next/link';
-import { ReactElement } from 'react';
-import { faGithub, faYoutube } from '@fortawesome/free-brands-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Sass from '../../../../public/technologies/SASS.svg';
 import HTML from '../../../../public/technologies/HTML5.svg';
 import CSS from '../../../../public/technologies/CSS.svg';
@@ -22,6 +10,8 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from '@/components/ui/tooltip';
+import Link from 'next/link';
+import JustPilsLogo from '../../../../public/justpils.png';
 
 export const metadata = {
   title: 'Daan Michielsen | JustPils Website',
@@ -90,6 +80,14 @@ export default function JustPilsWebsitePage() {
             </Tooltip>
           </TooltipProvider>
         </div>
+        <Link
+          href={'https://justpils.netlify.app/'}
+          target='_blank'
+          className='p-2 rounded-full flex items-center gap-x-2 transition-all hover:bg-slate-300 bg-slate-200 text-slate-800'
+        >
+          <Image src={JustPilsLogo} height={30} width={30} alt='Instagram' />{' '}
+          Justpils Website
+        </Link>
       </div>
 
       <h2 className='mt-10 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0'>

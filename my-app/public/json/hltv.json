@@ -1,0 +1,972 @@
+[
+  {
+    "Type": "player",
+    "Name": "H\u00E5vard Nygaard",
+    "Link": "https://www.hltv.org/player/8183/rain",
+    "Nationality": "Norway",
+    "InGameName": "rain"
+  },
+  {
+    "Type": "player",
+    "Name": "Aleks Petrov",
+    "Link": "https://www.hltv.org/player/17145/rainwaker",
+    "Nationality": "Bulgaria",
+    "InGameName": "Rainwaker"
+  },
+  {
+    "Type": "player",
+    "Name": "Jessie Lee",
+    "Link": "https://www.hltv.org/player/21245/rainstylezgk",
+    "Nationality": "Korea",
+    "InGameName": "rainstylezgk"
+  },
+  {
+    "Type": "player",
+    "Name": "Rowan Crothers",
+    "Link": "https://www.hltv.org/player/22623/magnetbrain",
+    "Nationality": "Australia",
+    "InGameName": "magnetbrain"
+  },
+  {
+    "Type": "player",
+    "Name": "Raul A.",
+    "Link": "https://www.hltv.org/player/4378/training",
+    "Nationality": "Spain",
+    "InGameName": "training"
+  },
+  {
+    "Type": "player",
+    "Name": "Dominik Dettelbacher",
+    "Link": "https://www.hltv.org/player/4863/rain",
+    "Nationality": "Austria",
+    "InGameName": "raiN"
+  },
+  {
+    "Type": "player",
+    "Name": "Mike Maher",
+    "Link": "https://www.hltv.org/player/5033/rain",
+    "Nationality": "United Kingdom",
+    "InGameName": "Rain"
+  },
+  {
+    "Type": "player",
+    "Name": "Stepan Sivoronov",
+    "Link": "https://www.hltv.org/player/5615/brain",
+    "Nationality": "Russia",
+    "InGameName": "brain"
+  },
+  {
+    "Type": "player",
+    "Name": "Richard de Kievit",
+    "Link": "https://www.hltv.org/player/7702/brains",
+    "Nationality": "Netherlands",
+    "InGameName": "brainsKievit"
+  },
+  {
+    "Type": "player",
+    "Name": "Amanda Smith",
+    "Link": "https://www.hltv.org/player/8642/rain",
+    "Nationality": "Canada",
+    "InGameName": "rain"
+  },
+  {
+    "Type": "Team",
+    "Name": "Ukraine",
+    "Link": "https://www.hltv.org/team/485/ukraine"
+  },
+  {
+    "Type": "Team",
+    "Name": "BlackTrains",
+    "Link": "https://www.hltv.org/team/1818/blacktrains"
+  },
+  {
+    "Type": "Team",
+    "Name": "Ukraine fe",
+    "Link": "https://www.hltv.org/team/2817/ukraine-fe"
+  },
+  {
+    "Type": "Team",
+    "Name": "braindamage",
+    "Link": "https://www.hltv.org/team/3590/braindamage"
+  },
+  {
+    "Type": "Team",
+    "Name": "Trained to kill",
+    "Link": "https://www.hltv.org/team/3735/trained-to-kill"
+  },
+  {
+    "Type": "Team",
+    "Name": "Ukraine",
+    "Link": "https://www.hltv.org/team/5144/ukraine"
+  },
+  {
+    "Type": "Team",
+    "Name": "Flaming Rainbows",
+    "Link": "https://www.hltv.org/team/5554/flaming-rainbows"
+  },
+  {
+    "Type": "Team",
+    "Name": "Braindead",
+    "Link": "https://www.hltv.org/team/6170/braindead"
+  },
+  {
+    "Type": "Team",
+    "Name": "Bahrain",
+    "Link": "https://www.hltv.org/team/7049/bahrain"
+  },
+  {
+    "Type": "Team",
+    "Name": "rain \u0026 NiKo",
+    "Link": "https://www.hltv.org/team/7825/rain-niko"
+  },
+  {
+    "Type": "Event",
+    "Name": "WESG 2017 Ukraine",
+    "Link": "https://www.hltv.org/events/3220/wesg-2017-ukraine"
+  },
+  {
+    "Type": "Event",
+    "Name": "UESF Parimatch Championship of Ukraine 2021",
+    "Link": "https://www.hltv.org/events/6153/uesf-parimatch-championship-of-ukraine-2021"
+  },
+  {
+    "Type": "Event",
+    "Name": "LEGION UPEA Ukrainian Cup 2021 Finals",
+    "Link": "https://www.hltv.org/events/5966/legion-upea-ukrainian-cup-2021-finals"
+  },
+  {
+    "Type": "Event",
+    "Name": "Rainmaker Open Season 2",
+    "Link": "https://www.hltv.org/events/5584/rainmaker-open-season-2"
+  },
+  {
+    "Type": "Event",
+    "Name": "ESWC 2014 Russia \u0026 Ukraine Qualifier",
+    "Link": "https://www.hltv.org/events/1513/eswc-2014-russia-ukraine-qualifier"
+  },
+  {
+    "Type": "Event",
+    "Name": "ESWC 2013 Ukraine",
+    "Link": "https://www.hltv.org/events/1226/eswc-2013-ukraine"
+  },
+  {
+    "Type": "Event",
+    "Name": "TECHLABS Cup Ukraine 2012",
+    "Link": "https://www.hltv.org/events/978/techlabs-cup-ukraine-2012"
+  },
+  {
+    "Type": "Event",
+    "Name": "Kingston Trilogy Tour Ukraine",
+    "Link": "https://www.hltv.org/events/857/kingston-trilogy-tour-ukraine"
+  },
+  {
+    "Type": "Event",
+    "Name": "WCG 2011 Ukraine",
+    "Link": "https://www.hltv.org/events/798/wcg-2011-ukraine"
+  },
+  {
+    "Type": "Event",
+    "Name": "IEM5 Ukrainian Qualifier",
+    "Link": "https://www.hltv.org/events/642/iem5-ukrainian-qualifier"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/33932/video-rain-mvp-of-pgl-major-antwerp",
+    "Title": "Video: rain - MVP of PGL Major Antwerp",
+    "Region": "Belgium",
+    "PublishDate": "2022-06-02",
+    "Author": "LucasAM"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/33885/rain-were-just-getting-started",
+    "Title": "rain: \u0022We\u0027re just getting started\u0022",
+    "Region": "Belgium",
+    "PublishDate": "2022-05-23",
+    "Author": "Nohte"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/33884/rain-claims-pgl-major-antwerp-mvp-award",
+    "Title": "rain claims PGL Major Antwerp MVP award",
+    "Region": "Belgium",
+    "PublishDate": "2022-05-22",
+    "Author": "Rizzolini"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/33856/rain-all-of-these-people-saying-rain-whatever-that-was-the-motivation-for-me-to-play-better",
+    "Title": "rain: \u0022All of these people saying -rain \u002Bwhatever, that was the motivation for me to play better\u0022",
+    "Region": "Belgium",
+    "PublishDate": "2022-05-19",
+    "Author": "Professeur"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/33364/elisa-esports-relog-media-eden-esports-reveal-plans-amid-ukraine-invasion",
+    "Title": "Elisa Esports, Relog Media, Eden Esports reveal plans amid Ukraine invasion",
+    "Region": "Other",
+    "PublishDate": "2022-03-02",
+    "Author": "Professeur"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/33191/weplay-academy-league-season-3-finals-moved-online",
+    "Title": "WePlay Academy League Season 3 Finals moved online",
+    "Region": "Other",
+    "PublishDate": "2022-01-31",
+    "Author": "LucasAM"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/29624/dignitas-fe-add-bouchard-on-trial",
+    "Title": "Dignitas fe add Bouchard on trial",
+    "Region": "Canada",
+    "PublishDate": "2020-05-12",
+    "Author": "Nohte"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/26280/wesg-world-finals-day-two-recap",
+    "Title": "WESG World Finals day two recap",
+    "Region": "China",
+    "PublishDate": "2019-03-12",
+    "Author": "Aleksei_L"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/25754/top-20-players-of-2018-rain-18",
+    "Title": "Top 20 players of 2018: rain (18)",
+    "Region": "Norway",
+    "PublishDate": "2019-01-03",
+    "Author": "Striker"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/25708/team1-win-wesg-ukraine-finals-qualify-for-world-finals",
+    "Title": "Team1 win WESG Ukraine Finals; qualify for World Finals",
+    "Region": "Ukraine",
+    "PublishDate": "2018-12-24",
+    "Author": "Professeur"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/25427/team-ukraine-pull-out-of-wesg-2018-ukraine-finals",
+    "Title": "Team Ukraine pull out of WESG 2018 Ukraine Finals",
+    "Region": "Ukraine",
+    "PublishDate": "2018-11-21",
+    "Author": "LucasAM"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/25023/navi-hellraisers-players-team-up-for-wesg-ukraine-finals",
+    "Title": "Na\u0060Vi, HellRaisers players team up for WESG Ukraine finals",
+    "Region": "Ukraine",
+    "PublishDate": "2018-10-07",
+    "Author": "MIRAA"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/24746/wesg-ukraine-details-revealed",
+    "Title": "WESG Ukraine details revealed",
+    "Region": "Ukraine",
+    "PublishDate": "2018-09-11",
+    "Author": "BenjaCS"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/24148/video-rain-vs-boot-ds",
+    "Title": "Video: rain vs. B.O.O.T-d[S]",
+    "Region": "Germany",
+    "PublishDate": "2018-07-05",
+    "Author": "MAKKU"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/23997/video-rain-vs-liquid",
+    "Title": "Video: rain vs. Liquid",
+    "Region": "Brazil",
+    "PublishDate": "2018-06-18",
+    "Author": "brcho"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/23767/wind-and-rain-change-two",
+    "Title": "Wind and Rain change two",
+    "Region": "United Kingdom",
+    "PublishDate": "2018-05-29",
+    "Author": "MIRAA"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/23008/official-team-ukraine-withdraw-from-wesg-finals",
+    "Title": "Official: Team Ukraine withdraw from WESG Finals",
+    "Region": "China",
+    "PublishDate": "2018-03-10",
+    "Author": "MIRAA"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/23006/s1mple-to-miss-wesg-world-finals",
+    "Title": "s1mple to miss WESG World Finals",
+    "Region": "China",
+    "PublishDate": "2018-03-10",
+    "Author": "MIRAA"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/22843/wind-and-rain-sign-stifmeister",
+    "Title": "Wind and Rain sign Stifmeister",
+    "Region": "United Kingdom",
+    "PublishDate": "2018-02-20",
+    "Author": "eZlo"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/22481/top-20-players-of-2017-rain-4",
+    "Title": "Top 20 players of 2017: rain (4)",
+    "Region": "Norway",
+    "PublishDate": "2018-01-15",
+    "Author": "Professeur"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/22317/video-rain-mvp-of-ecs-season-4-finals",
+    "Title": "Video: rain - MVP of ECS Season 4 Finals",
+    "Region": "Mexico",
+    "PublishDate": "2017-12-21",
+    "Author": "eZlo"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/22302/rain-claims-ecs-season-4-finals-mvp-award",
+    "Title": "rain claims ECS Season 4 Finals MVP award",
+    "Region": "Mexico",
+    "PublishDate": "2017-12-18",
+    "Author": "MIRAA"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/22135/team-ukraine-win-wesg-eu-cis-regional-finals",
+    "Title": "Team Ukraine win WESG EU \u0026 CIS Regional Finals",
+    "Region": "Spain",
+    "PublishDate": "2017-11-26",
+    "Author": "eZlo"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/22088/wesg-eu-cis-finals-viewers-guide",
+    "Title": "WESG EU \u0026 CIS Finals viewer\u0027s guide",
+    "Region": "Spain",
+    "PublishDate": "2017-11-22",
+    "Author": "eZlo"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/22049/markeloff-to-replace-ange1-on-team-ukraine-at-wesg-eu-cis-event",
+    "Title": "markeloff to replace ANGE1 on Team Ukraine at WESG EU \u0026 CIS event",
+    "Region": "Ukraine",
+    "PublishDate": "2017-11-16",
+    "Author": "MIRAA"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/21835/video-rain-mvp-of-eleague-premier",
+    "Title": "Video: rain - MVP of ELEAGUE Premier",
+    "Region": "United States",
+    "PublishDate": "2017-10-23",
+    "Author": "Professeur"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/21735/rain-gets-eleague-premier-mvp-award",
+    "Title": "rain gets ELEAGUE Premier MVP award",
+    "Region": "United States",
+    "PublishDate": "2017-10-14",
+    "Author": "MIRAA"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/21728/quantum-bellator-fire-top-wesg-russia-qualifier-2",
+    "Title": "Quantum Bellator Fire top WESG Russia qualifier 2",
+    "Region": "Russia",
+    "PublishDate": "2017-10-13",
+    "Author": "Striker"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/21621/dynasty-to-wesg-eu-cis-female-finals",
+    "Title": "Dynasty to WESG EU \u0026 CIS Female Finals",
+    "Region": "Sweden",
+    "PublishDate": "2017-09-29",
+    "Author": "Professeur"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/21611/team-ukraine-qualify-for-wesg-eucis-regional-finals",
+    "Title": "Team Ukraine qualify for WESG EU\u0026CIS Regional Finals",
+    "Region": "Ukraine",
+    "PublishDate": "2017-09-27",
+    "Author": "Professeur"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/20300/niko-rain-invited-to-htc-2v2",
+    "Title": "NiKo \u0026 rain invited to HTC 2v2",
+    "Region": "Romania",
+    "PublishDate": "2017-04-24",
+    "Author": "MIRAA"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/19737/rain-knew-nv-would-play-pug-style",
+    "Title": "rain: \u0022Knew nV would play pug-style\u0022",
+    "Region": "United States",
+    "PublishDate": "2017-01-26",
+    "Author": "Striker"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/19381/video-rain-vs-optic",
+    "Title": "Video: rain vs. OpTic",
+    "Region": "United States",
+    "PublishDate": "2016-12-03",
+    "Author": "brcho"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/16899/video-rain-vs-luminosity",
+    "Title": "Video: rain vs. Luminosity",
+    "Region": "Germany",
+    "PublishDate": "2016-01-23",
+    "Author": "brcho"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/16286/video-rain-vs-envyus",
+    "Title": "Video: rain vs. EnVyUs",
+    "Region": "Romania",
+    "PublishDate": "2015-11-01",
+    "Author": "proutounz"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/15889/video-rain-vs-natus-vincere",
+    "Title": "Video: rain vs. Natus Vincere",
+    "Region": "Slovenia",
+    "PublishDate": "2015-09-08",
+    "Author": "proutounz"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/15751/rain-most-of-our-game-is-on-the-fly",
+    "Title": "rain: \u0022Most of our game is on-the-fly\u0022",
+    "Region": "Germany",
+    "PublishDate": "2015-08-21",
+    "Author": "Striker"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/15555/video-rain-vs-penta",
+    "Title": "Video: rain vs. PENTA",
+    "Region": "Germany",
+    "PublishDate": "2015-07-25",
+    "Author": "brcho"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/15496/video-rain-vs-virtuspro",
+    "Title": "Video: rain vs. Virtus.pro",
+    "Region": "Spain",
+    "PublishDate": "2015-07-17",
+    "Author": "brcho"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/14974/invites-for-eswc-cis-revealed",
+    "Title": "Invites for ESWC CIS revealed",
+    "Region": "CIS",
+    "PublishDate": "2015-05-16",
+    "Author": "MIRAA"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/14911/lgb-confirm-rain-transfer",
+    "Title": "LGB confirm rain transfer",
+    "Region": "Norway",
+    "PublishDate": "2015-05-04",
+    "Author": "MIRAA"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/14853/lgb-confirm-rain-interest",
+    "Title": "LGB confirm rain interest",
+    "Region": "Norway",
+    "PublishDate": "2015-04-28",
+    "Author": "stich"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/14648/video-rain-vs-inshock",
+    "Title": "Video: rain vs. INSHOCK",
+    "Region": "Denmark",
+    "PublishDate": "2015-04-04",
+    "Author": "brcho"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/14444/video-rain-vs-envyus",
+    "Title": "Video: rain vs. EnVyUs",
+    "Region": "Poland",
+    "PublishDate": "2015-03-12",
+    "Author": "brcho"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/14302/video-rain-vs-tsm",
+    "Title": "Video: rain vs. TSM",
+    "Region": "Norway",
+    "PublishDate": "2015-02-20",
+    "Author": "brcho"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/13387/hellraisers-win-eswc-qualifier",
+    "Title": "HellRaisers win ESWC qualifier",
+    "Region": "Ukraine",
+    "PublishDate": "2014-10-13",
+    "Author": "MIRAA"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/13255/navi-invited-for-eswc-finals",
+    "Title": "Na\u00B4Vi invited for ESWC finals",
+    "Region": "Ukraine",
+    "PublishDate": "2014-09-22",
+    "Author": "MIRAA"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/13254/ukraine-to-host-eswc-qualifier",
+    "Title": "Ukraine to host ESWC qualifier",
+    "Region": "Ukraine",
+    "PublishDate": "2014-09-21",
+    "Author": "MIRAA"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/12875/ukraine-reveal-esec-lineup",
+    "Title": "Ukraine reveal ESEC lineup",
+    "Region": "Ukraine",
+    "PublishDate": "2014-07-27",
+    "Author": "Striker"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/11465/astana-dragons-win-eswc-ukraine",
+    "Title": "Astana Dragons win ESWC Ukraine",
+    "Region": "Ukraine",
+    "PublishDate": "2013-10-07",
+    "Author": "Striker"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/11288/ukraine-libya-with-eswc-qualifiers",
+    "Title": "Ukraine, Libya with ESWC qualifiers",
+    "Region": "Other",
+    "PublishDate": "2013-09-09",
+    "Author": "MIRAA"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/11048/astana-trio-in-ukraine-ec-squad",
+    "Title": "Astana trio in Ukraine EC squad",
+    "Region": "Ukraine",
+    "PublishDate": "2013-07-24",
+    "Author": "MIRAA"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/10961/eswc-adds-danish-qualifier",
+    "Title": "ESWC adds Danish qualifier",
+    "Region": "Denmark",
+    "PublishDate": "2013-07-13",
+    "Author": "MIRAA"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/9195/video-zeus-vs-place2playru",
+    "Title": "Video: Zeus vs place2play.ru",
+    "Region": "Ukraine",
+    "PublishDate": "2012-09-30",
+    "Author": "razor~"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/9194/video-hally-vs-natus-vincere",
+    "Title": "Video: hally vs Natus Vincere",
+    "Region": "Ukraine",
+    "PublishDate": "2012-09-30",
+    "Author": "razor~"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/9193/place2playru-win-techlabs",
+    "Title": "place2play.ru win TECHLABS",
+    "Region": "Ukraine",
+    "PublishDate": "2012-09-29",
+    "Author": "MIRAA"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/9159/place2playru-to-techlabs-cup",
+    "Title": "place2play.ru to TECHLABS Cup",
+    "Region": "Russia",
+    "PublishDate": "2012-09-24",
+    "Author": "Nix0n"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/8943/10000-techlabs-cup-in-kiev",
+    "Title": "$10,000 TECHLABS Cup in Kiev",
+    "Region": "Ukraine",
+    "PublishDate": "2012-08-15",
+    "Author": "Nix0n"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/8504/video-xek-vs-ukraine",
+    "Title": "Video: xek vs Ukraine",
+    "Region": "Russia",
+    "PublishDate": "2012-05-08",
+    "Author": "aThId"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/8150/m5-win-kingston-trilogy-tour",
+    "Title": "M5 win Kingston Trilogy Tour",
+    "Region": "Turkey",
+    "PublishDate": "2012-02-04",
+    "Author": "Nix0n"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/7980/m5-to-kingston-trilogy-tour",
+    "Title": "M5 to Kingston Trilogy Tour",
+    "Region": "Russia",
+    "PublishDate": "2011-12-26",
+    "Author": "lurppis"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/7979/navi-qualify-for-kingston-tour",
+    "Title": "Na\u0060Vi qualify for Kingston Tour",
+    "Region": "Ukraine",
+    "PublishDate": "2011-12-26",
+    "Author": "lurppis"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/7941/asus-cup-2011-groups-announced",
+    "Title": "ASUS Cup 2011 groups announced",
+    "Region": "Ukraine",
+    "PublishDate": "2011-12-14",
+    "Author": "lurppis"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/7592/ukraine-face-poland-in-sec-final",
+    "Title": "Ukraine face Poland in SEC final",
+    "Region": "Poland",
+    "PublishDate": "2011-10-09",
+    "Author": "Nix0n"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/7491/video-wcg-2011-ukraine-highlights",
+    "Title": "Video: WCG 2011 Ukraine highlights",
+    "Region": "Ukraine",
+    "PublishDate": "2011-09-17",
+    "Author": "Nix0n"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/7466/dts-tops-wcg-ukraine",
+    "Title": "DTS tops WCG Ukraine",
+    "Region": "Ukraine",
+    "PublishDate": "2011-09-11",
+    "Author": "GoMeZ"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/7459/groups-for-wcg-ukraine-drawn",
+    "Title": "Groups for WCG Ukraine drawn",
+    "Region": "Ukraine",
+    "PublishDate": "2011-09-09",
+    "Author": "Nix0n"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/7179/ukraine-announces-wcg-qualifier",
+    "Title": "Ukraine announces WCG qualifier",
+    "Region": "Ukraine",
+    "PublishDate": "2011-07-23",
+    "Author": "Nix0n"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/6585/msi-beat-it-russia-2011-announced",
+    "Title": "MSI BEAT IT Russia 2011 announced",
+    "Region": "Russia",
+    "PublishDate": "2011-04-20",
+    "Author": "Nix0n"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/5785/navi-scored-220000-in-2010",
+    "Title": "Na\u00B4Vi scored $220,000 in 2010",
+    "Region": "Ukraine",
+    "PublishDate": "2010-11-30",
+    "Author": "Nix0n"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/5131/navi-to-skip-msi-beat-it-report",
+    "Title": "Na\u00B4Vi to skip MSI BEAT IT - Report",
+    "Region": "China",
+    "PublishDate": "2010-08-30",
+    "Author": "MIRAA"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/5067/video-get-right-vs-ukraine",
+    "Title": "Video: GeT_RiGhT vs Ukraine",
+    "Region": "Germany",
+    "PublishDate": "2010-08-22",
+    "Author": "itsmeERROR"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/5065/sweden-win-asus-enc-2010",
+    "Title": "Sweden win ASUS ENC 2010",
+    "Region": "Germany",
+    "PublishDate": "2010-08-22",
+    "Author": "Pus"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/5058/ukraine-move-past-russia",
+    "Title": "Ukraine move past Russia",
+    "Region": "Germany",
+    "PublishDate": "2010-08-21",
+    "Author": "MIRAA"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/5017/navi-beat-party-at-wcg-ukraine",
+    "Title": "Na\u00B4Vi beat PartY at WCG Ukraine",
+    "Region": "Ukraine",
+    "PublishDate": "2010-08-15",
+    "Author": "MIRAA"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/5009/wcg-ukraine-hits-playoffs",
+    "Title": "WCG Ukraine hits playoffs",
+    "Region": "Ukraine",
+    "PublishDate": "2010-08-14",
+    "Author": "MIRAA"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/4998/wcg-ukraine-to-go-live-at-1100-cet",
+    "Title": "WCG Ukraine to go live at 11:00 CET",
+    "Region": "Ukraine",
+    "PublishDate": "2010-08-14",
+    "Author": "Pus"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/4978/wcg-ukraine-groups-drawn",
+    "Title": "WCG Ukraine groups drawn",
+    "Region": "Ukraine",
+    "PublishDate": "2010-08-12",
+    "Author": "Pus"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/4605/video-f0rest-vs-ukraine",
+    "Title": "Video: f0rest vs Ukraine",
+    "Region": "Sweden",
+    "PublishDate": "2010-06-29",
+    "Author": "itsmeERROR"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/4514/ping-to-attend-eswc-finals",
+    "Title": "PinG to attend ESWC finals",
+    "Region": "Ukraine",
+    "PublishDate": "2010-06-15",
+    "Author": "MIRAA"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/4497/cgl-ukraine-move-on-to-playoffs",
+    "Title": "CGL Ukraine move on to playoffs",
+    "Region": "Ukraine",
+    "PublishDate": "2010-06-11",
+    "Author": "Nix0n"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/4177/eswc-reveals-ukraine-information",
+    "Title": "ESWC reveals Ukraine information",
+    "Region": "Ukraine",
+    "PublishDate": "2010-04-25",
+    "Author": "MIRAA"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/4154/eswc-reveals-spain-qualifier",
+    "Title": "ESWC reveals Spain qualifier",
+    "Region": "Spain",
+    "PublishDate": "2010-04-22",
+    "Author": "MIRAA"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/4005/navi-win-arbalet-cup-ukraine",
+    "Title": "Na\u00B4Vi win Arbalet Cup Ukraine",
+    "Region": "Ukraine",
+    "PublishDate": "2010-04-04",
+    "Author": "MIRAA"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/3974/teams-ready-for-arbalet-cup-ukraine",
+    "Title": "Teams ready for Arbalet Cup Ukraine",
+    "Region": "Ukraine",
+    "PublishDate": "2010-04-01",
+    "Author": "Pus"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/3931/ukraine-name-enc-squad",
+    "Title": "Ukraine name ENC squad",
+    "Region": "Ukraine",
+    "PublishDate": "2010-03-25",
+    "Author": "Pus"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/3894/wes-masters-euro-cup-2-announced",
+    "Title": "WES Masters Euro Cup #2 announced",
+    "Region": "Europe",
+    "PublishDate": "2010-03-17",
+    "Author": "Pus"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/3191/arbalet-cup-reveals-2010-plans",
+    "Title": "Arbalet Cup reveals 2010 plans",
+    "Region": "Europe",
+    "PublishDate": "2009-11-09",
+    "Author": "Nix0n"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/3095/virtuspro-win-arbalet-cup-ukraine",
+    "Title": "Virtus.pro win Arbalet Cup Ukraine",
+    "Region": "Ukraine",
+    "PublishDate": "2009-10-19",
+    "Author": "Nix0n"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/3089/eight-teams-left-in-arbalet-ukraine",
+    "Title": "Eight teams left in Arbalet Ukraine",
+    "Region": "Ukraine",
+    "PublishDate": "2009-10-17",
+    "Author": "Nix0n"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/3087/arbalet-ukraine-start-at-1000cet",
+    "Title": "Arbalet Ukraine start at 10:00CET",
+    "Region": "Ukraine",
+    "PublishDate": "2009-10-16",
+    "Author": "Nix0n"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/3076/arbalet-cup-ukraine-group-draw",
+    "Title": "Arbalet Cup Ukraine group draw",
+    "Region": "Ukraine",
+    "PublishDate": "2009-10-14",
+    "Author": "MIRAA"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/2936/groups-for-wcg-ukraine-announced",
+    "Title": "Groups for WCG Ukraine announced",
+    "Region": "Ukraine",
+    "PublishDate": "2009-09-25",
+    "Author": "Nix0n"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/2872/heavy-rain-delay-gamegune-mexico",
+    "Title": "Heavy rain delay GameGune Mexico",
+    "Region": "Mexico",
+    "PublishDate": "2009-09-12",
+    "Author": "Nix0n"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/2833/ukrainian-em4-qualifier-finalists-found",
+    "Title": "Ukrainian EM4 qualifier finalists found",
+    "Region": "Ukraine",
+    "PublishDate": "2009-09-06",
+    "Author": "Nix0n"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/2785/arbalet-cup-ukraine-in-kiev-announced",
+    "Title": "Arbalet Cup Ukraine in Kiev announced",
+    "Region": "Ukraine",
+    "PublishDate": "2009-08-27",
+    "Author": "Nix0n"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/2335/virtuspro-to-open-super-cup-of-cgl-ii",
+    "Title": "Virtus.pro to open Super Cup of CGL II",
+    "Region": "Russia",
+    "PublishDate": "2009-04-14",
+    "Author": "Nix0n"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/2331/cgl-ukraine-iv-season-opener-tonight",
+    "Title": "CGL Ukraine IV season opener tonight",
+    "Region": "Ukraine",
+    "PublishDate": "2009-04-13",
+    "Author": "Nix0n"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/2323/new-partnership-with-cyberarenatv",
+    "Title": "New partnership with cyberarena.tv",
+    "Region": "Other",
+    "PublishDate": "2009-04-08",
+    "Author": "Nix0n"
+  },
+  {
+    "Type": "Article",
+    "Link": "https://www.hltv.org/news/1351/hr-versus-eyesports-in-dts-cup-final",
+    "Title": "HR versus EYESports in DTS-CUP final",
+    "Region": "Ukraine",
+    "PublishDate": "2008-04-06",
+    "Author": "Nix0n"
+  }
+]
