@@ -1,19 +1,3 @@
-import { Button } from '@/components/ui/button';
-import {
-  HoverCard,
-  HoverCardContent,
-  HoverCardTrigger,
-} from '@/components/ui/hover-card';
-import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
-import { CalendarDays } from 'lucide-react';
-import Link from 'next/link';
-import { ReactElement } from 'react';
-import {
-  faGithub,
-  faYoutube,
-  faInstagram,
-} from '@fortawesome/free-brands-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Python from '../../../../public/technologies/Python.svg';
 import Flask from '../../../../public/technologies/Flask Framework^light.svg';
 import Angular from '../../../../public/technologies/Angular.svg';
@@ -30,6 +14,9 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from '@/components/ui/tooltip';
+import VideoComponent from './_components/PromoVideo';
+import { Suspense } from 'react';
+import { Skeleton } from '@/components/ui/skeleton';
 
 export const metadata = {
   title: 'Daan Michielsen | Yellow nutsedge detection application',
@@ -135,6 +122,12 @@ export default function JustPilsWebsitePage() {
             </Tooltip>
           </TooltipProvider>
         </div>
+      </div>
+
+      <div className='mt-6 rounded-md'>
+        <Suspense fallback={<Skeleton className='aspect-video w-full' />}>
+          <VideoComponent fileName='https://nzrffqfvb7klovvb.public.blob.vercel-storage.com/Skyguard%20-%20promo%20video-H8mqX3wsTVWNIqU60bO6I2Tevliu3z.mp4' />
+        </Suspense>
       </div>
 
       <h2 className='mt-10 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0'>

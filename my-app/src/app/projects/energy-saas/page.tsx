@@ -5,11 +5,6 @@ import {
   HoverCardTrigger,
 } from '@/components/ui/hover-card';
 import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
-import { CalendarDays } from 'lucide-react';
-import Link from 'next/link';
-import { ReactElement } from 'react';
-import { faGithub, faYoutube } from '@fortawesome/free-brands-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import NextJs from '../../../../public/technologies/NextJS^light.svg';
 import Stripe from '../../../../public/technologies/Stripe.svg';
 import Prisma from '../../../../public/technologies/Prisma ORM.svg';
@@ -20,7 +15,7 @@ import WebscraperJSON from '../../../../public/web_scraper_json.png';
 import Tailwind from '../../../../public/technologies/Tailwind CSS.svg';
 import Auth0 from '../../../../public/technologies/AuthZero.svg';
 import Resend from '../../../../public/technologies/Resend^light.svg';
-import ISmart from '../../../../public/technologies/iSmart.svg';
+import Energy from '../../../../public/ismart-energy.svg';
 import Image from 'next/image';
 import {
   Tooltip,
@@ -28,6 +23,7 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from '@/components/ui/tooltip';
+import Link from 'next/link';
 
 export const metadata = {
   title: 'Daan Michielsen | Energy SaaS Platform',
@@ -171,6 +167,14 @@ export default function EnergySaasPage() {
             </Tooltip>
           </TooltipProvider>
         </div>
+        <Link
+          href={'https://stage-energy.vercel.app/'}
+          target='_blank'
+          className='p-2 rounded-full flex items-center gap-x-2 transition-all hover:bg-slate-300 bg-slate-200 text-slate-800'
+        >
+          <Image src={Energy} height={30} width={30} alt='Energy logo' /> Energy
+          SaaS Platform
+        </Link>
       </div>
 
       <h2 className='mt-10 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0'>
