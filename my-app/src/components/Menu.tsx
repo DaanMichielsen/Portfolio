@@ -11,7 +11,6 @@ import {
 } from './ui/navigation-menu';
 import React from 'react';
 import { cn } from '@/lib/utils';
-import { redirect } from 'next/navigation';
 
 const components: { title: string; href: string; description: string }[] = [
   {

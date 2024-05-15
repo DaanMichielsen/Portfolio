@@ -31,6 +31,7 @@ export const metadata = {
   description: 'Page of the JustPils Website project',
 };
 import { Image as ImageType } from './_components/ImageGallery';
+import BackToTopButton from './_components/BackToTopButton';
 
 const imagesPages: ImageType[] = [
   { src: JustPilsOrigin, name: 'Justpils origin page' },
@@ -165,7 +166,7 @@ export default function JustPilsWebsitePage() {
         was also responsible for 2 pages on the website, each about a different
         topic and with at least one JavaScript implementation.
       </p>
-      <ul className='my-6 ml-6 list-disc [&>li]:mt-2'>
+      <ul className='my-6 ml-6 list-disc [&>li]:mt-4'>
         <li className='font-semibold'>Branding:</li>
         <p>
           We decided to use some common colors in beers for our color palette.
@@ -196,7 +197,8 @@ export default function JustPilsWebsitePage() {
           For the JavaScript implementation I decided to make a back to top
           button for the origin page and a section with national beer dates in
           different countries with a countdown to the next date for the
-          ingredients page.
+          ingredients page. The back to top button is also available on this
+          page :) But as you can probably tell, the behaviour is not flawless.
         </p>
         <div>
           <ImageGallery images={imagesJS} />
@@ -212,13 +214,14 @@ export default function JustPilsWebsitePage() {
         What have I learned?
       </h2>
       <p className='leading-7 [&:not(:first-child)]:mt-6'>
-        I learned that there is more than just plain HTML, CSS and Javascript. I
+        I learned that there is more than just plain HTML, CSS and JavaScript. I
         also had to work with version control for the first time in a team of 4
         students which was a bit of a challange at first. The use of Netlify was
         also now to me since I had only hosted a static page on a normal web
         server before and never used a hosting platform that takes care of all
         of that.
       </p>
+      <BackToTopButton />
     </div>
   );
 }

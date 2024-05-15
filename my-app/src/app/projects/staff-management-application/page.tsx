@@ -22,7 +22,7 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from '@/components/ui/tooltip';
-import PageCarousel from './_components/Carousel';
+import PageCarousel from '../../../components/common/Carousel';
 
 export const metadata = {
   title: 'Daan Michielsen | Staff Management Application',

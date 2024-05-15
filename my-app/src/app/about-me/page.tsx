@@ -58,8 +58,6 @@ async function getImagePaths() {
   return imageFilenames.map(filename => filename);
 }
 
-type hardSkill = SoftSkill & { projects: string[] };
-
 export default async function AboutMe() {
   const imageDirectory = path.join(process.cwd(), '/public/technologies');
   const imageFilenames = await fs.readdir(imageDirectory);

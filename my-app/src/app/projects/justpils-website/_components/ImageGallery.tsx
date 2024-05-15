@@ -17,7 +17,7 @@ export default function ImageGallery({ images }: { images: Image[] }) {
     <>
       <div className='grid grid-cols-1 md:grid-cols-2 gap-3 mt-8'>
         {images.map((image, index) => (
-          <div className='relative flex flex-col' key={index}>
+          <div className='relative flex flex-col shadow-md' key={index}>
             <p className='font-bold mx-auto underline'>{image.name}</p>
             <Dialog>
               <DialogTrigger>

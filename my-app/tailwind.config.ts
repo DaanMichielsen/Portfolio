@@ -13,6 +13,10 @@ const config = {
       },
     },
     extend: {
+      colors: {
+        'primary-dark': '#323b4c',
+        'primary-light': '#10b981',
+      },
       keyframes: {
         'accordion-down': {
           from: { height: '0' },
@@ -22,10 +26,20 @@ const config = {
           from: { height: 'var(--radix-accordion-content-height)' },
           to: { height: '0' },
         },
+        exit: {
+          from: { opacity: '1' },
+          to: { opacity: '0', transform: 'scale3d(0.3,0.3,0.3)' },
+        },
+        'exit-reverse': {
+          from: { opacity: '0', transform: 'scale3d(0.3,0.3,0.3)' },
+          to: { opacity: '1' },
+        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
+        exit: 'exit 0.2s ease-in-out',
+        'exit-reverse': 'exit-reverse 0.2s ease-in-out',
       },
     },
   },

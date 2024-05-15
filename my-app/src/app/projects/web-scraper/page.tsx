@@ -5,9 +5,7 @@ import {
   HoverCardTrigger,
 } from '@/components/ui/hover-card';
 import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
-import { CalendarDays } from 'lucide-react';
 import Link from 'next/link';
-import { ReactElement } from 'react';
 import { faGithub, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Selenium from '../../../../public/technologies/Selenium.svg';
@@ -30,7 +28,6 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from '@/components/ui/accordion';
-import assert from 'assert';
 
 export const metadata = {
   title: 'Daan Michielsen | Web scraper',
@@ -65,12 +62,6 @@ function ICTJobs() {
               View 1000&apos;s of new IT jobs & Freelance projects in your
               region daily.
             </p>
-            {/* <div className='flex items-center pt-2'>
-              <CalendarDays className='mr-2 h-4 w-4 opacity-70' />{' '}
-              <span className='text-xs text-muted-foreground'>
-                Joined September 2021
-              </span>
-            </div> */}
           </div>
         </div>
       </HoverCardContent>
@@ -107,12 +98,6 @@ function HLTV() {
               news, demos, pictures, statistics, on-site coverage and much much
               more!
             </p>
-            {/* <div className='flex items-center pt-2'>
-              <CalendarDays className='mr-2 h-4 w-4 opacity-70' />{' '}
-              <span className='text-xs text-muted-foreground'>
-                Joined September 2021
-              </span>
-            </div> */}
           </div>
         </div>
       </HoverCardContent>
