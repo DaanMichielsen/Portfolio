@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Python from '../../../../public/technologies/Python.svg';
 import GoogleColab from '../../../../public/technologies/Google Colab.svg';
 import Roboflow from '../../../../public/technologies/Roboflow.svg';
-import FastAI from '../../../../public/technologies/Fastai.png';
+import FastAI from '../../../../public/technologies/FastAI.png';
 import Numpy from '../../../../public/technologies/Numpy.svg';
 import Pandas from '../../../../public/technologies/Pandas.svg';
 import Streamlit from '../../../../public/technologies/Streamlit.svg';

@@ -5,7 +5,7 @@ import Roboflow from '../../../../public/technologies/Roboflow.svg';
 import Streamlit from '../../../../public/technologies/Streamlit.svg';
 import TeachableMachine from '../../../../public/technologies/Teachable Machine.svg';
 import Selenium from '../../../../public/technologies/Selenium.svg';
-import FastAI from '../../../../public/technologies/Fastai.png';
+import FastAI from '../../../../public/technologies/FastAI.png';
 import Numpy from '../../../../public/technologies/Numpy.svg';
 import Pandas from '../../../../public/technologies/Pandas.svg';
 import CelebrityTomato from '../../../../public/tomatoes/celebrity_tomato.png';
