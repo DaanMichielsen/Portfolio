@@ -27,7 +27,7 @@ import HornetDetected2 from '../../../../public/hornet-detected-2.jpg';
 import { Image as ImageType } from '../justpils-website/_components/ImageGallery';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import PDFModal from './_components/ReportModal';
+import PDFModal from '../../../components/common/ReportModal';
 
 const labelCarousel: ImageType[] = [
   {
@@ -302,7 +302,10 @@ export default function HornetTrackingAiModelPage() {
           much into detail. If you are interested in the code you can find it on
           GitHub. You can also read the report below.
         </p>
-        <PDFModal />
+        <PDFModal
+          src='https://thomasmore365-my.sharepoint.com/personal/r0896365_student_thomasmore_be/_layouts/15/embed.aspx?UniqueId=6215bf3f-e126-4e93-8abd-2b1b1e3a9b8a'
+          title='Hornet-tracking-report.pdf'
+        />
       </ul>
       <h2 className='mt-10 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0'>
         What have I learned?

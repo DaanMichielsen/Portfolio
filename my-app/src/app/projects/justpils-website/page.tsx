@@ -217,7 +217,7 @@ export default function JustPilsWebsitePage() {
         I learned that there is more than just plain HTML, CSS and JavaScript. I
         also had to work with version control for the first time in a team of 4
         students which was a bit of a challange at first. The use of Netlify was
-        also now to me since I had only hosted a static page on a normal web
+        also new to me since I had only hosted a static page on a normal web
         server before and never used a hosting platform that takes care of all
         of that.
       </p>
