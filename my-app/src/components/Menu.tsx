@@ -48,16 +48,16 @@ const components: { title: string; href: string; description: string }[] = [
       'AI model that can do image classification using Python and FastAI',
   },
   {
-    title: 'Internship | Energy subscription platform',
-    href: '/projects/energy-saas',
-    description:
-      'A subscription platform for energy monitoring using NextJS, Stripe, Prisma and EMQX',
-  },
-  {
     title: 'Yellow nutsedge detection application',
     href: '/projects/yellow-nutsedge-detection-application',
     description:
       'An application for farmers to detect yellow nutsedge using Angular, Python, Flask, FastAI and AWS',
+  },
+  {
+    title: 'Internship | Energy subscription platform',
+    href: '/projects/energy-saas',
+    description:
+      'A subscription platform for energy monitoring using NextJS, Stripe, Prisma and EMQX',
   },
 ];
 

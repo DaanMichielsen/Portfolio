@@ -350,7 +350,7 @@ export default function JustPilsWebsitePage() {
       </h3>
       <p className='leading-7 [&:not(:first-child)]:mt-2'>
         In case you are interested in the full report of the project I would
-        recommend you check it out below.
+        recommend you to check it out below.
       </p>
       <PDFModal
         src='https://thomasmore365-my.sharepoint.com/personal/r0896365_student_thomasmore_be/_layouts/15/embed.aspx?UniqueId=9676260e-cb3e-4170-b902-b2e9a33cacdf'
@@ -360,23 +360,15 @@ export default function JustPilsWebsitePage() {
         What have I learned?
       </h2>
       <p className='leading-7 [&:not(:first-child)]:mt-6'>
-        I learned about C# which I had not used before. I got to learn about
-        Selenium and some law-related stuff about web-scraping which is not an
-        easy topic. It also gave me a good insight in how web scraping works and
-        why it is so powerful.
+        I learned about the power of pretrained models and how to fine-tune
+        them. The amount of data you need for pretrained models is significantly
+        lower than training from scratch. I also learned how to create a project
+        on Google Cloud Plaftorm, create a dataset and train a model. I also had
+        to create an API and create credentials to access the model throught the
+        Google Python SDK. And yet again the power of Streamlit to create an
+        awesome application that integrates all of the models and makes it easy
+        to use.
       </p>
-      <div className='w-5/6 mx-auto mt-4'>
-        <h3 className='scroll-m-20 text-2xl font-semibold tracking-tight text-center'>
-          Scraping results
-        </h3>
-        {/* <Image
-          src={WebscraperJSON}
-          alt='Json result'
-          width={1000}
-          height={500}
-          className='rounded-2xl'
-        ></Image> */}
-      </div>
     </div>
   );
 }

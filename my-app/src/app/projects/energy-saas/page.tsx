@@ -11,10 +11,10 @@ import Prisma from '../../../../public/technologies/Prisma ORM.svg';
 import EMQX from '../../../../public/technologies/EMQX MQTT.svg';
 import CosmosDB from '../../../../public/technologies/Azure Cosmos DB.svg';
 import AzureFunctions from '../../../../public/technologies/Azure Functions.svg';
-import WebscraperJSON from '../../../../public/web_scraper_json.png';
 import Tailwind from '../../../../public/technologies/Tailwind CSS.svg';
 import Auth0 from '../../../../public/technologies/AuthZero.svg';
 import Resend from '../../../../public/technologies/Resend^light.svg';
+import Postman from '../../../../public/technologies/Postman.svg';
 import Energy from '../../../../public/ismart-energy.svg';
 import Image from 'next/image';
 import {
@@ -163,6 +163,19 @@ export default function EnergySaasPage() {
               </TooltipTrigger>
               <TooltipContent>
                 <p>Resend</p>
+              </TooltipContent>
+            </Tooltip>
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <Image
+                  src={Postman}
+                  height={30}
+                  width={30}
+                  alt='Postman'
+                ></Image>
+              </TooltipTrigger>
+              <TooltipContent>
+                <p>Postman</p>
               </TooltipContent>
             </Tooltip>
           </TooltipProvider>

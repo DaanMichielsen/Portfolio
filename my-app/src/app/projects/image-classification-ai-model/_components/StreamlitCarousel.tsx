@@ -24,9 +24,9 @@ export default function StreamlitCarousel({ images }: { images: ImageType[] }) {
                 height={853}
               />
               {image.name === 'Prediction' && (
-                <p className='text-gray-500 text-center'>
-                  *Google has no result in this picture because the API has been
-                  offline for a while and I am out of credits*
+                <p className='text-gray-500 text-center dark:text-slate-300'>
+                  *Google has no result in this screenshot because the API has
+                  been offline for a while and I am out of credits*
                 </p>
               )}
               <p className='font-bold text-center'>{image.name}</p>
