@@ -267,7 +267,7 @@ export default function JustPilsWebsitePage() {
           dataset. We tried using the following pretrained models for transfer
           learning with our dataset:
         </p>
-        <ul className='list-disc [&>li]:mt-2 [&>li]:ml-8'>
+        <ul className='list-disc [&>li]:ml-8'>
           <li>Resnet-34</li>
           <li>Resnet-50</li>
           <li>VGG-16</li>

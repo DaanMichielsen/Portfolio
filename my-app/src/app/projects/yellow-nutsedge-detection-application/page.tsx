@@ -14,14 +14,53 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from '@/components/ui/tooltip';
-import VideoComponent from './_components/PromoVideo';
-import { Suspense } from 'react';
-import { Skeleton } from '@/components/ui/skeleton';
+import {
+  HoverCard,
+  HoverCardTrigger,
+  HoverCardContent,
+} from '@/components/ui/hover-card';
+import { Button } from '@/components/ui/button';
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 
 export const metadata = {
   title: 'Daan Michielsen | Yellow nutsedge detection application',
   description: 'Page of the Yellow nutsedge detection application project',
 };
+
+function Vito() {
+  return (
+    <HoverCard>
+      <HoverCardTrigger asChild className='py-0 h-0'>
+        <Button className='px-1 underline py-0 h-4' variant='link'>
+          Vito
+        </Button>
+      </HoverCardTrigger>
+      <HoverCardContent className='w-80 z-50'>
+        <div className='flex justify-between space-x-4'>
+          <Avatar>
+            <AvatarImage src='/vito.png' />
+            <AvatarFallback>Vito</AvatarFallback>
+          </Avatar>
+          <div className='space-y-1'>
+            <h4 className='text-sm font-semibold'>
+              <a
+                className='text-blue-700 underline hover:text-blue-500'
+                href='https://remotesensing.vito.be/'
+                target='_blank'
+              >
+                Vito - remote sensing
+              </a>
+            </h4>
+            <p className='text-sm'>
+              Flamish Institution for Technological Research - Turning earth
+              observation data into practical answers
+            </p>
+          </div>
+        </div>
+      </HoverCardContent>
+    </HoverCard>
+  );
+}
 
 export default function JustPilsWebsitePage() {
   return (
@@ -80,7 +119,7 @@ export default function JustPilsWebsitePage() {
                 <Image src={DotNet} height={30} width={30} alt='DotNet'></Image>
               </TooltipTrigger>
               <TooltipContent>
-                <p>.Net</p>
+                <p>.NET</p>
               </TooltipContent>
             </Tooltip>
             <Tooltip>
@@ -124,39 +163,85 @@ export default function JustPilsWebsitePage() {
         </div>
       </div>
 
-      {/* <div className='mt-6 rounded-md'>
-        <Suspense fallback={<Skeleton className='aspect-video w-full' />}>
-          <VideoComponent fileName='https://nzrffqfvb7klovvb.public.blob.vercel-storage.com/Skyguard%20-%20promo%20video-H8mqX3wsTVWNIqU60bO6I2Tevliu3z.mp4' />
-        </Suspense>
-      </div> */}
-
       <h2 className='mt-10 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0'>
         Description
       </h2>
       <p className='leading-7 [&:not(:first-child)]:mt-6'>
-        I was challenged to ...
+        This project was a group project in which we had to create a solution
+        for a client. The groups were formed with different branches of our
+        IT-Factory. There was a distribution of 3 Application Development
+        students, 2 Cloud & Cybersecurity students and one Artificial
+        Intelligence student(me). In our case the client was <Vito />, Vito is a
+        company that spends their time researching technology to help the
+        environment through processing images from earth. They came to us with a
+        problem we could solve using their data in the form of images taken with
+        a drone.
+      </p>
+      <h3 className='scroll-m-20 text-2xl font-semibold tracking-tight mt-8'>
+        The problem
+      </h3>
+      <p className='leading-7 [&:not(:first-child)]:mt-6'>
+        In Belgium, there has been a problem that is arising in agriculture
+        where the fields are containing more and more yellow nutsedge. This is a
+        problem because the nutsedge is a weed that is hard to get rid of and it
+        is taking over the fields. The government has been monitoring the fields
+        closely and is handing out sanction to the farmers with the contaminated
+        fields in the form of a prevention of planting any crops on the fields.
+        Especially for the fields that contain crops that need to be taken out
+        of the ground since the moving of the soil could help the weed to spread
+        even faster.
+      </p>
+      <h3 className='scroll-m-20 text-2xl font-semibold tracking-tight mt-8'>
+        The solution
+      </h3>
+      <p className='leading-7 [&:not(:first-child)]:mt-6'>
+        The solution they came up with was to use drones to fly over the fields
+        and take images of the fields to then process the images to detect the
+        yellow nutsedge. The images would be processed by a machine learning
+        model that would detect the nutsedge and return the location of the
+        nutsedge in the image. The locations of the weed would then be visible
+        on a web app for the farmer to see. This is also good for the farmer in
+        the sense that he can prove that certain parts of the fields contain no
+        nutsedge and that he can still plant crops there.
       </p>
       <h2 className='mt-10 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0'>
         Tasks to complete
       </h2>
       <p className='leading-7 [&:not(:first-child)]:mt-6'>
-        All of the technologies were new to me, so I had to do some
-        preparation...
+        The project was divided into 3 parts. The first phases
       </p>
+      <ul className='list-decimal [&>li]:ml-8 [&>li]:mt-4 [&>li]:font-semibold'>
+        <li>Preparation phase</li>
+        <p className='leading-7 [&:not(:first-child)]:mt-2'>
+          The making of the project plan, with focus on the{' '}
+          <b>Who? What? Why?</b>. We also presented the plan to the other teams
+          and Project Coach for feedback. With all the best parts of each
+          presentation we creaed one final presentation to deliver to the
+          client. The making of this was done one a lesson block of 4 hours,
+          each Monday for a couple of weeks.
+        </p>
+        <li>Concept phase</li>
+        <p className='leading-7 [&:not(:first-child)]:mt-2'>
+          In this pahse we layed out the design of the concept, we made an
+          overview of what would be needed to create the solution. We also made
+          a list of the technologies we would use and the roles of each team
+          member. All of this is with focus on the <b>How?</b>.The making of
+          this was done one a lesson block of 4 hours, each Monday for a couple
+          of weeks.
+        </p>
+        <li>Realisation phase</li>
+        <p className='leading-7 [&:not(:first-child)]:mt-2'>
+          In this phase we actually start with creating the solution. This pahse
+          will be explained in more detail down below. The phase lasted for 3
+          full-time weeks of 5 days.
+        </p>
+      </ul>
       <ul className='my-6 ml-6 list-disc [&>li]:mt-2'>
         <li className='font-semibold'>Learning about c# and Selenium:</li>
-        <p>
+        <p className='leading-7 [&:not(:first-child)]:mt-6'>
           In our course we have not learned about C# or Selenium so my first
           step was looking up tutorials on YouTube on how to create a web
           scraper with Selenium in C#.
-        </p>
-        <li className='font-semibold'>Developing the web scraper:</li>
-        <p>
-          I had to decide on how to implement the web scraper, I chose to use a
-          Chrome browser based web scraper. When running the application the
-          user is prompted to choose between getting YouTube videos ICT-Jobs
-          offers or HLTV information. After that the user could choose the
-          amount of results to return.
         </p>
       </ul>
       <h2 className='mt-10 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0'>
@@ -168,18 +253,6 @@ export default function JustPilsWebsitePage() {
         easy topic. It also gave me a good insight in how web scraping works and
         why it is so powerful.
       </p>
-      <div className='w-5/6 mx-auto mt-4'>
-        <h3 className='scroll-m-20 text-2xl font-semibold tracking-tight text-center'>
-          Scraping results
-        </h3>
-        {/* <Image
-          src={WebscraperJSON}
-          alt='Json result'
-          width={1000}
-          height={500}
-          className='rounded-2xl'
-        ></Image> */}
-      </div>
     </div>
   );
 }

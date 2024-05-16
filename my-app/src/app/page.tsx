@@ -154,8 +154,8 @@ export default function Home() {
               <p className='max-w-[600px] text-gray-500 md:text-xl dark:text-gray-400'>
                 This page will give you a brief introduction about who I am,
                 what I&apos;m passionate about and what I&apos;m currently
-                working on. I&apos;m a software engineer with a passion for
-                creating beautiful and functional applications.
+                working on. I&apos;m a full stack software engineer with a
+                passion for creating beautiful and functional applications.
               </p>
             </div>
             <div className='flex flex-col gap-2 min-[400px]:flex-row'>

@@ -29,7 +29,7 @@ export default function RootLayout({
     <html lang='en'>
       <body
         className={cn(
-          'min-h-screen dark:bg-topography-dark font-sans antialiased bg-topography bg-repeat',
+          'min-h-screen dark:bg-topography-dark font-sans antialiased bg-topography bg-repeat relative',
           inter,
         )}
       >
@@ -43,7 +43,7 @@ export default function RootLayout({
             <Menu></Menu>
             <ModeToggle></ModeToggle>
           </div>
-          <div className='fixed -left-10 top-1/2 -rotate-90 origin-bottom flex gap-2'>
+          <div className='md:fixed absolute bottom-2 md:bottom-1/2 md:left-2 left-1/2 -translate-x-1/2 md:-translate-x-1/2 md:top-1/2 md:-rotate-90 md:origin-bottom origin-center flex gap-2'>
             <p className='font-bold leading-6'>FOLLOW ME | </p>
             <div className='flex gap-2'>
               <Link
