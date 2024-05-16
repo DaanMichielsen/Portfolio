@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  cursor: none;
+}
+
 .map {
   position: absolute;
   width: 300px;
@@ -19,4 +23,24 @@ body {
   top: 0;
   bottom: 0;
   width: 100%;
+}
+
+/* #template {
+  cursor: none;
+} */
+
+.cursor {
+  background-color: #323b4c;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 9999;
+  mix-blend-mode: difference;
+  filter: drop-shadow(
+    0 0 0.75rem rgba(0, 0, 0, 0.5)
+  ); /* Adjust the shadow size and color */
 }

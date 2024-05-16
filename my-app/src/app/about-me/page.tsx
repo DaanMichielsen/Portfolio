@@ -123,7 +123,7 @@ export default async function AboutMe() {
   const imagePaths = await getImagePaths();
 
   return (
-    <div className='mx-auto max-w-7xl px-6 pb-24 pt-16 sm:pt-16 lg:px-8 lg:pt-16'>
+    <div className='mx-auto max-w-7xl px-6 pb-24 pt-16 sm:pt-16 lg:px-8 lg:pt-16 bg-white bg-opacity-90 dark:bg-primary-dark dark:bg-opacity-80'>
       <section className='mt-12'>
         <h1 className='scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl'>
           Personal information
@@ -304,7 +304,14 @@ export default async function AboutMe() {
                 </Suspense>
                 <p className='mt-4'>
                   If you want to see how I used some of these technologies, I
-                  recommend you check out the projects page.
+                  recommend you check out the{' '}
+                  <Link
+                    className='underline dark:hover:text-slate-500 transition-colors hover:text-gray-500'
+                    href={'/projects'}
+                  >
+                    projects
+                  </Link>{' '}
+                  page.
                 </p>
               </CardContent>
             </Card>

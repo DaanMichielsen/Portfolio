@@ -76,7 +76,7 @@ const streamlitCarousel: ImageType[] = [
 
 export default function JustPilsWebsitePage() {
   return (
-    <div className='mx-auto max-w-7xl px-6 pb-24 pt-16 sm:pt-16 lg:px-8 lg:pt-16'>
+    <div className='mx-auto max-w-7xl px-6 pb-24 pt-16 sm:pt-16 lg:px-8 lg:pt-16 bg-white bg-opacity-90 dark:bg-primary-dark dark:bg-opacity-80'>
       <h1 className='scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl'>
         Big Data | Image classification AI model
       </h1>
@@ -236,7 +236,7 @@ export default function JustPilsWebsitePage() {
           <li>Super sweet 100 tomato</li>
           <li>Yellow Pear tomato</li>
         </ul>
-        <div className='max-w-5/6 my-2 flex mx-auto'>
+        <div className='max-w-5/6 my-2 flex mx-auto mr-6'>
           <TomatoCarousel images={labelCarousel} />
         </div>
         <li className='font-semibold'>Gathering data (web scraper):</li>
@@ -309,7 +309,7 @@ export default function JustPilsWebsitePage() {
           The application had an image gallery to explore the images we used to
           train the models
         </p>
-        <div className='max-w-5/6 my-2 flex mx-auto'>
+        <div className='max-w-5/6 my-2 flex mx-auto mr-6'>
           <StreamlitCarousel images={streamlitCarousel} />
         </div>
         <p className='leading-7 [&:not(:first-child)]:mt-2'>

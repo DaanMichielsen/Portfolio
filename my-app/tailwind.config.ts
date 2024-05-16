@@ -13,6 +13,10 @@ const config = {
       },
     },
     extend: {
+      backgroundImage: {
+        topography: 'url("/topography.svg")',
+        'topography-dark': 'url("/topography_dark.svg")',
+      },
       colors: {
         'primary-dark': '#323b4c',
         'primary-light': '#10b981',

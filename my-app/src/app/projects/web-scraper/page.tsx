@@ -107,7 +107,7 @@ function HLTV() {
 
 export default function WebscraperPage() {
   return (
-    <div className='mx-auto max-w-7xl px-6 pb-24 pt-16 sm:pt-16 lg:px-8 lg:pt-16'>
+    <div className='mx-auto max-w-7xl px-6 pb-24 pt-16 sm:pt-16 lg:px-8 lg:pt-16 bg-white bg-opacity-90 dark:bg-primary-dark dark:bg-opacity-80'>
       <h1 className='scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl'>
         DevOps & Security | Web scraper using C# and Selenium
       </h1>
@@ -223,19 +223,23 @@ export default function WebscraperPage() {
       <div className='w-5/6 mx-auto mt-4'>
         <Accordion type='single' collapsible>
           <AccordionItem value='item-1'>
-            <AccordionTrigger>Videos | Search term: Selenium</AccordionTrigger>
+            <AccordionTrigger className='cursor-none'>
+              Videos | Search term: Selenium
+            </AccordionTrigger>
             <AccordionContent className='overflow-x-scroll'>
               <pre>{JSON.stringify(JSONVideos, null, 2)}</pre>
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value='item-2'>
-            <AccordionTrigger>Jobs | Search term: Engineer</AccordionTrigger>
+            <AccordionTrigger className='cursor-none'>
+              Jobs | Search term: Engineer
+            </AccordionTrigger>
             <AccordionContent className='overflow-x-scroll'>
               <pre>{JSON.stringify(JSONJobs, null, 2)}</pre>
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value='item-3'>
-            <AccordionTrigger>
+            <AccordionTrigger className='cursor-none'>
               HLTV | Search term: rain(name of a player)
             </AccordionTrigger>
             <AccordionContent className='overflow-x-scroll'>

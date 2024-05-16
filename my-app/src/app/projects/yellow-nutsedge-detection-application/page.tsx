@@ -25,7 +25,7 @@ export const metadata = {
 
 export default function JustPilsWebsitePage() {
   return (
-    <div className='mx-auto max-w-7xl px-6 pb-24 pt-16 sm:pt-16 lg:px-8 lg:pt-16'>
+    <div className='mx-auto max-w-7xl px-6 pb-24 pt-16 sm:pt-16 lg:px-8 lg:pt-16 bg-white bg-opacity-90 dark:bg-primary-dark dark:bg-opacity-80'>
       <h1 className='scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl'>
         Project 4.0 | Yellow nutsedge detection application
       </h1>
@@ -124,11 +124,11 @@ export default function JustPilsWebsitePage() {
         </div>
       </div>
 
-      <div className='mt-6 rounded-md'>
+      {/* <div className='mt-6 rounded-md'>
         <Suspense fallback={<Skeleton className='aspect-video w-full' />}>
           <VideoComponent fileName='https://nzrffqfvb7klovvb.public.blob.vercel-storage.com/Skyguard%20-%20promo%20video-H8mqX3wsTVWNIqU60bO6I2Tevliu3z.mp4' />
         </Suspense>
-      </div>
+      </div> */}
 
       <h2 className='mt-10 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0'>
         Description

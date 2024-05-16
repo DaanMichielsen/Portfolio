@@ -12,8 +12,8 @@ import {
 export default function TomatoCarousel({ images }: { images: ImageType[] }) {
   return (
     <>
-      <Carousel className='mx-auto'>
-        <CarouselContent>
+      <Carousel className='mx-auto w-11/12'>
+        <CarouselContent className='mx-auto'>
           {images.map((image: ImageType) => (
             <CarouselItem key={image.name} className='basis-1/3'>
               <Image

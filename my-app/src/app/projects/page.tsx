@@ -298,7 +298,7 @@ const projects: Project[] = [
 
 export default function Projects() {
   return (
-    <div className='mx-auto max-w-7xl px-6 pb-24 pt-16 sm:pt-16 lg:px-8 lg:pt-16'>
+    <div className='mx-auto max-w-7xl px-6 pb-24 pt-16 sm:pt-16 lg:px-8 lg:pt-16 bg-white bg-opacity-90 dark:bg-primary-dark dark:bg-opacity-80'>
       <ProjectsCarousel projects={projects}></ProjectsCarousel>
     </div>
   );
