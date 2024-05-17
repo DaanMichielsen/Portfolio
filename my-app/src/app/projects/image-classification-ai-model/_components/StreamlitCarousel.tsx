@@ -1,5 +1,5 @@
 'use client';
-import { Image as ImageType } from '../../justpils-website/_components/ImageGallery';
+import { Image as ImageType } from '@/components/common/ImageGallery';
 import Image from 'next/image';
 import {
   Carousel,

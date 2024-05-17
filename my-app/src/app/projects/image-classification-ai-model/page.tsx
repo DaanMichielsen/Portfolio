@@ -7,7 +7,9 @@ import TeachableMachine from '../../../../public/technologies/Teachable Machine.
 import Selenium from '../../../../public/technologies/Selenium.svg';
 import FastAI from '../../../../public/technologies/FastAI.png';
 import Numpy from '../../../../public/technologies/Numpy.svg';
+import Flask from '../../../../public/technologies/Flask Framework^light.svg';
 import Pandas from '../../../../public/technologies/Pandas.svg';
+import Kaggle from '../../../../public/technologies/Kaggle.svg';
 import CelebrityTomato from '../../../../public/tomatoes/celebrity_tomato.png';
 import GreenZebraTomato from '../../../../public/tomatoes/green_zebra_tomato.png';
 import PineappleTomato from '../../../../public/tomatoes/pineapple_tomato.png';
@@ -25,7 +27,7 @@ import {
   TooltipTrigger,
 } from '@/components/ui/tooltip';
 import TomatoCarousel from './_components/TomatoCarousel';
-import { Image as ImageType } from '../justpils-website/_components/ImageGallery';
+import { Image as ImageType } from '@/components/common/ImageGallery';
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
@@ -81,8 +83,8 @@ export default function JustPilsWebsitePage() {
         Big Data | Image classification AI model
       </h1>
 
-      <div className='mt-4 flex text-gray-500 dark:text-slate-400 gap-x-4'>
-        <div className='flex bg-slate-200  p-1 px-3 rounded-full gap-x-2'>
+      <div className='mt-4 flex space-y-2 flex-col md:flex-row text-gray-500 dark:text-slate-400 gap-x-4'>
+        <div className='flex bg-slate-200  p-1 px-3 rounded-full gap-x-1 md:gap-x-2 flex-wrap'>
           <TooltipProvider>
             <Tooltip>
               <TooltipTrigger asChild>
@@ -127,6 +129,14 @@ export default function JustPilsWebsitePage() {
               </TooltipTrigger>
               <TooltipContent>
                 <p>Pandas</p>
+              </TooltipContent>
+            </Tooltip>
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <Image src={Flask} height={30} width={30} alt='Flask'></Image>
+              </TooltipTrigger>
+              <TooltipContent>
+                <p>Flask</p>
               </TooltipContent>
             </Tooltip>
             <Tooltip>
@@ -187,6 +197,14 @@ export default function JustPilsWebsitePage() {
               </TooltipTrigger>
               <TooltipContent>
                 <p>Selenium</p>
+              </TooltipContent>
+            </Tooltip>
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <Image src={Kaggle} height={30} width={30} alt='Kaggle'></Image>
+              </TooltipTrigger>
+              <TooltipContent>
+                <p>Kaggle</p>
               </TooltipContent>
             </Tooltip>
           </TooltipProvider>

@@ -54,6 +54,7 @@ import HornetDetected2 from '../../../public/hornet-detected-2.jpg';
 
 import GCP from '../../../public/technologies/Google Cloud Platform.svg';
 import TeachableMachine from '../../../public/technologies/Teachable Machine.svg';
+import Kaggle from '../../../public/technologies/Kaggle.svg';
 import CelebrityTomato from '../../../public/tomatoes/celebrity_tomato.png';
 import GreenZebraTomato from '../../../public/tomatoes/green_zebra_tomato.png';
 import PineappleTomato from '../../../public/tomatoes/pineapple_tomato.png';
@@ -63,24 +64,29 @@ import BigDataDataset from '../../../public/big-data-dataset.png';
 import BigDataLandgingPage from '../../../public/big-data-landing-page.png';
 import BigDataPrediction from '../../../public/big-data-prediction.png';
 
-import Flask from '../../../public/technologies/Flask Framework^light.svg';
+import Flask_light from '../../../public/technologies/Flask Framework^light.svg';
+import Flask_dark from '../../../public/technologies/Flask Framework^dark.svg';
 import Angular from '../../../public/technologies/Angular.svg';
 import EntityFW from '../../../public/technologies/Entity Framework.svg';
 import DotNet from '../../../public/technologies/^.NET.svg';
-import AWS from '../../../public/technologies/AWS^light.svg';
+import AWS_light from '../../../public/technologies/AWS^light.svg';
+import AWS_dark from '../../../public/technologies/AWS^dark.svg';
 import Docker from '../../../public/technologies/Docker.svg';
 import GitLab from '../../../public/technologies/GitLab.svg';
 import Postman from '../../../public/technologies/Postman.svg';
 import SkyGuard from '../../../public/SkyGuard.png';
 
-import NextJs from '../../../public/technologies/NextJS^light.svg';
+import NextJs_light from '../../../public/technologies/NextJS^light.svg';
+import NextJs_dark from '../../../public/technologies/NextJS^dark.svg';
 import Stripe from '../../../public/technologies/Stripe.svg';
-import Prisma from '../../../public/technologies/Prisma ORM.svg';
+import Prisma_light from '../../../public/technologies/Prisma ORM^light.svg';
+import Prisma_dark from '../../../public/technologies/Prisma ORM^dark.svg';
 import EMQX from '../../../public/technologies/EMQX MQTT.svg';
 import CosmosDB from '../../../public/technologies/Azure Cosmos DB.svg';
 import AzureFunctions from '../../../public/technologies/Azure Functions.svg';
 import Auth0 from '../../../public/technologies/AuthZero.svg';
-import Resend from '../../../public/technologies/Resend^light.svg';
+import Resend_light from '../../../public/technologies/Resend^light.svg';
+import Resend_dark from '../../../public/technologies/Resend^dark.svg';
 import Energy from '../../../public/ismart-energy.svg';
 
 export type Project = {
@@ -225,6 +231,8 @@ const projects: Project[] = [
         name: 'Roboflow',
       },
       { src: FastAI, name: 'FastAI' },
+      { src: Flask_light, name: 'Flask^light' },
+      { src: Flask_dark, name: 'Flask^dark' },
       {
         src: Numpy,
         name: 'Numpy',
@@ -236,6 +244,7 @@ const projects: Project[] = [
       },
       { src: TeachableMachine, name: 'Google Teachable Machine' },
       { src: Selenium, name: 'Selenium' },
+      { src: Kaggle, name: 'Kaggle' },
     ],
   },
   {
@@ -246,7 +255,8 @@ const projects: Project[] = [
     heroImages: [SkyGuard],
     technologies: [
       { src: Python, name: 'Python' },
-      { src: Flask, name: 'Flask' },
+      { src: Flask_light, name: 'Flask^light' },
+      { src: Flask_dark, name: 'Flask^dark' },
       { src: Angular, name: 'Angular' },
       {
         src: EntityFW,
@@ -254,8 +264,12 @@ const projects: Project[] = [
       },
       { src: DotNet, name: '.NET' },
       {
-        src: AWS,
-        name: 'Amazon Web Services',
+        src: AWS_light,
+        name: 'Amazon Web Services^light',
+      },
+      {
+        src: AWS_dark,
+        name: 'Amazon Web Services^dark',
       },
       { src: Docker, name: 'Docker' },
       {
@@ -263,6 +277,8 @@ const projects: Project[] = [
         name: 'GitLab',
       },
       { src: Postman, name: 'Postman' },
+      { src: GoogleColab, name: 'Google Colab' },
+      { src: FastAI, name: 'FastAI' },
     ],
   },
   {
@@ -272,12 +288,17 @@ const projects: Project[] = [
     href: '/projects/energy-saas',
     heroImages: [Energy],
     technologies: [
-      { src: NextJs, name: 'NextJS' },
+      { src: NextJs_light, name: 'NextJS^light' },
+      { src: NextJs_dark, name: 'NextJS^dark' },
       { src: Stripe, name: 'Stripe' },
       { src: Angular, name: 'Angular' },
       {
-        src: Prisma,
-        name: 'Prisma ORM',
+        src: Prisma_light,
+        name: 'Prisma ORM^light',
+      },
+      {
+        src: Prisma_dark,
+        name: 'Prisma ORM^dark',
       },
       { src: EMQX, name: 'EMQX Cloud' },
       {
@@ -290,7 +311,8 @@ const projects: Project[] = [
         name: 'Tailwind',
       },
       { src: Auth0, name: 'Auth0' },
-      { src: Resend, name: 'Resend' },
+      { src: Resend_light, name: 'Resend^light' },
+      { src: Resend_dark, name: 'Resend^dark' },
       { src: Postman, name: 'Postman' },
     ],
   },

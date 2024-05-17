@@ -36,7 +36,8 @@ import SkyGuard from '../../public/SkyGuard.png';
 
 import NextJs from '../../public/technologies/NextJS^light.svg';
 import Stripe from '../../public/technologies/Stripe.svg';
-import Prisma from '../../public/technologies/Prisma ORM.svg';
+import Prisma_light from '../../public/technologies/Prisma ORM^light.svg';
+import Prisma_dark from '../../public/technologies/Prisma ORM^dark.svg';
 import EMQX from '../../public/technologies/EMQX MQTT.svg';
 import CosmosDB from '../../public/technologies/Azure Cosmos DB.svg';
 import AzureFunctions from '../../public/technologies/Azure Functions.svg';
@@ -121,8 +122,12 @@ const projects: Project[] = [
       { src: Stripe, name: 'Stripe' },
       { src: Angular, name: 'Angular' },
       {
-        src: Prisma,
-        name: 'Prisma ORM',
+        src: Prisma_light,
+        name: 'Prisma ORM^light',
+      },
+      {
+        src: Prisma_dark,
+        name: 'Prisma ORM^dark',
       },
       { src: EMQX, name: 'EMQX Cloud' },
       {

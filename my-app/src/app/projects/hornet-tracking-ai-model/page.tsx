@@ -24,7 +24,9 @@ import HornetLabel3 from '../../../../public/hornet-label-3.png';
 import HornetLabel4 from '../../../../public/hornet-label-4.png';
 import HornetDetected1 from '../../../../public/hornet-detected-1.jpg';
 import HornetDetected2 from '../../../../public/hornet-detected-2.jpg';
-import { Image as ImageType } from '../justpils-website/_components/ImageGallery';
+import ImageGallery, {
+  Image as ImageType,
+} from '@/components/common/ImageGallery';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import PDFModal from '../../../components/common/ReportModal';
@@ -45,6 +47,13 @@ const labelCarousel: ImageType[] = [
   {
     name: 'Hornet label 4',
     src: HornetLabel4,
+  },
+];
+
+const labelImage: ImageType[] = [
+  {
+    name: 'Roboflow labels',
+    src: RoboflowLabels,
   },
 ];
 
@@ -220,9 +229,7 @@ export default function HornetTrackingAiModelPage() {
           in which <b>1787 labels</b> were drawn of which{' '}
           <b>946 were hornets and 841 were bees</b>.
         </p>
-        <div className='relative'>
-          <Image src={RoboflowLabels} alt='roboflow dataset distribution' />
-        </div>
+        <ImageGallery images={labelImage} />
         <p className='leading-7 [&:not(:first-child)]:mt-2'>
           The next task was to train the model. We used Yolov5 which is an
           object detection model. This model is trained by showing it a lot of
@@ -263,11 +270,11 @@ export default function HornetTrackingAiModelPage() {
           <div className='max-w-5/6'>
             <div className='overflow-hidden h-0 pb-[56.25%] relative'>
               <iframe
-                src='https://thomasmore365-my.sharepoint.com/personal/r0896365_student_thomasmore_be/_layouts/15/embed.aspx?UniqueId=60c3c955-f0d7-4f68-a072-29a16a5a6cb3&nav=%7B%22playbackOptions%22%3A%7B%22startTimeInSeconds%22%3A0%7D%7D&embed=%7B%22hvm%22%3Atrue%2C%22ust%22%3Atrue%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create'
+                src='https://my.microsoftpersonalcontent.com/personal/ced5be97da9b1174/_layouts/15/embed.aspx?UniqueId=baac415b-2857-437a-8f61-68a9827aa383&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create'
                 width='640'
                 height='360'
                 allowFullScreen
-                title='resulttracking_edited.mp4'
+                title='result-tracking-edited.mp4'
                 className='border-none absolute top-0 left-0 right-0 bottom-0 h-full w-full max-w-full'
               ></iframe>
             </div>
@@ -286,7 +293,7 @@ export default function HornetTrackingAiModelPage() {
         <div className='max-w-5/6'>
           <div className='overflow-hidden h-0 pb-[56.25%] relative'>
             <iframe
-              src='https://thomasmore365-my.sharepoint.com/personal/r0896365_student_thomasmore_be/_layouts/15/embed.aspx?UniqueId=29bc48ab-2ce0-4250-ad1f-a89739e1b559&embed=%7B%22hvm%22%3Atrue%2C%22ust%22%3Atrue%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create'
+              src='https://my.microsoftpersonalcontent.com/personal/ced5be97da9b1174/_layouts/15/embed.aspx?UniqueId=53d76b63-134a-44b7-b2c6-cdaa86a129b9&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create'
               width='640'
               height='360'
               title='streamlit-tracking.mp4'

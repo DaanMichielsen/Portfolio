@@ -7,7 +7,7 @@ import {
 import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
 import NextJs from '../../../../public/technologies/NextJS^light.svg';
 import Stripe from '../../../../public/technologies/Stripe.svg';
-import Prisma from '../../../../public/technologies/Prisma ORM.svg';
+import Prisma from '../../../../public/technologies/Prisma ORM^light.svg';
 import EMQX from '../../../../public/technologies/EMQX MQTT.svg';
 import CosmosDB from '../../../../public/technologies/Azure Cosmos DB.svg';
 import AzureFunctions from '../../../../public/technologies/Azure Functions.svg';
@@ -75,8 +75,8 @@ export default function EnergySaasPage() {
         Internship | Energy Saas Platform
       </h1>
 
-      <div className='mt-4 flex text-gray-500 dark:text-slate-400 gap-x-4'>
-        <div className='flex bg-slate-200  p-1 px-3 rounded-full gap-x-2'>
+      <div className='mt-4 flex space-y-2 flex-col md:flex-row text-gray-500 dark:text-slate-400 gap-x-4'>
+        <div className='flex bg-slate-200  p-1 px-3 rounded-full gap-x-1 md:gap-x-2'>
           <TooltipProvider>
             <Tooltip>
               <TooltipTrigger asChild>

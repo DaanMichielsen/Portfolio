@@ -112,8 +112,8 @@ export default function WebscraperPage() {
         DevOps & Security | Web scraper using C# and Selenium
       </h1>
 
-      <div className='mt-4 flex text-gray-500 dark:text-slate-400 gap-x-4'>
-        <div className='flex bg-slate-200  p-1 px-3 rounded-full gap-x-2'>
+      <div className='mt-4 flex space-y-2 flex-col md:flex-row text-gray-500 dark:text-slate-400 gap-x-4'>
+        <div className='flex bg-slate-200  p-1 px-3 rounded-full gap-x-1 md:gap-x-2  max-h-[46px] mt-2'>
           <TooltipProvider>
             <Tooltip>
               <TooltipTrigger asChild>

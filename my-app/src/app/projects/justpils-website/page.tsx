@@ -6,7 +6,7 @@ import Netlify from '../../../../public/technologies/Netlify.svg';
 import Gulp from '../../../../public/technologies/Gulp.svg';
 import NodeJS from '../../../../public/technologies/NodeJS.svg';
 import Bootstrap from '../../../../public/technologies/Bootstrap.svg';
-import ImageGallery from './_components/ImageGallery';
+import ImageGallery from '@/components/common/ImageGallery';
 import Image from 'next/image';
 import {
   Tooltip,
@@ -30,7 +30,7 @@ export const metadata = {
   title: 'Daan Michielsen | JustPils Website',
   description: 'Page of the JustPils Website project',
 };
-import { Image as ImageType } from './_components/ImageGallery';
+import { Image as ImageType } from '@/components/common/ImageGallery';
 import BackToTopButton from './_components/BackToTopButton';
 
 const imagesPages: ImageType[] = [
@@ -52,8 +52,8 @@ export default function JustPilsWebsitePage() {
         Webdesign Advanced | JustPils Website
       </h1>
 
-      <div className='mt-4 flex text-gray-500 dark:text-slate-400 gap-x-4'>
-        <div className='flex bg-slate-200  p-1 px-3 rounded-full gap-x-2'>
+      <div className='mt-4 flex space-y-2 flex-col md:flex-row text-gray-500 dark:text-slate-400 gap-x-4'>
+        <div className='flex bg-slate-200  p-1 px-3 rounded-full gap-x-1 md:gap-x-2'>
           <TooltipProvider>
             <Tooltip>
               <TooltipTrigger asChild>
