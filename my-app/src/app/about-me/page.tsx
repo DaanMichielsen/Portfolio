@@ -344,11 +344,11 @@ export default async function AboutMe() {
                 </p>
                 <div className='flex gap-4'>
                   <PDFModal
-                    src='https://nzrffqfvb7klovvb.public.blob.vercel-storage.com/CV%20Daan%20Michielsen%202024%20English-KPBxm1Rm9BfTclMywabDe3LUhb6vcg.pdf'
+                    src='https://1drv.ms/b/c/ced5be97da9b1174/IQOCUjoTCcZiRIOUpHrmt6-EAda-yb-BldZBKAcMg1mNqog'
                     title='CV Daan Michielsen English'
                   />
                   <PDFModal
-                    src='https://nzrffqfvb7klovvb.public.blob.vercel-storage.com/CV%20Daan%20Michielsen%202024%20Nederlands-gBUChMiLJP61bRuim9Q83goh2sv2PU.pdf'
+                    src='https://1drv.ms/b/c/ced5be97da9b1174/IQN06RhlrzoCQb5-zP3RrNlBARUpsUWoG0ou-e0kX5f6Sec'
                     title='CV Daan Michielsen Dutch'
                   />
                 </div>
