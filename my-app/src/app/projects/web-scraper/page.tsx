@@ -24,7 +24,6 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from '@/components/ui/accordion';
-import { Image as ImageType } from '@/components/common/ImageGallery';
 import TechnologyGallery from '@/components/common/TechnologyGallery';
 
 export const metadata = {
