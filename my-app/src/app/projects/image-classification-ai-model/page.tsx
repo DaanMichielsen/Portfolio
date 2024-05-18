@@ -10,6 +10,7 @@ import Numpy from '../../../../public/technologies/Numpy.svg';
 import Flask from '../../../../public/technologies/Flask Framework^light.svg';
 import Pandas from '../../../../public/technologies/Pandas.svg';
 import Kaggle from '../../../../public/technologies/Kaggle.svg';
+import Matplotlib from '../../../../public/technologies/Matplotlib.svg';
 import CelebrityTomato from '../../../../public/tomatoes/celebrity_tomato.png';
 import GreenZebraTomato from '../../../../public/tomatoes/green_zebra_tomato.png';
 import PineappleTomato from '../../../../public/tomatoes/pineapple_tomato.png';
@@ -19,19 +20,13 @@ import BigDataDataset from '../../../../public/big-data-dataset.png';
 import BigDataLandgingPage from '../../../../public/big-data-landing-page.png';
 import BigDataPrediction from '../../../../public/big-data-prediction.png';
 import StreamlitCarousel from './_components/StreamlitCarousel';
-import Image from 'next/image';
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from '@/components/ui/tooltip';
 import TomatoCarousel from './_components/TomatoCarousel';
 import { Image as ImageType } from '@/components/common/ImageGallery';
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import PDFModal from '@/components/common/ReportModal';
+import TechnologyGallery from '@/components/common/TechnologyGallery';
 
 export const metadata = {
   title: 'Daan Michielsen | Image classification AI model',
@@ -76,6 +71,61 @@ const streamlitCarousel: ImageType[] = [
   },
 ];
 
+const technologies: ImageType[] = [
+  {
+    name: 'Python',
+    src: Python,
+  },
+  {
+    name: 'Google Colab',
+    src: GoogleColab,
+  },
+  {
+    name: 'FastAI',
+    src: FastAI,
+  },
+  {
+    name: 'Numpy',
+    src: Numpy,
+  },
+  {
+    name: 'Pandas',
+    src: Pandas,
+  },
+  {
+    name: 'Flask',
+    src: Flask,
+  },
+  {
+    name: 'Roboflow',
+    src: Roboflow,
+  },
+  {
+    name: 'Google Cloud Platform',
+    src: GCP,
+  },
+  {
+    name: 'Streamlit',
+    src: Streamlit,
+  },
+  {
+    name: 'Teachable Machine',
+    src: TeachableMachine,
+  },
+  {
+    name: 'Selenium',
+    src: Selenium,
+  },
+  {
+    name: 'Kaggle',
+    src: Kaggle,
+  },
+  {
+    name: 'Matplotlib',
+    src: Matplotlib,
+  },
+];
+
 export default function JustPilsWebsitePage() {
   return (
     <div className='mx-auto max-w-7xl px-6 pb-24 pt-16 sm:pt-16 lg:px-8 lg:pt-16 bg-white bg-opacity-90 dark:bg-primary-dark dark:bg-opacity-80'>
@@ -84,131 +134,7 @@ export default function JustPilsWebsitePage() {
       </h1>
 
       <div className='mt-4 flex space-y-2 flex-col md:flex-row text-gray-500 dark:text-slate-400 gap-x-4'>
-        <div className='flex bg-slate-200  p-1 px-3 rounded-full gap-x-1 md:gap-x-2 flex-wrap'>
-          <TooltipProvider>
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <Image src={Python} height={30} width={30} alt='Python'></Image>
-              </TooltipTrigger>
-              <TooltipContent>
-                <p>Python</p>
-              </TooltipContent>
-            </Tooltip>
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <Image
-                  src={GoogleColab}
-                  height={30}
-                  width={30}
-                  alt='GoogleColab'
-                ></Image>
-              </TooltipTrigger>
-              <TooltipContent>
-                <p>Google Colab</p>
-              </TooltipContent>
-            </Tooltip>
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <Image src={FastAI} height={30} width={30} alt='FastAI'></Image>
-              </TooltipTrigger>
-              <TooltipContent>
-                <p>FastAI</p>
-              </TooltipContent>
-            </Tooltip>
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <Image src={Numpy} height={30} width={30} alt='Numpy'></Image>
-              </TooltipTrigger>
-              <TooltipContent>
-                <p>Numpy</p>
-              </TooltipContent>
-            </Tooltip>
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <Image src={Pandas} height={30} width={30} alt='Pandas'></Image>
-              </TooltipTrigger>
-              <TooltipContent>
-                <p>Pandas</p>
-              </TooltipContent>
-            </Tooltip>
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <Image src={Flask} height={30} width={30} alt='Flask'></Image>
-              </TooltipTrigger>
-              <TooltipContent>
-                <p>Flask</p>
-              </TooltipContent>
-            </Tooltip>
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <Image
-                  src={Roboflow}
-                  height={30}
-                  width={30}
-                  alt='Roboflow'
-                ></Image>
-              </TooltipTrigger>
-              <TooltipContent>
-                <p>Roboflow</p>
-              </TooltipContent>
-            </Tooltip>
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <Image src={GCP} height={30} width={30} alt='GCP'></Image>
-              </TooltipTrigger>
-              <TooltipContent>
-                <p>Google Cloud Platform</p>
-              </TooltipContent>
-            </Tooltip>
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <Image
-                  src={Streamlit}
-                  height={30}
-                  width={30}
-                  alt='Streamlit'
-                ></Image>
-              </TooltipTrigger>
-              <TooltipContent>
-                <p>Streamlit</p>
-              </TooltipContent>
-            </Tooltip>
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <Image
-                  src={TeachableMachine}
-                  height={30}
-                  width={30}
-                  alt='TeachableMachine'
-                ></Image>
-              </TooltipTrigger>
-              <TooltipContent>
-                <p>Teachable Machine</p>
-              </TooltipContent>
-            </Tooltip>
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <Image
-                  src={Selenium}
-                  height={30}
-                  width={30}
-                  alt='Selenium'
-                ></Image>
-              </TooltipTrigger>
-              <TooltipContent>
-                <p>Selenium</p>
-              </TooltipContent>
-            </Tooltip>
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <Image src={Kaggle} height={30} width={30} alt='Kaggle'></Image>
-              </TooltipTrigger>
-              <TooltipContent>
-                <p>Kaggle</p>
-              </TooltipContent>
-            </Tooltip>
-          </TooltipProvider>
-        </div>
+        <TechnologyGallery technologies={technologies} />
         <Link
           href={'https://github.com/SharonMaharjan/Big_Data-Project'}
           target='_blank'

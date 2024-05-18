@@ -8,12 +8,6 @@ import NodeJS from '../../../../public/technologies/NodeJS.svg';
 import Bootstrap from '../../../../public/technologies/Bootstrap.svg';
 import ImageGallery from '@/components/common/ImageGallery';
 import Image from 'next/image';
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from '@/components/ui/tooltip';
 import Link from 'next/link';
 import JustPilsLogo from '../../../../public/justpils.png';
 import ColorPalette from './_components/ColorPalette';
@@ -32,6 +26,7 @@ export const metadata = {
 };
 import { Image as ImageType } from '@/components/common/ImageGallery';
 import BackToTopButton from './_components/BackToTopButton';
+import TechnologyGallery from '@/components/common/TechnologyGallery';
 
 const imagesPages: ImageType[] = [
   { src: JustPilsOrigin, name: 'Justpils origin page' },
@@ -45,6 +40,41 @@ const imagesJS: ImageType[] = [
   { src: JustPilsBackToTop, name: 'Back to top button' },
 ];
 
+const technologies: ImageType[] = [
+  {
+    name: 'Sass',
+    src: Sass,
+  },
+  {
+    name: 'HTML',
+    src: HTML,
+  },
+  {
+    name: 'CSS',
+    src: CSS,
+  },
+  {
+    name: 'JavaScript',
+    src: JavaScript,
+  },
+  {
+    name: 'Netlify',
+    src: Netlify,
+  },
+  {
+    name: 'Gulp',
+    src: Gulp,
+  },
+  {
+    name: 'NodeJS',
+    src: NodeJS,
+  },
+  {
+    name: 'Bootstrap',
+    src: Bootstrap,
+  },
+];
+
 export default function JustPilsWebsitePage() {
   return (
     <div className='mx-auto max-w-7xl px-6 pb-24 pt-16 sm:pt-16 lg:px-8 lg:pt-16 bg-white bg-opacity-90 dark:bg-primary-dark dark:bg-opacity-80'>
@@ -53,89 +83,7 @@ export default function JustPilsWebsitePage() {
       </h1>
 
       <div className='mt-4 flex space-y-2 flex-col md:flex-row text-gray-500 dark:text-slate-400 gap-x-4'>
-        <div className='flex bg-slate-200  p-1 px-3 rounded-full gap-x-1 md:gap-x-2'>
-          <TooltipProvider>
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <Image src={Sass} height={30} width={30} alt='Sass'></Image>
-              </TooltipTrigger>
-              <TooltipContent>
-                <p>Sass</p>
-              </TooltipContent>
-            </Tooltip>
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <Image src={HTML} height={30} width={30} alt='HTML'></Image>
-              </TooltipTrigger>
-              <TooltipContent>
-                <p>HTML</p>
-              </TooltipContent>
-            </Tooltip>
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <Image src={CSS} height={30} width={30} alt='CSS'></Image>
-              </TooltipTrigger>
-              <TooltipContent>
-                <p>CSS</p>
-              </TooltipContent>
-            </Tooltip>
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <Image
-                  src={JavaScript}
-                  height={30}
-                  width={30}
-                  alt='JavaScript'
-                ></Image>
-              </TooltipTrigger>
-              <TooltipContent>
-                <p>JavaScript</p>
-              </TooltipContent>
-            </Tooltip>
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <Image
-                  src={Netlify}
-                  height={30}
-                  width={30}
-                  alt='Netlify'
-                ></Image>
-              </TooltipTrigger>
-              <TooltipContent>
-                <p>Netlify</p>
-              </TooltipContent>
-            </Tooltip>
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <Image src={Gulp} height={30} width={30} alt='Gulp'></Image>
-              </TooltipTrigger>
-              <TooltipContent>
-                <p>Gulp</p>
-              </TooltipContent>
-            </Tooltip>
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <Image src={NodeJS} height={30} width={30} alt='NodeJS'></Image>
-              </TooltipTrigger>
-              <TooltipContent>
-                <p>NodeJS</p>
-              </TooltipContent>
-            </Tooltip>
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <Image
-                  src={Bootstrap}
-                  height={30}
-                  width={30}
-                  alt='Bootstrap'
-                ></Image>
-              </TooltipTrigger>
-              <TooltipContent>
-                <p>Bootstrap</p>
-              </TooltipContent>
-            </Tooltip>
-          </TooltipProvider>
-        </div>
+        <TechnologyGallery technologies={technologies} />
         <Link
           href={'https://justpils.netlify.app/'}
           target='_blank'

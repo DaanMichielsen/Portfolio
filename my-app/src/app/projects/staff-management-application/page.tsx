@@ -14,15 +14,9 @@ import ManageAbsencesFilter from '../../../../public/manage-absences-filter.png'
 import InvoicesCreate from '../../../../public/invoices-create.png';
 import InvoicesFilter from '../../../../public/invoices-filter.png';
 import InvoicesSuccess from '../../../../public/invoices-success.png';
-
-import Image from 'next/image';
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from '@/components/ui/tooltip';
 import PageCarousel from '../../../components/common/Carousel';
+import TechnologyGallery from '@/components/common/TechnologyGallery';
+import { Image as ImageType } from '@/components/common/ImageGallery';
 
 export const metadata = {
   title: 'Daan Michielsen | Staff Management Application',
@@ -37,6 +31,33 @@ const absenceImages = [
   ManageAbsencesFilter,
 ];
 
+const technologies: ImageType[] = [
+  {
+    name: 'PHP',
+    src: PHP,
+  },
+  {
+    name: 'HTML',
+    src: HTML,
+  },
+  {
+    name: 'Tailwind',
+    src: Tailwind,
+  },
+  {
+    name: 'SQLite',
+    src: SQLite,
+  },
+  {
+    name: 'Combell',
+    src: Combell,
+  },
+  {
+    name: 'Livewire',
+    src: Livewire,
+  },
+];
+
 const InvoiceImages = [InvoicesCreate, InvoicesFilter, InvoicesSuccess];
 
 export default function JustPilsWebsitePage() {
@@ -47,73 +68,7 @@ export default function JustPilsWebsitePage() {
       </h1>
 
       <div className='mt-4 flex space-y-2 flex-col md:flex-row text-gray-500 dark:text-slate-400 gap-x-4'>
-        <div className='flex bg-slate-200  p-1 px-3 rounded-full gap-x-1 md:gap-x-2'>
-          <TooltipProvider>
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <Image src={PHP} height={30} width={30} alt='PHP'></Image>
-              </TooltipTrigger>
-              <TooltipContent>
-                <p>PHP</p>
-              </TooltipContent>
-            </Tooltip>
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <Image src={HTML} height={30} width={30} alt='HTML'></Image>
-              </TooltipTrigger>
-              <TooltipContent>
-                <p>HTML</p>
-              </TooltipContent>
-            </Tooltip>
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <Image
-                  src={Tailwind}
-                  height={30}
-                  width={30}
-                  alt='Tailwind'
-                ></Image>
-              </TooltipTrigger>
-              <TooltipContent>
-                <p>Tailwind</p>
-              </TooltipContent>
-            </Tooltip>
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <Image src={SQLite} height={30} width={30} alt='SQLite'></Image>
-              </TooltipTrigger>
-              <TooltipContent>
-                <p>SQLite</p>
-              </TooltipContent>
-            </Tooltip>
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <Image
-                  src={Combell}
-                  height={30}
-                  width={30}
-                  alt='Combell'
-                ></Image>
-              </TooltipTrigger>
-              <TooltipContent>
-                <p>Combell</p>
-              </TooltipContent>
-            </Tooltip>
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <Image
-                  src={Livewire}
-                  height={30}
-                  width={30}
-                  alt='Livewire'
-                ></Image>
-              </TooltipTrigger>
-              <TooltipContent>
-                <p>Livewire</p>
-              </TooltipContent>
-            </Tooltip>
-          </TooltipProvider>
-        </div>
+        <TechnologyGallery technologies={technologies} />
       </div>
 
       <h2 className='mt-10 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0'>

@@ -11,12 +11,6 @@ import Selenium from '../../../../public/technologies/Selenium.svg';
 import Instagram from '../../../../public/Instagram.svg';
 import RoboflowLabels from '../../../../public/roboflow-labels.png';
 import Image from 'next/image';
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from '@/components/ui/tooltip';
 import LabelCarousel from './_components/LabelCarousel';
 import HornetLabel1 from '../../../../public/hornet-label.png';
 import HornetLabel2 from '../../../../public/hornet-label-2.png';
@@ -30,6 +24,7 @@ import ImageGallery, {
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import PDFModal from '../../../components/common/ReportModal';
+import TechnologyGallery from '@/components/common/TechnologyGallery';
 
 const labelCarousel: ImageType[] = [
   {
@@ -62,6 +57,45 @@ export const metadata = {
   description: 'Page of the Hornet tracking AI model project',
 };
 
+const technologies: ImageType[] = [
+  {
+    name: 'Python',
+    src: Python,
+  },
+  {
+    name: 'Google Colab',
+    src: GoogleColab,
+  },
+  {
+    name: 'Roboflow',
+    src: Roboflow,
+  },
+  {
+    name: 'FastAI',
+    src: FastAI,
+  },
+  {
+    name: 'Numpy',
+    src: Numpy,
+  },
+  {
+    name: 'Pandas',
+    src: Pandas,
+  },
+  {
+    name: 'Streamlit',
+    src: Streamlit,
+  },
+  {
+    name: 'Yolo',
+    src: Yolo,
+  },
+  {
+    name: 'Selenium',
+    src: Selenium,
+  },
+];
+
 export default function HornetTrackingAiModelPage() {
   return (
     <div className='mx-auto max-w-7xl px-6 pb-24 pt-16 sm:pt-16 lg:px-8 lg:pt-16 bg-white bg-opacity-90 dark:bg-primary-dark dark:bg-opacity-80'>
@@ -70,102 +104,7 @@ export default function HornetTrackingAiModelPage() {
       </h1>
 
       <div className='mt-4 flex space-y-2 flex-col md:flex-row text-gray-500 dark:text-slate-400 gap-x-4'>
-        <div className='flex bg-slate-200 p-1 px-3 rounded-full gap-x-2 max-h-[46px] mt-2'>
-          <TooltipProvider>
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <Image src={Python} height={30} width={30} alt='Python'></Image>
-              </TooltipTrigger>
-              <TooltipContent>
-                <p>Python</p>
-              </TooltipContent>
-            </Tooltip>
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <Image
-                  src={GoogleColab}
-                  height={30}
-                  width={30}
-                  alt='GoogleColab'
-                ></Image>
-              </TooltipTrigger>
-              <TooltipContent>
-                <p>Google Colab</p>
-              </TooltipContent>
-            </Tooltip>
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <Image
-                  src={Roboflow}
-                  height={30}
-                  width={30}
-                  alt='Roboflow'
-                ></Image>
-              </TooltipTrigger>
-              <TooltipContent>
-                <p>Roboflow</p>
-              </TooltipContent>
-            </Tooltip>
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <Image src={FastAI} height={30} width={30} alt='FastAI'></Image>
-              </TooltipTrigger>
-              <TooltipContent>
-                <p>FastAI</p>
-              </TooltipContent>
-            </Tooltip>
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <Image src={Numpy} height={30} width={30} alt='Numpy'></Image>
-              </TooltipTrigger>
-              <TooltipContent>
-                <p>Numpy</p>
-              </TooltipContent>
-            </Tooltip>
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <Image src={Pandas} height={30} width={30} alt='Pandas'></Image>
-              </TooltipTrigger>
-              <TooltipContent>
-                <p>Pandas</p>
-              </TooltipContent>
-            </Tooltip>
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <Image
-                  src={Streamlit}
-                  height={30}
-                  width={30}
-                  alt='Streamlit'
-                ></Image>
-              </TooltipTrigger>
-              <TooltipContent>
-                <p>Streamlit</p>
-              </TooltipContent>
-            </Tooltip>
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <Image src={Yolo} height={30} width={30} alt='Yolo'></Image>
-              </TooltipTrigger>
-              <TooltipContent>
-                <p>Yolo</p>
-              </TooltipContent>
-            </Tooltip>
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <Image
-                  src={Selenium}
-                  height={30}
-                  width={30}
-                  alt='Selenium'
-                ></Image>
-              </TooltipTrigger>
-              <TooltipContent>
-                <p>Selenium</p>
-              </TooltipContent>
-            </Tooltip>
-          </TooltipProvider>
-        </div>
+        <TechnologyGallery technologies={technologies} />
         <Link
           href={'https://github.com/SharonMaharjan/AIProject-Team7'}
           target='_blank'

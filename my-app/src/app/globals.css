@@ -31,9 +31,9 @@ body {
 
 .cursor {
   background-color: #323b4c;
-  height: 32px;
-  width: 32px;
-  border-radius: 50%;
+  height: 24px;
+  width: 24px;
+  border-radius: 0 50% 50% 50%;
   position: fixed;
   top: 0;
   left: 0;

@@ -9,13 +9,6 @@ import GitLab from '../../../../public/technologies/GitLab.svg';
 import Postman from '../../../../public/technologies/Postman.svg';
 import GoogleColab from '../../../../public/technologies/Google Colab.svg';
 import FastAI from '../../../../public/technologies/FastAI.png';
-import Image from 'next/image';
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from '@/components/ui/tooltip';
 import {
   HoverCard,
   HoverCardTrigger,
@@ -34,6 +27,8 @@ import BlockRecentlyPlanted from '../../../../public/block-recently-planted.jpg'
 import BlockHalfGrown from '../../../../public/block-half-grown.jpg';
 import PDFModal from '@/components/common/PDFModal';
 import ConfusionMatrix from '../../../../public/confusion-matrix.png';
+import SkyGuard from '../../../../public/SkyGuard.png';
+import TechnologyGallery from '@/components/common/TechnologyGallery';
 
 export const metadata = {
   title: 'Daan Michielsen | Yellow nutsedge detection application',
@@ -103,6 +98,13 @@ const AIModelWorkingImages: ImageType[] = [
   },
 ];
 
+const SkyGuardImages: ImageType[] = [
+  {
+    src: SkyGuard,
+    name: 'SkyGuard logo',
+  },
+];
+
 const FieldImages: ImageType[] = [
   {
     src: FieldRecentlyPlanted,
@@ -122,6 +124,53 @@ const FieldImages: ImageType[] = [
   },
 ];
 
+const technologies: ImageType[] = [
+  {
+    src: Python,
+    name: 'Python',
+  },
+  {
+    src: Flask,
+    name: 'Flask',
+  },
+  {
+    src: Angular,
+    name: 'Angular',
+  },
+  {
+    src: EntityFW,
+    name: 'Entity Framework',
+  },
+  {
+    src: DotNet,
+    name: '.NET',
+  },
+  {
+    src: AWS,
+    name: 'Amazon Web Services',
+  },
+  {
+    src: Docker,
+    name: 'Docker',
+  },
+  {
+    src: GitLab,
+    name: 'GitLab',
+  },
+  {
+    src: Postman,
+    name: 'Postman',
+  },
+  {
+    src: GoogleColab,
+    name: 'Google Colab',
+  },
+  {
+    src: FastAI,
+    name: 'FastAI',
+  },
+];
+
 export default function JustPilsWebsitePage() {
   return (
     <div className='mx-auto max-w-7xl px-6 pb-24 pt-16 sm:pt-16 lg:px-8 lg:pt-16 bg-white bg-opacity-90 dark:bg-primary-dark dark:bg-opacity-80'>
@@ -130,121 +179,13 @@ export default function JustPilsWebsitePage() {
       </h1>
 
       <div className='mt-4 flex space-y-2 flex-col md:flex-row text-gray-500 dark:text-slate-400 gap-x-4'>
-        <div className='flex bg-slate-200 p-1 px-3 rounded-full gap-x-1 flex-wrap md:gap-x-2 mt-2'>
-          <TooltipProvider>
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <Image src={Python} height={30} width={30} alt='Python'></Image>
-              </TooltipTrigger>
-              <TooltipContent>
-                <p>Python</p>
-              </TooltipContent>
-            </Tooltip>
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <Image src={Flask} height={30} width={30} alt='Flask'></Image>
-              </TooltipTrigger>
-              <TooltipContent>
-                <p>Flask (API)</p>
-              </TooltipContent>
-            </Tooltip>
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <Image
-                  src={Angular}
-                  height={30}
-                  width={30}
-                  alt='Angular'
-                ></Image>
-              </TooltipTrigger>
-              <TooltipContent>
-                <p>Angular</p>
-              </TooltipContent>
-            </Tooltip>
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <Image
-                  src={EntityFW}
-                  height={30}
-                  width={30}
-                  alt='Entity framework'
-                ></Image>
-              </TooltipTrigger>
-              <TooltipContent>
-                <p>Entity Framework ORM</p>
-              </TooltipContent>
-            </Tooltip>
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <Image src={DotNet} height={30} width={30} alt='DotNet'></Image>
-              </TooltipTrigger>
-              <TooltipContent>
-                <p>.NET</p>
-              </TooltipContent>
-            </Tooltip>
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <Image src={AWS} height={30} width={30} alt='AWS'></Image>
-              </TooltipTrigger>
-              <TooltipContent>
-                <p>Amazon Web Services</p>
-              </TooltipContent>
-            </Tooltip>
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <Image src={Docker} height={30} width={30} alt='Docker'></Image>
-              </TooltipTrigger>
-              <TooltipContent>
-                <p>Docker</p>
-              </TooltipContent>
-            </Tooltip>
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <Image src={GitLab} height={30} width={30} alt='GitLab'></Image>
-              </TooltipTrigger>
-              <TooltipContent>
-                <p>GitLab</p>
-              </TooltipContent>
-            </Tooltip>
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <Image
-                  src={Postman}
-                  height={30}
-                  width={30}
-                  alt='Postman'
-                ></Image>
-              </TooltipTrigger>
-              <TooltipContent>
-                <p>Postman</p>
-              </TooltipContent>
-            </Tooltip>
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <Image
-                  src={GoogleColab}
-                  height={30}
-                  width={30}
-                  alt='Google Colab'
-                ></Image>
-              </TooltipTrigger>
-              <TooltipContent>
-                <p>Google Colab</p>
-              </TooltipContent>
-            </Tooltip>
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <Image src={FastAI} height={30} width={30} alt='FastAI'></Image>
-              </TooltipTrigger>
-              <TooltipContent>
-                <p>FastAI</p>
-              </TooltipContent>
-            </Tooltip>
-          </TooltipProvider>
-        </div>
+        <TechnologyGallery technologies={technologies} />
       </div>
 
-      <h2 className='mt-10 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0'>
+      <h2
+        id='description'
+        className='mt-10 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0'
+      >
         Description
       </h2>
       <p className='leading-7 [&:not(:first-child)]:mt-6'>
@@ -258,7 +199,10 @@ export default function JustPilsWebsitePage() {
         problem we could solve using their data in the form of images taken with
         a drone.
       </p>
-      <h3 className='scroll-m-20 text-2xl font-semibold tracking-tight mt-8'>
+      <h3
+        id='the-problem'
+        className='scroll-m-20 text-2xl font-semibold tracking-tight mt-8'
+      >
         The problem
       </h3>
       <p className='leading-7 [&:not(:first-child)]:mt-6'>
@@ -272,7 +216,10 @@ export default function JustPilsWebsitePage() {
         of the ground since the moving of the soil could help the weed to spread
         even faster.
       </p>
-      <h3 className='scroll-m-20 text-2xl font-semibold tracking-tight mt-8'>
+      <h3
+        id='the-solution'
+        className='scroll-m-20 text-2xl font-semibold tracking-tight mt-8'
+      >
         The solution
       </h3>
       <p className='leading-7 [&:not(:first-child)]:mt-6'>
@@ -285,7 +232,10 @@ export default function JustPilsWebsitePage() {
         the sense that he can prove that certain parts of the fields contain no
         nutsedge and that he can still plant crops there.
       </p>
-      <h2 className='mt-10 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0'>
+      <h2
+        id='tasks-to-complete'
+        className='mt-10 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0'
+      >
         Tasks to complete
       </h2>
       <p className='leading-7 [&:not(:first-child)]:mt-6'>
@@ -294,13 +244,21 @@ export default function JustPilsWebsitePage() {
       <ul className='list-decimal [&>li]:ml-8 [&>li]:mt-4 [&>li]:font-semibold'>
         <li>Preparation phase</li>
         <p className='leading-7 [&:not(:first-child)]:mt-2'>
-          The making of the project plan, with focus on the{' '}
+          During this phase we started of by makeing an identity for our team by
+          choosing a name and branding. Since our solution aims to protect the
+          crops by use of images taken from the sky we settled on SkyGuard. The
+          logo we chose can be found below. The rest of the time was spent on
+          the making of the project plan, with focus on the{' '}
           <b>Who? What? Why?</b>. We also presented the plan to the other teams
           and Project Coach for feedback. With all the best parts of each
           presentation we creaed one final presentation to deliver to the
           client. The making of this was done one a lesson block of 4 hours,
           each Monday for a couple of weeks.
         </p>
+        <div className='max-w-lg mx-auto'>
+          <ImageGallery images={SkyGuardImages} />
+        </div>
+
         <li>Concept phase</li>
         <p className='leading-7 [&:not(:first-child)]:mt-2'>
           In this phase we layed out the design of the concept, we made an
@@ -331,7 +289,10 @@ export default function JustPilsWebsitePage() {
           full-time weeks of 5 days.
         </p>
       </ul>
-      <h2 className='scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0'>
+      <h2
+        id='realisation-phase'
+        className='scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0'
+      >
         Realisation phase
       </h2>
       <p className='leading-7 [&:not(:first-child)]:mt-2'>
@@ -350,10 +311,16 @@ export default function JustPilsWebsitePage() {
         </b>{' '}
         to discuss what went well and what could be improved.
       </p>
-      <h3 className='scroll-m-20 text-2xl font-semibold tracking-tight mt-4'>
+      <h3
+        id='my-contribution-to-the-project'
+        className='scroll-m-20 text-2xl font-semibold tracking-tight mt-4'
+      >
         My contribution to the project
       </h3>
-      <h4 className='scroll-m-20 text-xl font-semibold tracking-tight mt-4'>
+      <h4
+        id='choosing-the-model'
+        className='scroll-m-20 text-xl font-semibold tracking-tight mt-4'
+      >
         Choosing the model
       </h4>
       <p className='leading-7 [&:not(:first-child)]:mt-2'>
@@ -366,7 +333,10 @@ export default function JustPilsWebsitePage() {
         was present or not. So I took that route and went with a ResNet-50 model
         by doing transfer learning.
       </p>
-      <h5 className='scroll-m-20 text-lg font-semibold tracking-tight mt-4'>
+      <h5
+        id='how-would-the-model-work'
+        className='scroll-m-20 text-lg font-semibold tracking-tight mt-4'
+      >
         How would the model work?
       </h5>
       <ul className='list-decimal [&>li]:ml-8'>
@@ -378,7 +348,10 @@ export default function JustPilsWebsitePage() {
         <li>Visualize results on heatmap</li>
       </ul>
       <ImageGallery images={AIModelWorkingImages} />
-      <h4 className='scroll-m-20 text-xl font-semibold tracking-tight mt-4'>
+      <h4
+        id='orchestrating-the-data-pipeline'
+        className='scroll-m-20 text-xl font-semibold tracking-tight mt-4'
+      >
         Orchestrating the data pipeline
       </h4>
       <p className='leading-7 [&:not(:first-child)]:mt-2'>
@@ -406,18 +379,16 @@ export default function JustPilsWebsitePage() {
         To make it easier to understand, there is a demo below of how the tool
         would work.
       </p>
-      <div>
-        <div className='max-w-5/6 w-5/6 mx-auto'>
-          <div className='overflow-hidden h-0 pb-[56.25%] relative'>
-            <iframe
-              src='https://thomasmore365-my.sharepoint.com/personal/r0445498_student_thomasmore_be/_layouts/15/embed.aspx?UniqueId=272dfc21-c61e-4f9a-aa3e-f648bc0a40cf&embed=%7B%22hvm%22%3Atrue%2C%22ust%22%3Atrue%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create'
-              width='640'
-              height='360'
-              allowFullScreen
-              title='Image labeling demo.mp4'
-              className='border-none absolute top-0 left-0 right-0 bottom-0 h-full w-full max-w-full'
-            ></iframe>
-          </div>
+      <div className='max-w-5/6 w-5/6 mx-auto'>
+        <div className='overflow-hidden h-0 pb-[56.25%] relative'>
+          <iframe
+            src='https://thomasmore365-my.sharepoint.com/personal/r0445498_student_thomasmore_be/_layouts/15/embed.aspx?UniqueId=272dfc21-c61e-4f9a-aa3e-f648bc0a40cf&embed=%7B%22hvm%22%3Atrue%2C%22ust%22%3Atrue%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create'
+            width='640'
+            height='360'
+            allowFullScreen
+            title='Image labeling demo.mp4'
+            className='border-none absolute top-0 left-0 right-0 bottom-0 h-full w-full max-w-full'
+          ></iframe>
         </div>
       </div>
       <p className='leading-7 [&:not(:first-child)]:mt-2'>
@@ -432,7 +403,10 @@ export default function JustPilsWebsitePage() {
       <ImageGallery images={FieldImages} />
 
       <ImageGallery images={labelingImages} />
-      <h4 className='scroll-m-20 text-xl font-semibold tracking-tight mt-4'>
+      <h4
+        id='training-the-model'
+        className='scroll-m-20 text-xl font-semibold tracking-tight mt-4'
+      >
         Training the model
       </h4>
       <p className='leading-7 [&:not(:first-child)]:mt-2'>
@@ -522,7 +496,85 @@ export default function JustPilsWebsitePage() {
         all fields are different and some of the images are hard to label as a
         human.
       </p>
-      <h2 className='mt-10 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0'>
+      <h4
+        id='api-wrapper-for-the-model'
+        className='scroll-m-20 text-xl font-semibold tracking-tight mt-4'
+      >
+        API wrapper for the model
+      </h4>
+      <p className='leading-7 [&:not(:first-child)]:mt-2'>
+        In order to use the model from an external application in Angular we
+        would want to use an API wrapper for the model so we can send a request
+        with images and the model type in the payload to then get back the
+        results of all the images sent. I and one other teammate were
+        responsible for creating the API, we used Flask for this and we put the
+        API behind a waitress server so we could easily run multiple instances.
+      </p>
+      <h4
+        id='containerize-the-model'
+        className='scroll-m-20 text-xl font-semibold tracking-tight mt-4'
+      >
+        Containerize API
+      </h4>
+      <p className='leading-7 [&:not(:first-child)]:mt-2'>
+        In order to have a scalable solution we would want to containerize the
+        API so we can spin up as many containers as we need when demand is high.
+        Doing this was not too hard since all we needed was a Dockerfile that
+        installed the dependencies and used the proper AWS credentials from an
+        environment variable in our GitLab Environment. The biggest issue with
+        the running of the API in AWS is that we have a learner lab which has
+        vary limited resources and permission so we were dealing with quite a
+        lot of restrictions which lead us to not even host the project after
+        all. Below is a video of the API working in an AWS ECS instance behind a
+        load balancer.
+      </p>
+      <div className='max-w-5/6 w-5/6 mx-auto'>
+        <div className='overflow-hidden h-0 pb-[56.25%] relative'>
+          <iframe
+            src='https://my.microsoftpersonalcontent.com/personal/ced5be97da9b1174/_layouts/15/embed.aspx?UniqueId=09fd1793-b666-4589-9949-0f69421f3eb1&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create'
+            width='640'
+            height='360'
+            allowFullScreen
+            title='Demo AI model API.mp4'
+            className='border-none absolute top-0 left-0 right-0 bottom-0 h-full w-full max-w-full'
+          ></iframe>
+        </div>
+      </div>
+      <p className='leading-7 [&:not(:first-child)]:mt-2'>
+        In a perfect world all of our code would be tested, built and pushed to
+        a registry in AWS and then deployed to an ECS instance, on every push to
+        the productuon environment but as I said before, the learner lab was
+        restricting is quite a lot. But since we were dealing with a learner lab
+        we could not do this. We did however have a pipeline in GitLab that
+        would build the Docker image and push it to the registry.
+      </p>
+      <h4
+        id='promotion-video'
+        className='scroll-m-20 text-xl font-semibold tracking-tight mt-4'
+      >
+        Promotion video
+      </h4>
+      <p className='leading-7 [&:not(:first-child)]:mt-2'>
+        And last but not least we had to create a promotion video for the
+        product. This was done using free AI tools such as ChatGPT and Kapwing
+        which makes it pretty easy to create a basic video for free.
+      </p>
+      <div className='max-w-5/6 w-5/6 mx-auto'>
+        <div className='overflow-hidden h-0 pb-[56.25%] relative'>
+          <iframe
+            src='https://my.microsoftpersonalcontent.com/personal/ced5be97da9b1174/_layouts/15/embed.aspx?UniqueId=4f440651-b2b1-4ab0-b2c2-74c117b2f4d5&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create'
+            width='640'
+            height='360'
+            allowFullScreen
+            title='Skyguard - promo video.mp4'
+            className='border-none absolute top-0 left-0 right-0 bottom-0 h-full w-full max-w-full'
+          ></iframe>
+        </div>
+      </div>
+      <h2
+        id='what-have-i-learned'
+        className='mt-10 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0'
+      >
         What have I learned?
       </h2>
       <p className='leading-7 [&:not(:first-child)]:mt-2'>

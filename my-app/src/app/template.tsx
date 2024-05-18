@@ -19,8 +19,8 @@ export default function Template({ children }: { children: React.ReactNode }) {
 
   const variants = {
     default: {
-      x: mousePosition.x - 16,
-      y: mousePosition.y - 16,
+      x: mousePosition.x,
+      y: mousePosition.y,
     },
   };
   return (

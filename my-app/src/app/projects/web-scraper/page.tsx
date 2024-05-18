@@ -15,12 +15,8 @@ import Image from 'next/image';
 import JSONVideos from '../../../../public/json/videos.json' assert { type: 'json' };
 import JSONJobs from '../../../../public/json/jobs.json' assert { type: 'json' };
 import JSONHLTV from '../../../../public/json/hltv.json' assert { type: 'json' };
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from '@/components/ui/tooltip';
+import ImageGallery from '@/components/common/ImageGallery';
+import { Image as ImageType } from '@/components/common/ImageGallery';
 
 import {
   Accordion,
@@ -28,17 +24,37 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from '@/components/ui/accordion';
+import { Image as ImageType } from '@/components/common/ImageGallery';
+import TechnologyGallery from '@/components/common/TechnologyGallery';
 
 export const metadata = {
   title: 'Daan Michielsen | Web scraper',
   description: 'Page of the Web scraper project',
 };
 
+const technologies: ImageType[] = [
+  {
+    name: 'C#',
+    src: CSharp,
+  },
+  {
+    name: 'Selenium',
+    src: Selenium,
+  },
+];
+
+const scrapingResults: ImageType[] = [
+  {
+    src: WebscraperJSON,
+    name: 'Json scraping results',
+  },
+];
+
 function ICTJobs() {
   return (
     <HoverCard>
-      <HoverCardTrigger asChild className='px-2 py-0 h-0'>
-        <Button className='px-2 py-0' variant='link'>
+      <HoverCardTrigger asChild className='px-0 py-0 h-0 underline'>
+        <Button className='px-0 h-4 py-0' variant='link'>
           ICT-Jobs
         </Button>
       </HoverCardTrigger>
@@ -72,8 +88,8 @@ function ICTJobs() {
 function HLTV() {
   return (
     <HoverCard>
-      <HoverCardTrigger asChild className='px-2 py-0 h-0'>
-        <Button className='px-2 py-0' variant='link'>
+      <HoverCardTrigger asChild className='px-0 py-0 h-0 underline'>
+        <Button className='px-0 h-4 py-0' variant='link'>
           HLTV
         </Button>
       </HoverCardTrigger>
@@ -113,31 +129,7 @@ export default function WebscraperPage() {
       </h1>
 
       <div className='mt-4 flex space-y-2 flex-col md:flex-row text-gray-500 dark:text-slate-400 gap-x-4'>
-        <div className='flex bg-slate-200  p-1 px-3 rounded-full gap-x-1 md:gap-x-2  max-h-[46px] mt-2'>
-          <TooltipProvider>
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <Image src={CSharp} height={30} width={30} alt='C#'></Image>
-              </TooltipTrigger>
-              <TooltipContent>
-                <p>C#</p>
-              </TooltipContent>
-            </Tooltip>
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <Image
-                  src={Selenium}
-                  height={30}
-                  width={30}
-                  alt='Selenium'
-                ></Image>
-              </TooltipTrigger>
-              <TooltipContent>
-                <p>Selenium</p>
-              </TooltipContent>
-            </Tooltip>
-          </TooltipProvider>
-        </div>
+        <TechnologyGallery technologies={technologies} />
         <Link
           href={'https://github.com/DaanMichielsen/Web_Scraper'}
           target='_blank'
@@ -209,16 +201,7 @@ export default function WebscraperPage() {
         why it is so powerful.
       </p>
       <div className='w-5/6 mx-auto mt-4'>
-        <h3 className='scroll-m-20 text-2xl font-semibold tracking-tight text-center'>
-          Scraping results
-        </h3>
-        <Image
-          src={WebscraperJSON}
-          alt='Json result'
-          width={1000}
-          height={500}
-          className='rounded-2xl'
-        ></Image>
+        <ImageGallery images={scrapingResults} />
       </div>
       <div className='w-5/6 mx-auto mt-4'>
         <Accordion type='single' collapsible>

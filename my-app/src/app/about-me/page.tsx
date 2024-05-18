@@ -182,16 +182,23 @@ export default async function AboutMe() {
                 {/* <PopoverTrigger className='underline'>Beerse</PopoverTrigger> with */}
                 my parents and brother. I study Applied Computer Science at
                 Thomas More in Geel. I&apos;ve always been into tech and
-                computers when growing up, that is why I chose to study
-                ACS(Applied Computer Science) at Thomas More. If you would like
-                to check out some of my work you can look at the{' '}
+                computers when growing up, that is why I chose to study ACS
+                (Applied Computer Science) at Thomas More. If you would like to
+                check out some of my work, you can look at the{' '}
                 <Link
                   className='underline hover:text-slate-500'
                   href={'/projects'}
                 >
                   projects
                 </Link>{' '}
-                page or at my github.
+                page or at my{' '}
+                <Link
+                  className='underline hover:text-slate-500'
+                  href={'https://github.com/DaanMichielsen'}
+                >
+                  github profile
+                </Link>
+                .
               </p>
               <PopoverContent className='w-[334px]'>
                 <Map></Map>
@@ -312,7 +319,7 @@ export default async function AboutMe() {
               <CardHeader>
                 <CardTitle>Hard Skills</CardTitle>
                 <CardDescription>
-                  The technical aspect I have learned doing projects and
+                  The technical aspect I have learned during projects and
                   following courses.
                 </CardDescription>
               </CardHeader>

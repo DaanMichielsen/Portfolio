@@ -24,17 +24,63 @@ import {
   TooltipTrigger,
 } from '@/components/ui/tooltip';
 import Link from 'next/link';
+import TechnologyGallery from '@/components/common/TechnologyGallery';
+import { Image as ImageType } from '@/components/common/ImageGallery';
+import { CalendarDays } from 'lucide-react';
 
 export const metadata = {
   title: 'Daan Michielsen | Energy SaaS Platform',
   description: 'Page of the Energy SaaS Platform project',
 };
 
+const technologies: ImageType[] = [
+  {
+    name: 'NextJS',
+    src: NextJs,
+  },
+  {
+    name: 'Stripe',
+    src: Stripe,
+  },
+  {
+    name: 'Prisma',
+    src: Prisma,
+  },
+  {
+    name: 'EMQX',
+    src: EMQX,
+  },
+  {
+    name: 'CosmosDB',
+    src: CosmosDB,
+  },
+  {
+    name: 'Azure Functions',
+    src: AzureFunctions,
+  },
+  {
+    name: 'Auth0',
+    src: Auth0,
+  },
+  {
+    name: 'Tailwind',
+    src: Tailwind,
+  },
+  {
+    name: 'Resend',
+    src: Resend,
+  },
+  {
+    name: 'Postman',
+    src: Postman,
+  },
+];
+
 function Ismart() {
   return (
     <HoverCard>
-      <HoverCardTrigger asChild className='px-2 py-0 h-0'>
-        <Button className='px-2 py-0' variant='link'>
+      <HoverCardTrigger asChild className='px-0 underline py-0 h-0'>
+        <Button className='px-0 h-4 py-0' variant='link'>
           iSmart
         </Button>
       </HoverCardTrigger>
@@ -55,12 +101,12 @@ function Ismart() {
               </a>
             </h4>
             <p className='text-sm'>Tailor-made digital thinking</p>
-            {/* <div className='flex items-center pt-2'>
+            <div className='flex items-center pt-2'>
               <CalendarDays className='mr-2 h-4 w-4 opacity-70' />{' '}
               <span className='text-xs text-muted-foreground'>
-                Joined September 2021
+                Established June 12th 2019
               </span>
-            </div> */}
+            </div>
           </div>
         </div>
       </HoverCardContent>
@@ -76,110 +122,7 @@ export default function EnergySaasPage() {
       </h1>
 
       <div className='mt-4 flex space-y-2 flex-col md:flex-row text-gray-500 dark:text-slate-400 gap-x-4'>
-        <div className='flex bg-slate-200  p-1 px-3 rounded-full gap-x-1 md:gap-x-2'>
-          <TooltipProvider>
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <Image src={NextJs} height={30} width={30} alt='NextJs'></Image>
-              </TooltipTrigger>
-              <TooltipContent>
-                <p>NextJS</p>
-              </TooltipContent>
-            </Tooltip>
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <Image src={Stripe} height={30} width={30} alt='Stripe'></Image>
-              </TooltipTrigger>
-              <TooltipContent>
-                <p>Stripe</p>
-              </TooltipContent>
-            </Tooltip>
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <Image src={Prisma} height={30} width={30} alt='Prisma'></Image>
-              </TooltipTrigger>
-              <TooltipContent>
-                <p>Prisma</p>
-              </TooltipContent>
-            </Tooltip>
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <Image src={EMQX} height={30} width={30} alt='EMQX'></Image>
-              </TooltipTrigger>
-              <TooltipContent>
-                <p>EMQX</p>
-              </TooltipContent>
-            </Tooltip>
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <Image
-                  src={CosmosDB}
-                  height={30}
-                  width={30}
-                  alt='CosmosDB'
-                ></Image>
-              </TooltipTrigger>
-              <TooltipContent>
-                <p>CosmosDB</p>
-              </TooltipContent>
-            </Tooltip>
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <Image
-                  src={AzureFunctions}
-                  height={30}
-                  width={30}
-                  alt='Azure Functions'
-                ></Image>
-              </TooltipTrigger>
-              <TooltipContent>
-                <p>Azure Functions</p>
-              </TooltipContent>
-            </Tooltip>
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <Image src={Auth0} height={30} width={30} alt='Auth0'></Image>
-              </TooltipTrigger>
-              <TooltipContent>
-                <p>Auth0</p>
-              </TooltipContent>
-            </Tooltip>
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <Image
-                  src={Tailwind}
-                  height={30}
-                  width={30}
-                  alt='Tailwind'
-                ></Image>
-              </TooltipTrigger>
-              <TooltipContent>
-                <p>Tailwind</p>
-              </TooltipContent>
-            </Tooltip>
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <Image src={Resend} height={30} width={30} alt='Resend'></Image>
-              </TooltipTrigger>
-              <TooltipContent>
-                <p>Resend</p>
-              </TooltipContent>
-            </Tooltip>
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <Image
-                  src={Postman}
-                  height={30}
-                  width={30}
-                  alt='Postman'
-                ></Image>
-              </TooltipTrigger>
-              <TooltipContent>
-                <p>Postman</p>
-              </TooltipContent>
-            </Tooltip>
-          </TooltipProvider>
-        </div>
+        <TechnologyGallery technologies={technologies} />
         <Link
           href={'https://stage-energy.vercel.app/'}
           target='_blank'
