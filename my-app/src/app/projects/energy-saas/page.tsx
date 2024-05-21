@@ -5,6 +5,7 @@ import {
   HoverCardTrigger,
 } from '@/components/ui/hover-card';
 import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
+import Vercel from '../../../../public/technologies/Vercel^light.svg';
 import NextJs from '../../../../public/technologies/NextJS^light.svg';
 import Stripe from '../../../../public/technologies/Stripe.svg';
 import Prisma from '../../../../public/technologies/Prisma ORM^light.svg';
@@ -34,6 +35,10 @@ export const metadata = {
 };
 
 const technologies: ImageType[] = [
+  {
+    name: 'Vercel',
+    src: Vercel,
+  },
   {
     name: 'NextJS',
     src: NextJs,
@@ -136,13 +141,118 @@ export default function EnergySaasPage() {
       <h2 className='mt-10 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0'>
         Description
       </h2>
-      <p className='leading-7 [&:not(:first-child)]:mt-6'>
-        <Ismart /> makes buildings and businesses more efficient. 1 customer in
-        Lier is already enjoying this with a customized application that ensures
-        that all the energy in the apartments is monitored and displayed in one
-        application. The data that is displayed comes from all kinds of sensors
-        in the apartments.
+      <h3 className='scroll-m-20 text-2xl font-semibold tracking-tight'>
+        What?
+      </h3>
+      <p className='leading-7 [&:not(:first-child)]:mt-4'>
+        a platform that apartment owners can subscribe to in order to access the
+        data from their sensors in a user-friendly application. This application
+        can contain multiple sites, buildings and sensors with historical data
+        of the measurements. All these functionalities are, framed with an
+        account system, so that all the information can be shown to those who
+        are allowed to see it. The users also have the option to connect live to
+        the feed of a sensor to immediately get the latest values when they are
+        sent to the database. The application also has an API that can be
+        accessed by users with an account so they can implement some of the
+        functionalities into their own applications.
       </p>
+      <h3 className='scroll-m-20 text-2xl font-semibold tracking-tight'>
+        How?
+      </h3>
+      <p className='leading-7 [&:not(:first-child)]:mt-4'>
+        To create the solution we used a combination of some of the most popular
+        technologies at the moment. With we, I mean me and one other student
+        that is in her last year of Application Development at Thomas More,
+        called Hilde. The following technologies were used:
+      </p>
+      <ul className='list-disc [&>li]:ml-8 [&>li]:font-semibold [&>p]:ml-8'>
+        <li>NextJS</li>
+        <p className='leading-7 [&:not(:first-child)]:mt-1 mb-4'>
+          We use NextJS as a fullstack framework to create the backend, frontend
+          and even the API. Tied in with NextJS we already use <b>React</b>,{' '}
+          <b>Tailwind</b>, <b>TypeScript</b>. By using vercel we can easily opt
+          in to using the vercel <b>Blob Storage</b> and the{' '}
+          <b>Vercel PostgreSQL Database</b>.
+        </p>
+        <li>Stripe</li>
+        <p className='leading-7 [&:not(:first-child)]:mt-1 mb-4'>
+          We use Stripe for the Subscriptions aspect of the application, Stripe
+          allows us to create <b>products</b> with different{' '}
+          <b>plans and prices</b> which we can offer as <b>monthly</b> (or
+          yearly) <b>subscriptions</b>. Stripe also has <b>webhooks</b> that we
+          can <b>utilize in our application</b> to{' '}
+          <b>listen for events that happen in Stripe</b>.
+        </p>
+        <li>Prisma</li>
+        <p className='leading-7 [&:not(:first-child)]:mt-1 mb-4'>
+          We use Prisma as our ORM to communicate with our postgreSQL database.
+          This makes it very easy to define a schema in programming-like syntax
+          and then generate the database schema from that. Prisma also has a lot
+          of features that make it easy to work with the database, like{' '}
+          <b>relations</b>, <b>transactions</b>, <b>aggregations</b> and{' '}
+          <b>many more</b>.
+        </p>
+        <li>EMQX</li>
+        <p className='leading-7 [&:not(:first-child)]:mt-1 mb-4'>
+          We use EMQX as our <b>MQTT broker</b>, this allows us to{' '}
+          <b>send data from the sensors to the database</b> in a very efficient
+          way. EMQX is a very powerful MQTT broker that is used by many
+          companies to send data from devices to the cloud. EMQX is also{' '}
+          <b>open source</b> and free to use up to a decent amount of devices
+          and messages.
+        </p>
+        <li>CosmosDB</li>
+        <p className='leading-7 [&:not(:first-child)]:mt-1 mb-4'>
+          To store all the <b>data that the sensors send</b>, including the
+          sensors and their alert-configurations, we use CosmosDB. CosmosDB is a
+          <b>document database from Azure</b> that is very scalable and has a
+          lot of features that make it easy to work with. CosmosDB is a{' '}
+          <b>NoSQL database that can store JSON documents</b> and has a{' '}
+          <b>SQL-like query language to query the data</b>. CosmosDB is easy to
+          use in our application through API keys and the CosmosDB JavaScript
+          SDK.
+        </p>
+        <li>Azure Functions</li>
+        <p className='leading-7 [&:not(:first-child)]:mt-1 mb-4'>
+          We utilize Azure functions to create a serverless function that takes
+          in the messages that our broker sends and then stores them in the
+          database. Azure functions are very easy to use and can be written in
+          many languages, we used <b>NodeJS</b> to write our functions.
+        </p>
+        <li>Auth0</li>
+        <p className='leading-7 [&:not(:first-child)]:mt-1 mb-4'>
+          We use Auth0 as our <b>authentication provider</b>, Auth0 allows us to
+          easily <b>authenticate users</b> and <b>authorize them</b> to access
+          certain parts of the application. Auth0 also has a lot of{' '}
+          <b>features</b> like <b>social logins</b>,{' '}
+          <b>multi-factor authentication</b> and <b>many more</b>.
+        </p>
+        <li>Tailwind</li>
+        <p className='leading-7 [&:not(:first-child)]:mt-1 mb-4'>
+          We use Tailwind as our <b>styling framework</b>, Tailwind allows us to
+          easily create <b>beautiful designs</b> without having to write a lot
+          of CSS. Tailwind also has a lot of <b>features</b> like{' '}
+          <b>dark mode</b>, <b>hover states</b> and <b>many more</b>. We also
+          used Tailwind UI which is a Tailwind component library that has a lot
+          of components that we can use in our application that provide
+          accessibility and respoinsiveness out of the box. We also use
+          ShadCN/UI which is an open source component library based on radix-ui
+          and also styled using tailwind.
+        </p>
+        <li>Resend</li>
+        <p className='leading-7 [&:not(:first-child)]:mt-1 mb-4'>
+          We use Resend to send <b>emails</b> to our users, Resend is a very
+          powerful email service that allows us to{' '}
+          <b>send transactional emails to our users</b>. Resend also has a lot
+          of features like <b>templates</b>, <b>tracking</b> and{' '}
+          <b>many more</b>.
+        </p>
+        <li>Postman</li>
+        <p className='leading-7 [&:not(:first-child)]:mt-1 mb-4'>
+          To test our API we use Postman, Postman is a very popular tool to test
+          API&apos;s.
+        </p>
+      </ul>
       <h2 className='mt-10 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0'>
         The set goal
       </h2>

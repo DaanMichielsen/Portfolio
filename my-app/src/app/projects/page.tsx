@@ -76,6 +76,8 @@ import GitLab from '../../../public/technologies/GitLab.svg';
 import Postman from '../../../public/technologies/Postman.svg';
 import SkyGuard from '../../../public/SkyGuard.png';
 
+import Vercel_light from '../../../public/technologies/Vercel^light.svg';
+import Vercel_dark from '../../../public/technologies/Vercel^dark.svg';
 import NextJs_light from '../../../public/technologies/NextJS^light.svg';
 import NextJs_dark from '../../../public/technologies/NextJS^dark.svg';
 import Stripe from '../../../public/technologies/Stripe.svg';
@@ -288,6 +290,8 @@ const projects: Project[] = [
     href: '/projects/energy-saas',
     heroImages: [Energy],
     technologies: [
+      { src: Vercel_light, name: 'Vercel^light' },
+      { src: Vercel_dark, name: 'Vercel^dark' },
       { src: NextJs_light, name: 'NextJS^light' },
       { src: NextJs_dark, name: 'NextJS^dark' },
       { src: Stripe, name: 'Stripe' },

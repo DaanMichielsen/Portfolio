@@ -39,7 +39,7 @@ import Daan from '../../../public/daan.jpg';
 
 export const metadata = {
   title: 'Daan Michielsen | About me',
-  description: 'About me page',
+  description: 'On this page you can find information about me and my work.',
 };
 
 type SoftSkill = {
