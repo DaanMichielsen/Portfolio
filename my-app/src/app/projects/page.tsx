@@ -295,7 +295,6 @@ const projects: Project[] = [
       { src: NextJs_light, name: 'NextJS^light' },
       { src: NextJs_dark, name: 'NextJS^dark' },
       { src: Stripe, name: 'Stripe' },
-      { src: Angular, name: 'Angular' },
       {
         src: Prisma_light,
         name: 'Prisma ORM^light',

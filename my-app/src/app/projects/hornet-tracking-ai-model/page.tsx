@@ -209,7 +209,7 @@ export default function HornetTrackingAiModelPage() {
           <div className='max-w-5/6'>
             <div className='overflow-hidden h-0 pb-[56.25%] relative'>
               <iframe
-                src='https://my.microsoftpersonalcontent.com/personal/ced5be97da9b1174/_layouts/15/embed.aspx?UniqueId=baac415b-2857-437a-8f61-68a9827aa383&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create'
+                src='https://1drv.ms/v/c/ced5be97da9b1174/IQNbQay6Vyh6Q49haKmCeqODARNegh5Yj9LtApMPRohx-wc'
                 width='640'
                 height='360'
                 allowFullScreen
@@ -232,7 +232,7 @@ export default function HornetTrackingAiModelPage() {
         <div className='max-w-5/6'>
           <div className='overflow-hidden h-0 pb-[56.25%] relative'>
             <iframe
-              src='https://my.microsoftpersonalcontent.com/personal/ced5be97da9b1174/_layouts/15/embed.aspx?UniqueId=53d76b63-134a-44b7-b2c6-cdaa86a129b9&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create'
+              src='https://1drv.ms/v/c/ced5be97da9b1174/IQNja9dTShO3RLLGzaqGoSm5AadwUep5IMnEi2V6tXX5QkM'
               width='640'
               height='360'
               title='streamlit-tracking.mp4'
@@ -249,7 +249,7 @@ export default function HornetTrackingAiModelPage() {
           GitHub. You can also read the report below.
         </p>
         <PDFModal
-          src='https://thomasmore365-my.sharepoint.com/personal/r0896365_student_thomasmore_be/_layouts/15/embed.aspx?UniqueId=6215bf3f-e126-4e93-8abd-2b1b1e3a9b8a'
+          src='https://1drv.ms/b/c/ced5be97da9b1174/IQOUCSRjU1tETIHXb2edT_2fAXfOakMXCzsdYKHORoB5PPs'
           title='Hornet-tracking-report.pdf'
         />
       </ul>

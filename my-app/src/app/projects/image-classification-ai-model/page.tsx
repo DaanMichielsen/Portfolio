@@ -297,7 +297,7 @@ export default function JustPilsWebsitePage() {
         recommend you to check it out below.
       </p>
       <PDFModal
-        src='https://thomasmore365-my.sharepoint.com/personal/r0896365_student_thomasmore_be/_layouts/15/embed.aspx?UniqueId=9676260e-cb3e-4170-b902-b2e9a33cacdf'
+        src='https://1drv.ms/b/c/ced5be97da9b1174/IQMpkM9dDWppR4jmuA72W_mSAWF6er7yufVQ_gWYtJJgqAE'
         title='Image-classification-report.pdf'
       />
       <h2 className='mt-10 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0'>

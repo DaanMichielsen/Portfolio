@@ -18,12 +18,7 @@ import Resend from '../../../../public/technologies/Resend^light.svg';
 import Postman from '../../../../public/technologies/Postman.svg';
 import Energy from '../../../../public/ismart-energy.svg';
 import Image from 'next/image';
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from '@/components/ui/tooltip';
+import TechLink from './_components/TechLink';
 import Link from 'next/link';
 import TechnologyGallery from '@/components/common/TechnologyGallery';
 import { Image as ImageType } from '@/components/common/ImageGallery';
@@ -145,7 +140,7 @@ export default function EnergySaasPage() {
         What?
       </h3>
       <p className='leading-7 [&:not(:first-child)]:mt-4'>
-        a platform that apartment owners can subscribe to in order to access the
+        A platform that apartment owners can subscribe to in order to access the
         data from their sensors in a user-friendly application. This application
         can contain multiple sites, buildings and sensors with historical data
         of the measurements. All these functionalities are, framed with an
@@ -166,7 +161,9 @@ export default function EnergySaasPage() {
         called Hilde. The following technologies were used:
       </p>
       <ul className='list-disc [&>li]:ml-8 [&>li]:font-semibold [&>p]:ml-8'>
-        <li>NextJS</li>
+        <li>
+          <TechLink techUrl='https://nextjs.org/' name='NextJS' />
+        </li>
         <p className='leading-7 [&:not(:first-child)]:mt-1 mb-4'>
           We use NextJS as a fullstack framework to create the backend, frontend
           and even the API. Tied in with NextJS we already use <b>React</b>,{' '}
@@ -174,7 +171,9 @@ export default function EnergySaasPage() {
           in to using the vercel <b>Blob Storage</b> and the{' '}
           <b>Vercel PostgreSQL Database</b>.
         </p>
-        <li>Stripe</li>
+        <li>
+          <TechLink techUrl='https://stripe.com/' name='Stripe' />
+        </li>
         <p className='leading-7 [&:not(:first-child)]:mt-1 mb-4'>
           We use Stripe for the Subscriptions aspect of the application, Stripe
           allows us to create <b>products</b> with different{' '}
@@ -183,7 +182,9 @@ export default function EnergySaasPage() {
           can <b>utilize in our application</b> to{' '}
           <b>listen for events that happen in Stripe</b>.
         </p>
-        <li>Prisma</li>
+        <li>
+          <TechLink techUrl='https://www.prisma.io/' name='Prisma' />
+        </li>
         <p className='leading-7 [&:not(:first-child)]:mt-1 mb-4'>
           We use Prisma as our ORM to communicate with our postgreSQL database.
           This makes it very easy to define a schema in programming-like syntax
@@ -192,7 +193,9 @@ export default function EnergySaasPage() {
           <b>relations</b>, <b>transactions</b>, <b>aggregations</b> and{' '}
           <b>many more</b>.
         </p>
-        <li>EMQX</li>
+        <li>
+          <TechLink techUrl='https://www.emqx.io/' name='EMQX' />
+        </li>
         <p className='leading-7 [&:not(:first-child)]:mt-1 mb-4'>
           We use EMQX as our <b>MQTT broker</b>, this allows us to{' '}
           <b>send data from the sensors to the database</b> in a very efficient
@@ -201,7 +204,12 @@ export default function EnergySaasPage() {
           <b>open source</b> and free to use up to a decent amount of devices
           and messages.
         </p>
-        <li>CosmosDB</li>
+        <li>
+          <TechLink
+            techUrl='https://azure.microsoft.com/en-us/products/cosmos-db'
+            name='CosmosDB'
+          />
+        </li>
         <p className='leading-7 [&:not(:first-child)]:mt-1 mb-4'>
           To store all the <b>data that the sensors send</b>, including the
           sensors and their alert-configurations, we use CosmosDB. CosmosDB is a
@@ -212,14 +220,21 @@ export default function EnergySaasPage() {
           use in our application through API keys and the CosmosDB JavaScript
           SDK.
         </p>
-        <li>Azure Functions</li>
+        <li>
+          <TechLink
+            techUrl='https://azure.microsoft.com/en-us/products/functions'
+            name='Azure Functions'
+          />
+        </li>
         <p className='leading-7 [&:not(:first-child)]:mt-1 mb-4'>
           We utilize Azure functions to create a serverless function that takes
           in the messages that our broker sends and then stores them in the
           database. Azure functions are very easy to use and can be written in
           many languages, we used <b>NodeJS</b> to write our functions.
         </p>
-        <li>Auth0</li>
+        <li>
+          <TechLink techUrl='https://auth0.com/' name='Auth0' />
+        </li>
         <p className='leading-7 [&:not(:first-child)]:mt-1 mb-4'>
           We use Auth0 as our <b>authentication provider</b>, Auth0 allows us to
           easily <b>authenticate users</b> and <b>authorize them</b> to access
@@ -227,7 +242,9 @@ export default function EnergySaasPage() {
           <b>features</b> like <b>social logins</b>,{' '}
           <b>multi-factor authentication</b> and <b>many more</b>.
         </p>
-        <li>Tailwind</li>
+        <li>
+          <TechLink techUrl='https://tailwindcss.com/' name='Tailwind' />
+        </li>
         <p className='leading-7 [&:not(:first-child)]:mt-1 mb-4'>
           We use Tailwind as our <b>styling framework</b>, Tailwind allows us to
           easily create <b>beautiful designs</b> without having to write a lot
@@ -239,7 +256,9 @@ export default function EnergySaasPage() {
           ShadCN/UI which is an open source component library based on radix-ui
           and also styled using tailwind.
         </p>
-        <li>Resend</li>
+        <li>
+          <TechLink techUrl='https://resend.com/' name='Resend' />
+        </li>
         <p className='leading-7 [&:not(:first-child)]:mt-1 mb-4'>
           We use Resend to send <b>emails</b> to our users, Resend is a very
           powerful email service that allows us to{' '}
@@ -247,7 +266,9 @@ export default function EnergySaasPage() {
           of features like <b>templates</b>, <b>tracking</b> and{' '}
           <b>many more</b>.
         </p>
-        <li>Postman</li>
+        <li>
+          <TechLink techUrl='https://www.postman.com/' name='Postman' />
+        </li>
         <p className='leading-7 [&:not(:first-child)]:mt-1 mb-4'>
           To test our API we use Postman, Postman is a very popular tool to test
           API&apos;s.

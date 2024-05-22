@@ -269,7 +269,7 @@ export default function JustPilsWebsitePage() {
           of weeks. You can checkout the full report of the concept phase below.
         </p>
         <PDFModal
-          src='https://nzrffqfvb7klovvb.public.blob.vercel-storage.com/report-concept-phase-Xzyt3xnuSMtQeCg6V3LCcafjhA46XI.pdf'
+          src='https://1drv.ms/b/c/ced5be97da9b1174/EeLZbIykbspNqOyy9CVdVtgBNzrHBCM0gX_aOOzhr2Y7Xg?e=uIrTxX'
           title='Concept Phase Report (Dutch)'
         />
         <p className='leading-7 [&:not(:first-child)]:mt-2'>
@@ -382,7 +382,7 @@ export default function JustPilsWebsitePage() {
       <div className='max-w-5/6 w-5/6 mx-auto'>
         <div className='overflow-hidden h-0 pb-[56.25%] relative'>
           <iframe
-            src='https://thomasmore365-my.sharepoint.com/personal/r0445498_student_thomasmore_be/_layouts/15/embed.aspx?UniqueId=272dfc21-c61e-4f9a-aa3e-f648bc0a40cf&embed=%7B%22hvm%22%3Atrue%2C%22ust%22%3Atrue%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create'
+            src='https://1drv.ms/v/c/ced5be97da9b1174/IQO3vCoOVYl7TpxSjWWNOSHBASHO8aSkCEqr863ovFLEK-s'
             width='640'
             height='360'
             allowFullScreen
@@ -531,7 +531,7 @@ export default function JustPilsWebsitePage() {
       <div className='max-w-5/6 w-5/6 mx-auto'>
         <div className='overflow-hidden h-0 pb-[56.25%] relative'>
           <iframe
-            src='https://my.microsoftpersonalcontent.com/personal/ced5be97da9b1174/_layouts/15/embed.aspx?UniqueId=09fd1793-b666-4589-9949-0f69421f3eb1&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create'
+            src='https://1drv.ms/v/c/ced5be97da9b1174/IQOgXAeipLoEQ72_GwYR2nJJAYoG2sZmRtMoLWQsFoISgHw'
             width='640'
             height='360'
             allowFullScreen
@@ -562,7 +562,7 @@ export default function JustPilsWebsitePage() {
       <div className='max-w-5/6 w-5/6 mx-auto'>
         <div className='overflow-hidden h-0 pb-[56.25%] relative'>
           <iframe
-            src='https://my.microsoftpersonalcontent.com/personal/ced5be97da9b1174/_layouts/15/embed.aspx?UniqueId=4f440651-b2b1-4ab0-b2c2-74c117b2f4d5&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create'
+            src='https://1drv.ms/v/c/ced5be97da9b1174/IQNRBkRPsbKwSrLCdMEXsvTVAWVOhzHrdJ1XtcvHgJTo1NI'
             width='640'
             height='360'
             allowFullScreen
