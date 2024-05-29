@@ -25,7 +25,7 @@ import { Image as ImageType } from '@/components/common/ImageGallery';
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import PDFModal from '@/components/common/ReportModal';
+import PDFModal from '@/components/common/PDFModal';
 import TechnologyGallery from '@/components/common/TechnologyGallery';
 
 export const metadata = {
@@ -257,9 +257,9 @@ export default function JustPilsWebsitePage() {
           <StreamlitCarousel images={streamlitCarousel} />
         </div>
         <p className='leading-7 [&:not(:first-child)]:mt-2'>
-          From the imge you can tell that Teachable Machine is still beating our
-          own model :(. This might be because we trained it for 100 epochs while
-          our model only did 3 with with a discriminative learning rate.
+          From the image you can tell that Teachable Machine is still beating
+          our own model :(. This might be because we trained it for 100 epochs
+          while our model only did 3 with with a discriminative learning rate.
         </p>
         <li className='font-semibold'>Accessing model through API (extra):</li>
         <p className='leading-7 [&:not(:first-child)]:mt-2'>
@@ -297,8 +297,9 @@ export default function JustPilsWebsitePage() {
         recommend you to check it out below.
       </p>
       <PDFModal
-        src='https://1drv.ms/b/c/ced5be97da9b1174/IQMpkM9dDWppR4jmuA72W_mSAWF6er7yufVQ_gWYtJJgqAE'
-        title='Image-classification-report.pdf'
+        src='/pdf/image-classification-report.pdf'
+        title='Image classification AI model report'
+        newTab
       />
       <h2 className='mt-10 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0'>
         What have I learned?

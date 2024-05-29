@@ -28,7 +28,7 @@ export default function ImageGallery({ images }: { images: Image[] }) {
           <div className='relative flex flex-col shadow-md' key={index}>
             <p className='font-bold mx-auto underline'>{image.name}</p>
             <Dialog>
-              <DialogTrigger className='cursor-none mx-auto'>
+              <DialogTrigger className='mx-auto'>
                 <Image className='mx-auto' src={image.src} alt={image.name} />
               </DialogTrigger>
               <DialogContent className='lg:max-w-[90%] lg:max-h-[90%] overflow-y-scroll'>

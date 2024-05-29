@@ -19,10 +19,23 @@ import { cn } from '@/lib/utils';
 import Link from 'next/link';
 import { useTheme } from 'next-themes';
 import { useEffect, useState } from 'react';
+import { TagIcon, FilterIcon } from 'lucide-react';
+import { ProjectTag } from '@/app/projects/page';
+import { Badge } from '../ui/badge';
+
+const filterOptions: ProjectTag[] = [
+  'AI/ML/DL',
+  'BI',
+  'Internship',
+  'Scripting',
+  'Web development',
+  'Team',
+];
 
 export function ProjectsCarousel({ projects }: { projects: Project[] }) {
   const { theme } = useTheme(); // Get the current theme
   const [currentTheme, setCurrentTheme] = useState<string | null>(null);
+  const [selectedFilters, setSelectedFilters] = useState<ProjectTag[]>([]);
 
   useEffect(() => {
     setCurrentTheme(theme!);
@@ -30,34 +43,89 @@ export function ProjectsCarousel({ projects }: { projects: Project[] }) {
 
   if (!currentTheme) return null; // Render nothing until theme is initialized
 
-  const filteredProjects = projects.map(project => {
-    const filteredTechnologies = project.technologies.filter(tech => {
-      const techName = tech.name; // Convert name to lowercase to ensure case-insensitive comparison
-      console.log(techName);
-      return (
-        // For images that don't have 'dark' or 'light' in their names, render them regardless of the theme
-        (!techName.includes('dark') && !techName.includes('light')) ||
-        // For images that contain 'dark' or 'light' in their names, render them according to the current theme
-        (currentTheme === 'light' && techName.includes('light')) ||
-        (currentTheme === 'dark' && techName.includes('dark'))
-      );
+  const handleFilterClick = (filter: ProjectTag) => {
+    setSelectedFilters(prevFilters => {
+      if (prevFilters.includes(filter)) {
+        return prevFilters.filter(f => f !== filter);
+      } else {
+        return [...prevFilters, filter];
+      }
     });
+  };
 
-    // Return a new project object with the filtered technologies array
-    return {
-      ...project,
-      technologies: filteredTechnologies,
-    };
-  });
+  const filteredProjects = projects
+    .map(project => {
+      const filteredTechnologies = project.technologies.filter(tech => {
+        const techName = tech.name.toLowerCase(); // Convert name to lowercase to ensure case-insensitive comparison
+        return (
+          (!techName.includes('dark') && !techName.includes('light')) ||
+          (currentTheme === 'light' && techName.includes('light')) ||
+          (currentTheme === 'dark' && techName.includes('dark'))
+        );
+      });
+
+      return {
+        ...project,
+        technologies: filteredTechnologies,
+      };
+    })
+    .filter(project => {
+      // If no filters are selected, show all projects
+      if (selectedFilters.length === 0) {
+        return true;
+      }
+      // Otherwise, filter based on the selected tags
+      return project.tags.some(tag => selectedFilters.includes(tag));
+    });
   return (
-    <main className='w-full max-w-6xl mx-auto px-4 py-8 md:px-6 md:py-12'>
-      <h1 className='text-3xl font-bold mb-8'>Projects I have worked on</h1>
+    <main>
+      <h1 className='scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl'>
+        Projects I have worked on
+      </h1>
       <p className='leading-7 [&:not(:first-child)]:mt-6 text-lg mb-8'>
         These are the projects that I am proud of and stuck with me the most
         throughout my career in software development. I have worked on many more
         projects, but these are the ones that I have learned the most from and
         that I am most proud of.
       </p>
+      <h4 className='scroll-m-20 text-xl font-semibold tracking-tight mb-2'>
+        Filters
+      </h4>
+      <div className='flex flex-col sm:flex-row items-start sm:items-center gap-4 mb-4'>
+        <div className='flex-1 flex flex-wrap gap-2'>
+          {filterOptions.map((option, index) => (
+            <button
+              key={index}
+              className={`justify-start px-4 py-2 border dark:border-slate-500 rounded flex items-center ${
+                selectedFilters.includes(option)
+                  ? 'bg-gray-100 dark:bg-slate-700'
+                  : 'bg-white dark:bg-slate-900'
+              }`}
+              onMouseDown={() => handleFilterClick(option)}
+            >
+              {/* <TagIcon className='w-4 h-4 mr-2' /> */}
+              {option}
+            </button>
+          ))}
+          {selectedFilters.length > 0 && (
+            <button
+              className={`justify-center px-4 py-2 border dark:border-slate-500 rounded flex items-center`}
+              onMouseDown={() => setSelectedFilters([])}
+            >
+              <FilterIcon className='w-6 h-6 mx-auto text-red-500' />
+            </button>
+          )}
+        </div>
+      </div>
+      <h4 className='scroll-m-20 text-xl font-semibold tracking-tight mb-2'>
+        Projects({filteredProjects.length})
+      </h4>
+      {filteredProjects.length === 0 && (
+        <p className='text-lg text-gray-500 dark:text-gray-400'>
+          Maybe one day I will work on a project that fits the selected
+          filters...
+        </p>
+      )}
       <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8'>
         {filteredProjects.map((project, index: number) => (
           <>
@@ -117,6 +185,17 @@ export function ProjectsCarousel({ projects }: { projects: Project[] }) {
               <Link href={project.href}>
                 <div className='p-4 md:p-6 hover:bg-gray-100 dark:hover:bg-slate-900 transition-colors h-full'>
                   <h2 className='text-xl font-bold mb-2'>{project.title}</h2>
+                  <div className='flex items-center flex-wrap gap-2 text-sm'>
+                    {project.tags.map((tag, index: number) => (
+                      <Badge
+                        key={index}
+                        variant='outline'
+                        className='dark:border-slate-500'
+                      >
+                        {tag}
+                      </Badge>
+                    ))}
+                  </div>
                   <p className='text-gray-500 dark:text-gray-400 mb-4'>
                     {project.description}
                   </p>

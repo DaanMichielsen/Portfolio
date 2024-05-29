@@ -205,23 +205,19 @@ export default function WebscraperPage() {
       <div className='w-5/6 mx-auto mt-4'>
         <Accordion type='single' collapsible>
           <AccordionItem value='item-1'>
-            <AccordionTrigger className='cursor-none'>
-              Videos | Search term: Selenium
-            </AccordionTrigger>
+            <AccordionTrigger>Videos | Search term: Selenium</AccordionTrigger>
             <AccordionContent className='overflow-x-scroll'>
               <pre>{JSON.stringify(JSONVideos, null, 2)}</pre>
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value='item-2'>
-            <AccordionTrigger className='cursor-none'>
-              Jobs | Search term: Engineer
-            </AccordionTrigger>
+            <AccordionTrigger>Jobs | Search term: Engineer</AccordionTrigger>
             <AccordionContent className='overflow-x-scroll'>
               <pre>{JSON.stringify(JSONJobs, null, 2)}</pre>
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value='item-3'>
-            <AccordionTrigger className='cursor-none'>
+            <AccordionTrigger>
               HLTV | Search term: rain(name of a player)
             </AccordionTrigger>
             <AccordionContent className='overflow-x-scroll'>

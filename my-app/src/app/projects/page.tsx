@@ -91,8 +91,17 @@ import Resend_light from '../../../public/technologies/Resend^light.svg';
 import Resend_dark from '../../../public/technologies/Resend^dark.svg';
 import Energy from '../../../public/ismart-energy.svg';
 
+export type ProjectTag =
+  | 'Web development'
+  | 'AI/ML/DL'
+  | 'BI'
+  | 'Internship'
+  | 'Scripting'
+  | 'Team';
+
 export type Project = {
   title: string;
+  tags: ProjectTag[];
   description: string;
   href: string;
   heroImages: StaticImageData[];
@@ -109,6 +118,7 @@ const projects: Project[] = [
       'A webscraper for videos, job applications and e-sports data using C# and Selenium',
     href: '/projects/web-scraper',
     heroImages: [WebscraperJSON],
+    tags: ['Scripting'],
     technologies: [
       { src: Selenium, name: 'Selenium' },
       { src: CSharp, name: 'C#' },
@@ -129,6 +139,7 @@ const projects: Project[] = [
       InvoicesFilter,
       InvoicesSuccess,
     ],
+    tags: ['Web development', 'Team'],
     technologies: [
       { src: HTML, name: 'HTML' },
       { src: PHP, name: 'PHP' },
@@ -148,6 +159,7 @@ const projects: Project[] = [
     title: 'JustPils Website',
     description: 'A website about beer using basic web technologies.',
     href: '/projects/justpils-website',
+    tags: ['Web development', 'Team'],
     heroImages: [
       JustPilsOrigin,
       JustPilsOrigin2,
@@ -188,6 +200,7 @@ const projects: Project[] = [
       HornetDetected1,
       HornetDetected2,
     ],
+    tags: ['AI/ML/DL', 'Team'],
     technologies: [
       { src: Python, name: 'Python' },
       { src: GoogleColab, name: 'Google Colab' },
@@ -224,6 +237,7 @@ const projects: Project[] = [
       BigDataLandgingPage,
       BigDataPrediction,
     ],
+    tags: ['Web development', 'Team'],
     technologies: [
       { src: Python, name: 'Python' },
       { src: GoogleColab, name: 'Google Colab' },
@@ -255,6 +269,7 @@ const projects: Project[] = [
       'An application for farmers to detect yellow nutsedge using Angular, Python, Flask, FastAI and AWS.',
     href: '/projects/yellow-nutsedge-detection-application',
     heroImages: [SkyGuard],
+    tags: ['Web development', 'AI/ML/DL', 'Scripting', 'Team'],
     technologies: [
       { src: Python, name: 'Python' },
       { src: Flask_light, name: 'Flask^light' },
@@ -289,6 +304,7 @@ const projects: Project[] = [
       'A subscription platform for energy monitoring using NextJS, Stripe, Prisma and EMQX.',
     href: '/projects/energy-saas',
     heroImages: [Energy],
+    tags: ['Internship', 'Web development', 'Team'],
     technologies: [
       { src: Vercel_light, name: 'Vercel^light' },
       { src: Vercel_dark, name: 'Vercel^dark' },

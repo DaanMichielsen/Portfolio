@@ -45,6 +45,7 @@ import Auth0 from '../../public/technologies/AuthZero.svg';
 import Resend from '../../public/technologies/Resend^light.svg';
 import Energy from '../../public/ismart-energy.svg';
 import { Project } from './projects/page';
+import { Badge } from '@/components/ui/badge';
 
 const projects: Project[] = [
   {
@@ -62,6 +63,7 @@ const projects: Project[] = [
       BigDataLandgingPage,
       BigDataPrediction,
     ],
+    tags: ['Web development', 'Team'],
     technologies: [
       { src: Python, name: 'Python' },
       { src: GoogleColab, name: 'Google Colab' },
@@ -90,6 +92,7 @@ const projects: Project[] = [
       'An application for farmers to detect yellow nutsedge using Angular, Python, Flask, FastAI and AWS.',
     href: '/projects/yellow-nutsedge-detection-application',
     heroImages: [SkyGuard],
+    tags: ['Web development', 'AI/ML/DL', 'Scripting', 'Team'],
     technologies: [
       { src: Python, name: 'Python' },
       { src: Flask, name: 'Flask' },
@@ -117,6 +120,7 @@ const projects: Project[] = [
       'A subscription platform for energy monitoring using NextJS, Stripe, Prisma and EMQX.',
     href: '/projects/energy-saas',
     heroImages: [Energy],
+    tags: ['Internship', 'Web development', 'Team'],
     technologies: [
       { src: NextJs, name: 'NextJS' },
       { src: Stripe, name: 'Stripe' },
@@ -156,31 +160,32 @@ export default function Home() {
               <h1 className='text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl xl:text-6xl/none'>
                 Welcome to my Portfolio
               </h1>
-              <p className='max-w-[600px] text-gray-500 md:text-xl dark:text-gray-400'>
-                This page will give you a brief introduction about who I am,
-                what I&apos;m passionate about and what I&apos;m currently
-                working on. I&apos;m a full stack software engineer with a
-                passion for creating beautiful and functional applications.
+              <p className='max-w-[600px] text-gray-500 md:text-xl dark:text-slate-300'>
+                I am Daan, I was born in 2003 and I am a student at the Thomas
+                More University of Applied Sciences in Belgium. I am studying
+                Applied Computer Science and I am currently in my last year. I
+                am excited to start my career as a Software Engineer or Machine
+                Learning Engineer so I can contribute to the world of tomorrow.
               </p>
             </div>
             <div className='flex flex-col gap-2 min-[400px]:flex-row'>
-              <Link
-                className='inline-flex h-10 items-center justify-center rounded-md bg-gray-900 px-8 text-sm font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300'
-                href='/projects'
-              >
-                View Projects
-              </Link>
               <Link
                 className='inline-flex h-10 items-center justify-center rounded-md border border-gray-200 bg-white px-8 text-sm font-medium shadow-sm transition-colors hover:bg-gray-100 hover:text-gray-900 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:border-gray-800 dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus-visible:ring-gray-300'
                 href='/about-me'
               >
                 About me
               </Link>
+              <Link
+                className='inline-flex h-10 items-center justify-center rounded-md bg-gray-900 px-8 text-sm font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300'
+                href='/projects'
+              >
+                View Projects
+              </Link>
             </div>
           </div>
           <Image
             alt='Daan Michielsen'
-            className='mx-auto aspect-square overflow-hidden rounded-full object-cover sm:w-full'
+            className='mx-auto aspect-square overflow-hidden rounded-full object-cover sm:w-full border-8 dark:border-slate-600 border-gray-300'
             height={550}
             src={Daan}
             width={550}
@@ -216,6 +221,17 @@ export default function Home() {
                     />
                     <CardContent className='p-4 sm:p-6 group-hover:bg-gray-200 dark:group-hover:bg-slate-900 transition-all'>
                       <h3 className='text-lg font-bold'>{project.title}</h3>
+                      <div className='flex items-center flex-wrap gap-2 text-sm'>
+                        {project.tags.map((tag, index: number) => (
+                          <Badge
+                            key={index}
+                            variant='outline'
+                            className='dark:border-slate-500'
+                          >
+                            {tag}
+                          </Badge>
+                        ))}
+                      </div>
                       <p className='mt-2 text-gray-500 dark:text-gray-400'>
                         {project.description}
                       </p>

@@ -23,7 +23,7 @@ import ImageGallery, {
 } from '@/components/common/ImageGallery';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import PDFModal from '../../../components/common/ReportModal';
+import PDFModal from '@/components/common/PDFModal';
 import TechnologyGallery from '@/components/common/TechnologyGallery';
 
 const labelCarousel: ImageType[] = [
@@ -49,6 +49,17 @@ const labelImage: ImageType[] = [
   {
     name: 'Roboflow labels',
     src: RoboflowLabels,
+  },
+];
+
+const detectionImages: ImageType[] = [
+  {
+    name: 'hornet detection',
+    src: HornetDetected1,
+  },
+  {
+    name: 'hornet detection',
+    src: HornetDetected2,
   },
 ];
 
@@ -187,36 +198,27 @@ export default function HornetTrackingAiModelPage() {
           sometimes but we counteracted that by gathering more data and cleaning
           the data over and over until we were satisfied with the results.
         </p>
-        <div className='flex flex-col lg:flex-row gap-4 max-w-5/6 items-center'>
-          <div className='relative'>
-            <Image src={HornetDetected1} alt='hornet-detected' />
-          </div>
-          <div className='relative'>
-            <Image src={HornetDetected2} alt='hornet-detected' />
-          </div>
-        </div>
+        <ImageGallery images={detectionImages} />
         <li className='font-semibold'>Object tracking(extra):</li>
         <p className='leading-7 [&:not(:first-child)]:mt-2'>
           In the ideal scenario, the model would be able to track the hornet,
           that way we could even apply calculation based on the direction of the
           camera to predict the location of the nest so it can be removed. Doing
           this did not require a new model as Yolo is already capable of
-          detectinf them. All we have to do is put the detection of video in
+          detecting them. All we have to do is put the detection of video in
           sequence and apply some mathematical calculations to track the center
-          of the bounding boxes over time.
+          of the bounding boxes over time and draw a line that correpsonds to
+          the center.
         </p>
-        <div>
-          <div className='max-w-5/6'>
-            <div className='overflow-hidden h-0 pb-[56.25%] relative'>
-              <iframe
-                src='https://1drv.ms/v/c/ced5be97da9b1174/IQNbQay6Vyh6Q49haKmCeqODARNegh5Yj9LtApMPRohx-wc'
-                width='640'
-                height='360'
-                allowFullScreen
-                title='result-tracking-edited.mp4'
-                className='border-none absolute top-0 left-0 right-0 bottom-0 h-full w-full max-w-full'
-              ></iframe>
-            </div>
+        <div className='max-w-5/6 w-5/6 mx-auto'>
+          <div className='overflow-hidden h-0 pb-[56.25%] relative'>
+            <iframe
+              className='aspect-video w-full'
+              src='https://www.youtube.com/embed/_xcbfyq0xes?si=2RHV6JYYqzoWPxyE'
+              title='YouTube video player'
+              allow='accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+              allowFullScreen
+            ></iframe>
           </div>
         </div>
         <li className='font-semibold'>Streamlit application(extra):</li>
@@ -229,14 +231,14 @@ export default function HornetTrackingAiModelPage() {
           application was not possible due to the complexicty and the resource
           requirements of the model.
         </p>
-        <div className='max-w-5/6'>
+        <div className='max-w-5/6 w-5/6 mx-auto'>
           <div className='overflow-hidden h-0 pb-[56.25%] relative'>
             <iframe
-              src='https://1drv.ms/v/c/ced5be97da9b1174/IQNja9dTShO3RLLGzaqGoSm5AadwUep5IMnEi2V6tXX5QkM'
-              width='640'
-              height='360'
-              title='streamlit-tracking.mp4'
-              className='border-none absolute top-0 left-0 right-0 bottom-0 h-full w-full max-w-full'
+              className='aspect-video w-full'
+              src='https://www.youtube.com/embed/hB59vqYWPjE?si=KsJ2j4KGP_vDLpoC'
+              title='YouTube video player'
+              allow='accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+              allowFullScreen
             ></iframe>
           </div>
         </div>
@@ -249,8 +251,9 @@ export default function HornetTrackingAiModelPage() {
           GitHub. You can also read the report below.
         </p>
         <PDFModal
-          src='https://1drv.ms/b/c/ced5be97da9b1174/IQOUCSRjU1tETIHXb2edT_2fAXfOakMXCzsdYKHORoB5PPs'
-          title='Hornet-tracking-report.pdf'
+          src='/pdf/Hornet-tracking-report.pdf'
+          title='Hornet tracking AI model report'
+          newTab={true}
         />
       </ul>
       <h2 className='mt-10 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0'>

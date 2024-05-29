@@ -9,6 +9,7 @@ import { config } from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import ScrollToTopButton from '@/components/common/BackToTopButton';
 import Link from 'next/link';
 config.autoAddCss = false;
 
@@ -48,19 +49,20 @@ export default function RootLayout({
             <div className='flex gap-2'>
               <Link
                 href={'https://github.com/DaanMichielsen'}
-                className='hover:text-gray-500 dark:hover:text-slate-500'
+                className='hover:text-gray-700 dark:hover:text-slate-500 transition-all'
               >
                 <FontAwesomeIcon size='lg' icon={faGithub} />
               </Link>
               <Link
                 href={'https://www.linkedin.com/in/daan-michielsen/'}
-                className='hover:text-gray-500 dark:hover:text-slate-500'
+                className='hover:text-gray-700 dark:hover:text-slate-500 transition-all'
               >
                 <FontAwesomeIcon size='lg' icon={faLinkedin} />
               </Link>
             </div>
           </div>
           {children}
+          <ScrollToTopButton />
         </ThemeProvider>
       </body>
     </html>

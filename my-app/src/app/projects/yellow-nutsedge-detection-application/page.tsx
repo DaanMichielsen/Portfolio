@@ -29,6 +29,7 @@ import PDFModal from '@/components/common/PDFModal';
 import ConfusionMatrix from '../../../../public/confusion-matrix.png';
 import SkyGuard from '../../../../public/SkyGuard.png';
 import TechnologyGallery from '@/components/common/TechnologyGallery';
+import ScrollToTopButton from '@/components/common/BackToTopButton';
 
 export const metadata = {
   title: 'Daan Michielsen | Yellow nutsedge detection application',
@@ -269,8 +270,9 @@ export default function JustPilsWebsitePage() {
           of weeks. You can checkout the full report of the concept phase below.
         </p>
         <PDFModal
-          src='https://1drv.ms/b/c/ced5be97da9b1174/EeLZbIykbspNqOyy9CVdVtgBNzrHBCM0gX_aOOzhr2Y7Xg?e=uIrTxX'
+          src='/pdf/report-concept-phase.pdf'
           title='Concept Phase Report (Dutch)'
+          newTab
         />
         <p className='leading-7 [&:not(:first-child)]:mt-2'>
           During the concept we had to create something called the &quot;Product
@@ -382,12 +384,11 @@ export default function JustPilsWebsitePage() {
       <div className='max-w-5/6 w-5/6 mx-auto'>
         <div className='overflow-hidden h-0 pb-[56.25%] relative'>
           <iframe
-            src='https://1drv.ms/v/c/ced5be97da9b1174/IQO3vCoOVYl7TpxSjWWNOSHBASHO8aSkCEqr863ovFLEK-s'
-            width='640'
-            height='360'
+            className='aspect-video w-full'
+            src='https://www.youtube.com/embed/wNhsQlZs9ZE?si=eT_lKxCiNzkrmp6A'
+            title='YouTube video player'
+            allow='accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
             allowFullScreen
-            title='Image labeling demo.mp4'
-            className='border-none absolute top-0 left-0 right-0 bottom-0 h-full w-full max-w-full'
           ></iframe>
         </div>
       </div>
@@ -531,12 +532,11 @@ export default function JustPilsWebsitePage() {
       <div className='max-w-5/6 w-5/6 mx-auto'>
         <div className='overflow-hidden h-0 pb-[56.25%] relative'>
           <iframe
-            src='https://1drv.ms/v/c/ced5be97da9b1174/IQOgXAeipLoEQ72_GwYR2nJJAYoG2sZmRtMoLWQsFoISgHw'
-            width='640'
-            height='360'
+            className='aspect-video w-full'
+            src='https://www.youtube.com/embed/0hXpdUg-I3o?si=sMWBazUa0vAwfIAS'
+            title='YouTube video player'
+            allow='accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
             allowFullScreen
-            title='Demo AI model API.mp4'
-            className='border-none absolute top-0 left-0 right-0 bottom-0 h-full w-full max-w-full'
           ></iframe>
         </div>
       </div>
@@ -562,12 +562,11 @@ export default function JustPilsWebsitePage() {
       <div className='max-w-5/6 w-5/6 mx-auto'>
         <div className='overflow-hidden h-0 pb-[56.25%] relative'>
           <iframe
-            src='https://1drv.ms/v/c/ced5be97da9b1174/IQNRBkRPsbKwSrLCdMEXsvTVAWVOhzHrdJ1XtcvHgJTo1NI'
-            width='640'
-            height='360'
+            className='aspect-video w-full'
+            src='https://www.youtube.com/embed/QutO_n6TAPc?si=l8BTeuYXhMEwUf2W'
+            title='YouTube video player'
+            allow='accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
             allowFullScreen
-            title='Skyguard - promo video.mp4'
-            className='border-none absolute top-0 left-0 right-0 bottom-0 h-full w-full max-w-full'
           ></iframe>
         </div>
       </div>
@@ -589,6 +588,7 @@ export default function JustPilsWebsitePage() {
         since every task needed to be planned and estimated for us to fill our
         sprint backlog.
       </p>
+      {/* <ScrollToTopButton></ScrollToTopButton> */}
     </div>
   );
 }
