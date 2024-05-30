@@ -97,7 +97,7 @@ const technologies: ImageType[] = [
 const documents: Document[] = [
   {
     name: 'Project plan (Dutch)',
-    url: '/pdf/Plan_van_aanpak_daan_Michielsen_stage.pdf',
+    url: '/pdf/project-plan.pdf',
   },
   {
     name: 'Realistaition document (Dutch)',
