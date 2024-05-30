@@ -46,6 +46,7 @@ import Resend from '../../public/technologies/Resend^light.svg';
 import Energy from '../../public/ismart-energy.svg';
 import { Project } from './projects/page';
 import { Badge } from '@/components/ui/badge';
+import TypeWriter from './_components/TypeWriter';
 
 const projects: Project[] = [
   {
@@ -160,6 +161,12 @@ export default function Home() {
               <h1 className='text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl xl:text-6xl/none'>
                 Welcome to my Portfolio
               </h1>
+              <div className='text-xl font-bold tracking-tighter sm:text-2xl md:text-3xl xl:text-4xl/none flex gap-3'>
+                <span>I am</span>{' '}
+                <span className='text-blue-500'>
+                  <TypeWriter />
+                </span>
+              </div>
               <p className='max-w-[600px] text-gray-500 md:text-xl dark:text-slate-300'>
                 I am Daan, I was born in 2003 and I am a student at the Thomas
                 More University of Applied Sciences in Belgium. I am studying

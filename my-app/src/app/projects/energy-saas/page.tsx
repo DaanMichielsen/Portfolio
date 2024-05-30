@@ -367,14 +367,14 @@ export default function EnergySaasPage() {
 
       <div>
         {documents.map((document, index) => (
-          <>
+          <div key={index}>
             <PDFModal
               src={document.url}
               newTab
               download
               title={document.name}
             ></PDFModal>
-          </>
+          </div>
         ))}
       </div>
     </div>
