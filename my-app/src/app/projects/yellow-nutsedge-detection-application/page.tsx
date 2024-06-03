@@ -385,7 +385,7 @@ export default function JustPilsWebsitePage() {
         <div className='overflow-hidden h-0 pb-[56.25%] relative'>
           <iframe
             className='aspect-video w-full'
-            src='https://www.youtube.com/embed/wNhsQlZs9ZE?si=eT_lKxCiNzkrmp6A'
+            src='https://www.youtube.com/embed/irlbQfQZpzs?si=8w9EhdbgNbtGzkHR'
             title='YouTube video player'
             allow='accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
             allowFullScreen
@@ -533,7 +533,7 @@ export default function JustPilsWebsitePage() {
         <div className='overflow-hidden h-0 pb-[56.25%] relative'>
           <iframe
             className='aspect-video w-full'
-            src='https://www.youtube.com/embed/0hXpdUg-I3o?si=sMWBazUa0vAwfIAS'
+            src='https://www.youtube.com/embed/HqAIkAjvGuU?si=sUm58rHQ9zw6TCVr'
             title='YouTube video player'
             allow='accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
             allowFullScreen
