@@ -21,12 +21,15 @@ import BigDataLandgingPage from '../../../../public/big-data-landing-page.png';
 import BigDataPrediction from '../../../../public/big-data-prediction.png';
 import StreamlitCarousel from './_components/StreamlitCarousel';
 import TomatoCarousel from './_components/TomatoCarousel';
-import { Image as ImageType } from '@/components/common/ImageGallery';
+import ImageGallery, {
+  Image as ImageType,
+} from '@/components/common/ImageGallery';
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import PDFModal from '@/components/common/PDFModal';
 import TechnologyGallery from '@/components/common/TechnologyGallery';
+import NextAndPreviousProjectButton from '../_components/NextAndPrevProjectButton';
 
 export const metadata = {
   title: 'Daan Michielsen | Image classification AI model',
@@ -53,6 +56,13 @@ const labelCarousel: ImageType[] = [
   {
     name: 'Yellow Pear tomato',
     src: YellowPearTomato,
+  },
+];
+
+const heroImage: ImageType[] = [
+  {
+    name: 'Landing page',
+    src: BigDataLandgingPage,
   },
 ];
 
@@ -143,6 +153,8 @@ export default function JustPilsWebsitePage() {
           <FontAwesomeIcon icon={faGithub} size='xl' /> Code on GitHub
         </Link>
       </div>
+
+      <ImageGallery images={heroImage} />
 
       <h2 className='mt-10 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0'>
         Description
@@ -314,6 +326,16 @@ export default function JustPilsWebsitePage() {
         awesome application that integrates all of the models and makes it easy
         to use.
       </p>
+      <NextAndPreviousProjectButton
+        previousProject={{
+          title: 'Hornet tracking AI model',
+          href: '/projects/hornet-tracking-ai-model',
+        }}
+        nextProject={{
+          title: 'Yellow nutsedge detection application',
+          href: '/projects/yellow-nutsedge-detection-application',
+        }}
+      />
     </div>
   );
 }

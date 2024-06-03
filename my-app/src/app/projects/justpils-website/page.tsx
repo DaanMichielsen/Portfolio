@@ -12,6 +12,7 @@ import Link from 'next/link';
 import JustPilsLogo from '../../../../public/justpils.png';
 import ColorPalette from './_components/ColorPalette';
 import Logo from './_components/Logo';
+import NextAndPreviousProjectButton from '../_components/NextAndPrevProjectButton';
 
 import JustPilsOrigin from '../../../../public/justpils-origin.png';
 import JustPilsOrigin2 from '../../../../public/justpils-origin-2.png';
@@ -19,6 +20,7 @@ import JustPilsIngredients from '../../../../public/justpils-ingredients.png';
 import JustPilsIngredients2 from '../../../../public/justpils-ingredients-2.png';
 import JustPilsCountdown from '../../../../public/justpils-countdown.png';
 import JustPilsBackToTop from '../../../../public/justpils-back-to-top.png';
+import JustPilseHomePage from '../../../../public/justpils-homepage.png';
 
 export const metadata = {
   title: 'Daan Michielsen | JustPils Website',
@@ -75,6 +77,13 @@ const technologies: ImageType[] = [
   },
 ];
 
+const homePageImage: ImageType[] = [
+  {
+    src: JustPilseHomePage,
+    name: 'Justpils home page',
+  },
+];
+
 export default function JustPilsWebsitePage() {
   return (
     <div className='mx-auto max-w-7xl px-6 pb-24 pt-16 sm:pt-16 lg:px-8 lg:pt-16 bg-white bg-opacity-90 dark:bg-primary-dark dark:bg-opacity-80'>
@@ -93,6 +102,8 @@ export default function JustPilsWebsitePage() {
           Justpils Website
         </Link>
       </div>
+
+      <ImageGallery images={homePageImage} />
 
       <h2 className='mt-10 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0'>
         Description
@@ -170,6 +181,16 @@ export default function JustPilsWebsitePage() {
         of that.
       </p>
       <BackToTopButton />
+      <NextAndPreviousProjectButton
+        nextProject={{
+          title: 'Hornet tracking AI model',
+          href: '/projects/hornet-tracking-ai-model',
+        }}
+        previousProject={{
+          title: 'Staff management application',
+          href: '/projects/staff-management-application',
+        }}
+      />
     </div>
   );
 }

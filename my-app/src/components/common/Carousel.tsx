@@ -18,6 +18,7 @@ export default function PageCarousel({
 }) {
   return (
     <Carousel
+      className='my-8'
       opts={{
         align: 'center',
         loop: true,

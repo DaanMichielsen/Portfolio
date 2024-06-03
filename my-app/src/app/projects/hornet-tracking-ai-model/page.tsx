@@ -25,6 +25,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import PDFModal from '@/components/common/PDFModal';
 import TechnologyGallery from '@/components/common/TechnologyGallery';
+import NextAndPreviousProjectButton from '../_components/NextAndPrevProjectButton';
+import TrackingResult from '../../../../public/tracking-result.gif';
 
 const labelCarousel: ImageType[] = [
   {
@@ -49,6 +51,13 @@ const labelImage: ImageType[] = [
   {
     name: 'Roboflow labels',
     src: RoboflowLabels,
+  },
+];
+
+const trackingGif: ImageType[] = [
+  {
+    name: 'Tracking result',
+    src: TrackingResult,
   },
 ];
 
@@ -132,6 +141,8 @@ export default function HornetTrackingAiModelPage() {
           Instagram post (Thomas More)
         </Link>
       </div>
+
+      <ImageGallery images={trackingGif} />
 
       <h2 className='mt-10 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0'>
         Description
@@ -269,6 +280,16 @@ export default function HornetTrackingAiModelPage() {
         interactive applications with. It is very easy to use and has a lot of
         options to customize the application.
       </p>
+      <NextAndPreviousProjectButton
+        nextProject={{
+          title: 'Image classification AI model',
+          href: '/projects/image-classification-ai-model',
+        }}
+        previousProject={{
+          title: 'Justpils website',
+          href: '/projects/justpils-website',
+        }}
+      />
     </div>
   );
 }

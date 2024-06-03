@@ -29,7 +29,7 @@ import PDFModal from '@/components/common/PDFModal';
 import ConfusionMatrix from '../../../../public/confusion-matrix.png';
 import SkyGuard from '../../../../public/SkyGuard.png';
 import TechnologyGallery from '@/components/common/TechnologyGallery';
-import ScrollToTopButton from '@/components/common/BackToTopButton';
+import NextAndPreviousProjectButton from '../_components/NextAndPrevProjectButton';
 
 export const metadata = {
   title: 'Daan Michielsen | Yellow nutsedge detection application',
@@ -181,6 +181,18 @@ export default function JustPilsWebsitePage() {
 
       <div className='mt-4 flex space-y-2 flex-col md:flex-row text-gray-500 dark:text-slate-400 gap-x-4'>
         <TechnologyGallery technologies={technologies} />
+      </div>
+
+      <div className='max-w-5/6 w-5/6 mx-auto mt-8'>
+        <div className='overflow-hidden h-0 pb-[56.25%] relative'>
+          <iframe
+            className='aspect-video w-full'
+            src='https://www.youtube.com/embed/QutO_n6TAPc?si=l8BTeuYXhMEwUf2W'
+            title='YouTube video player'
+            allow='accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+            allowFullScreen
+          ></iframe>
+        </div>
       </div>
 
       <h2
@@ -559,17 +571,6 @@ export default function JustPilsWebsitePage() {
         product. This was done using free AI tools such as ChatGPT and Kapwing
         which makes it pretty easy to create a basic video for free.
       </p>
-      <div className='max-w-5/6 w-5/6 mx-auto'>
-        <div className='overflow-hidden h-0 pb-[56.25%] relative'>
-          <iframe
-            className='aspect-video w-full'
-            src='https://www.youtube.com/embed/QutO_n6TAPc?si=l8BTeuYXhMEwUf2W'
-            title='YouTube video player'
-            allow='accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-            allowFullScreen
-          ></iframe>
-        </div>
-      </div>
       <h2
         id='what-have-i-learned'
         className='mt-10 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0'
@@ -588,7 +589,16 @@ export default function JustPilsWebsitePage() {
         since every task needed to be planned and estimated for us to fill our
         sprint backlog.
       </p>
-      {/* <ScrollToTopButton></ScrollToTopButton> */}
+      <NextAndPreviousProjectButton
+        nextProject={{
+          title: 'Internship | Energy subscription platform',
+          href: '/projects/energy-saas',
+        }}
+        previousProject={{
+          title: 'Image classification AI model',
+          href: '/projects/image-classification-ai-model',
+        }}
+      />
     </div>
   );
 }

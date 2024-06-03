@@ -29,6 +29,11 @@ import ImageGallery from '@/components/common/ImageGallery';
 import architecture from '../../../../public/architecture.png';
 import PDFModal from '@/components/common/PDFModal';
 import { Tabs, TabsContent, TabsTrigger, TabsList } from '@/components/ui/tabs';
+import NextAndPreviousProjectButton from '../_components/NextAndPrevProjectButton';
+import SaasHomePage from '../../../../public/saas-homepage.png';
+import SaasGraph from '../../../../public/saas-graph.png';
+import PageCarousel from '@/components/common/Carousel';
+import DocumentSection from './_components/DocumentSection';
 
 export const metadata = {
   title: 'Daan Michielsen | Energy SaaS Platform',
@@ -39,6 +44,8 @@ type Document = {
   name: string;
   url: string;
 };
+
+const heroImages = [SaasHomePage, SaasGraph];
 
 const architectureImages: ImageType[] = [
   {
@@ -314,6 +321,9 @@ export default function EnergySaasPage() {
           SaaS Platform
         </Link>
       </div>
+      <div className='w-5/6 my-2 flex mx-auto'>
+        <PageCarousel images={heroImages} />
+      </div>
 
       <h2 className='mt-10 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0'>
         Description
@@ -349,9 +359,13 @@ export default function EnergySaasPage() {
         More. The following technologies were used:
       </p>
       <Tabs defaultValue='technologies' className='w-full'>
-        <TabsList>
-          <TabsTrigger value='technologies'>Technologies</TabsTrigger>
-          <TabsTrigger value='architecture'>Architecture</TabsTrigger>
+        <TabsList className='h-auto w-full'>
+          <TabsTrigger className='py-3 px-4 w-full' value='technologies'>
+            Technologies
+          </TabsTrigger>
+          <TabsTrigger className='py-3 px-4 w-full' value='architecture'>
+            Architecture
+          </TabsTrigger>
         </TabsList>
         <TabsContent value='technologies'>
           <div className='w-11/12 mx-auto'>
@@ -365,7 +379,7 @@ export default function EnergySaasPage() {
         </TabsContent>
       </Tabs>
 
-      <div>
+      {/* <div>
         {documents.map((document, index) => (
           <div key={index}>
             <PDFModal
@@ -376,7 +390,15 @@ export default function EnergySaasPage() {
             ></PDFModal>
           </div>
         ))}
-      </div>
+      </div> */}
+      <DocumentSection />
+      <NextAndPreviousProjectButton
+        previousProject={{
+          title: 'Yellow nutsedge detection application',
+          href: '/projects/yellow-nutsedge-detection-application',
+        }}
+        nextProject={null}
+      />
     </div>
   );
 }

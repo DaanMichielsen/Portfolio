@@ -17,6 +17,9 @@ import InvoicesSuccess from '../../../../public/invoices-success.png';
 import PageCarousel from '../../../components/common/Carousel';
 import TechnologyGallery from '@/components/common/TechnologyGallery';
 import { Image as ImageType } from '@/components/common/ImageGallery';
+import NextAndPreviousProjectButton from '../_components/NextAndPrevProjectButton';
+import StaffManagementHomePage from '../../../../public/staff-management-home-page.png';
+import ImageGallery from '@/components/common/ImageGallery';
 
 export const metadata = {
   title: 'Daan Michielsen | Staff Management Application',
@@ -58,6 +61,13 @@ const technologies: ImageType[] = [
   },
 ];
 
+const homePageImage: ImageType[] = [
+  {
+    src: StaffManagementHomePage,
+    name: 'Staff management application home page',
+  },
+];
+
 const InvoiceImages = [InvoicesCreate, InvoicesFilter, InvoicesSuccess];
 
 export default function JustPilsWebsitePage() {
@@ -70,6 +80,8 @@ export default function JustPilsWebsitePage() {
       <div className='mt-4 flex space-y-2 flex-col md:flex-row text-gray-500 dark:text-slate-400 gap-x-4'>
         <TechnologyGallery technologies={technologies} />
       </div>
+
+      <ImageGallery images={homePageImage} />
 
       <h2 className='mt-10 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0'>
         Background
@@ -194,6 +206,16 @@ export default function JustPilsWebsitePage() {
         first time we had to interact with a real client. Adapting to feedback
         and making proposals based on that feedback was a new experience for me.
       </p>
+      <NextAndPreviousProjectButton
+        nextProject={{
+          title: 'Justpils website',
+          href: '/projects/justpils-website',
+        }}
+        previousProject={{
+          title: 'Web scraper',
+          href: '/projects/web-scraper',
+        }}
+      />
     </div>
   );
 }

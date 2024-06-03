@@ -29,7 +29,11 @@ export default function ImageGallery({ images }: { images: Image[] }) {
             <p className='font-bold mx-auto underline'>{image.name}</p>
             <Dialog>
               <DialogTrigger className='mx-auto'>
-                <Image className='mx-auto' src={image.src} alt={image.name} />
+                <Image
+                  className='mx-auto rounded-xl'
+                  src={image.src}
+                  alt={image.name}
+                />
               </DialogTrigger>
               <DialogContent className='lg:max-w-[90%] lg:max-h-[90%] overflow-y-scroll'>
                 <DialogHeader>
