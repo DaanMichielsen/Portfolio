@@ -83,7 +83,7 @@ import NextJs_dark from '../../../public/technologies/NextJS^dark.svg';
 import Stripe from '../../../public/technologies/Stripe.svg';
 import Prisma_light from '../../../public/technologies/Prisma ORM^light.svg';
 import Prisma_dark from '../../../public/technologies/Prisma ORM^dark.svg';
-import EMQX from '../../../public/technologies/EMQX MQTT.svg';
+import EMQX from '../../../public/technologies/EMQX.svg';
 import CosmosDB from '../../../public/technologies/Azure Cosmos DB.svg';
 import AzureFunctions from '../../../public/technologies/Azure Functions.svg';
 import Auth0 from '../../../public/technologies/AuthZero.svg';

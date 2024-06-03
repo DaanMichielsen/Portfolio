@@ -108,41 +108,35 @@ export default async function AboutMe() {
       value: 65,
     },
   ];
-  const softSkills: SoftSkill[] = [
+  const softSkills: Omit<SoftSkill, 'value'>[] = [
     {
       name: 'Accountability',
       description: 'The ability to take ownership of your mistakes.',
-      value: 90,
-    },
-    {
-      name: 'Professional communication',
-      description:
-        'The ability to communicate in a professional manner with team members, teachers, colleagues...',
-      value: 85,
-    },
-    {
-      name: 'Research',
-      description:
-        'The ability to research on the internet and finding useful information efficiently.',
-      value: 85,
-    },
-    {
-      name: 'Teamwork',
-      description:
-        'The ability to work together with a team to achieve a common goal.',
-      value: 85,
-    },
-    {
-      name: 'Problem solving',
-      description:
-        'The ability to solve technical problems in an application or project.',
-      value: 80,
     },
     {
       name: 'Empathy',
       description:
         'The ability to empathize with your team and understand the problems that they face.',
-      value: 75,
+    },
+    {
+      name: 'Professional communication',
+      description:
+        'The ability to communicate in a professional manner with team members, teachers, colleagues...',
+    },
+    {
+      name: 'Research',
+      description:
+        'The ability to research on the internet and finding useful information efficiently.',
+    },
+    {
+      name: 'Teamwork',
+      description:
+        'The ability to work together with a team to achieve a common goal.',
+    },
+    {
+      name: 'Problem solving',
+      description:
+        'The ability to solve technical problems in an application or project.',
     },
   ];
 
@@ -215,12 +209,12 @@ export default async function AboutMe() {
                 </div>
               </HoverCardContent>
             </HoverCard>{' '}
-            in Geel(Belgium). This page serves as a place where I can express
+            in Geel (Belgium). This page serves as a place where I can express
             myself and my work. I hope you enjoy your stay. I am passionate
             about technology and I want to pursue a career in tech.
           </p>
           <p className='leading-7 [&:not(:first-child)]:mt-6'>
-            In case you want to know more about me, you can check out me CV
+            In case you want to know more about me, you can check out my CV
             below.
           </p>
           <div className='flex gap-4 flex-wrap'>
@@ -265,17 +259,6 @@ export default async function AboutMe() {
                       <TooltipTrigger asChild>
                         <div className='mb-2'>
                           <Label>{skill.name}</Label>
-                          <div className='flex items-center gap-4 justify-between'>
-                            <div className='w-11/12'>
-                              <Progress value={skill.value}></Progress>
-                              <p className='md:hidden text-sm'>
-                                {skill.description}
-                              </p>
-                            </div>
-                            <Label className='w-1/12 text-right'>
-                              {skill.value / 10}/10
-                            </Label>
-                          </div>
                         </div>
                       </TooltipTrigger>
                       <TooltipContent>
@@ -385,7 +368,7 @@ export default async function AboutMe() {
                 ))}
               </TooltipProvider>
               <h2 className='scroll-m-20 border-b pb-2 text-xl font-semibold tracking-tight first:mt-0 my-4'>
-                All technnologies I have encountered
+                All technnologies I have worked with
               </h2>
               <Suspense fallback={<ImagesLoading />}>
                 <ImageGallery imagePaths={imagePaths}></ImageGallery>

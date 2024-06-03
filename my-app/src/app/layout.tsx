@@ -47,18 +47,20 @@ export default function RootLayout({
           <div className='md:fixed absolute bottom-2 md:bottom-1/2 md:left-2 left-1/2 -translate-x-1/2 md:-translate-x-1/2 md:top-1/2 md:-rotate-90 md:origin-bottom origin-center flex gap-2'>
             <p className='font-bold leading-6'>FOLLOW ME | </p>
             <div className='flex gap-2'>
-              <Link
+              <a
+                target='_blank'
                 href={'https://github.com/DaanMichielsen'}
                 className='hover:text-gray-700 dark:hover:text-slate-500 transition-all'
               >
                 <FontAwesomeIcon size='lg' icon={faGithub} />
-              </Link>
-              <Link
+              </a>
+              <a
+                target='_blank'
                 href={'https://www.linkedin.com/in/daan-michielsen/'}
                 className='hover:text-gray-700 dark:hover:text-slate-500 transition-all'
               >
                 <FontAwesomeIcon size='lg' icon={faLinkedin} />
-              </Link>
+              </a>
             </div>
           </div>
           {children}

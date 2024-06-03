@@ -9,7 +9,7 @@ import Vercel from '../../../../public/technologies/Vercel^light.svg';
 import NextJs from '../../../../public/technologies/NextJS^light.svg';
 import Stripe from '../../../../public/technologies/Stripe.svg';
 import Prisma from '../../../../public/technologies/Prisma ORM^light.svg';
-import EMQX from '../../../../public/technologies/EMQX MQTT.svg';
+import EMQX from '../../../../public/technologies/EMQX.svg';
 import CosmosDB from '../../../../public/technologies/Azure Cosmos DB.svg';
 import AzureFunctions from '../../../../public/technologies/Azure Functions.svg';
 import Tailwind from '../../../../public/technologies/Tailwind CSS.svg';

@@ -38,7 +38,7 @@ import NextJs from '../../public/technologies/NextJS^light.svg';
 import Stripe from '../../public/technologies/Stripe.svg';
 import Prisma_light from '../../public/technologies/Prisma ORM^light.svg';
 import Prisma_dark from '../../public/technologies/Prisma ORM^dark.svg';
-import EMQX from '../../public/technologies/EMQX MQTT.svg';
+import EMQX from '../../public/technologies/EMQX.svg';
 import CosmosDB from '../../public/technologies/Azure Cosmos DB.svg';
 import AzureFunctions from '../../public/technologies/Azure Functions.svg';
 import Auth0 from '../../public/technologies/AuthZero.svg';
@@ -168,11 +168,11 @@ export default function Home() {
                 </span>
               </div>
               <p className='max-w-[600px] text-gray-500 md:text-xl dark:text-slate-300'>
-                I am Daan, I was born in 2003 and I am a student at the Thomas
-                More University of Applied Sciences in Belgium. I am studying
-                Applied Computer Science and I am currently in my last year. I
-                am excited to start my career as a Software Engineer or Machine
-                Learning Engineer so I can contribute to the world of tomorrow.
+                My name is Daan, I was born in 2003 and currently I study at the
+                Thomas More University of Applied Sciences in Belgium. I am
+                finishing my last year of Artificial Intelligence. I am excited
+                to start my career as a Software Engineer or Machine Learning
+                Engineer so I can contribute to the world of tomorrow.
               </p>
             </div>
             <div className='flex flex-col gap-2 min-[400px]:flex-row'>

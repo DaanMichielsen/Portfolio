@@ -11,6 +11,7 @@ import {
 } from './ui/navigation-menu';
 import React from 'react';
 import { cn } from '@/lib/utils';
+import { useRouter } from 'next/navigation';
 
 const components: { title: string; href: string; description: string }[] = [
   {
@@ -62,6 +63,7 @@ const components: { title: string; href: string; description: string }[] = [
 ];
 
 export function Menu() {
+  const router = useRouter();
   return (
     <NavigationMenu className='z-50'>
       <NavigationMenuList>
@@ -82,7 +84,9 @@ export function Menu() {
           </NavigationMenuLink>
         </NavigationMenuItem>
         <NavigationMenuItem className='cursor-pointer'>
-          <NavigationMenuTrigger>Projects</NavigationMenuTrigger>
+          <NavigationMenuTrigger onClick={() => router.push('/projects')}>
+            Projects
+          </NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className='grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] '>
               {components.map(component => (
