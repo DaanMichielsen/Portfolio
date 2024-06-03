@@ -206,16 +206,16 @@ export default function Home() {
               <h2 className='text-3xl font-bold tracking-tighter sm:text-5xl'>
                 Featured Projects
               </h2>
-              <p className='max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400'>
+              <p className='max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-slate-300'>
                 Check out some of my best work and see what I can do.
               </p>
             </div>
           </div>
           <div className='grid gap-8 sm:grid-cols-2 lg:grid-cols-3'>
             {projects.map((project, index) => (
-              <>
+              <div key={index}>
                 <Card
-                  className='group hover:scale-105 transition-transform'
+                  className='group hover:scale-105 transition-transform rounded-t-xl'
                   key={index}
                 >
                   <Link href={project.href}>
@@ -245,7 +245,7 @@ export default function Home() {
                     </CardContent>
                   </Link>
                 </Card>
-              </>
+              </div>
             ))}
           </div>
         </div>

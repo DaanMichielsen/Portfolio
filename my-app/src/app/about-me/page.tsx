@@ -7,12 +7,6 @@ import {
 import { Button } from '@/components/ui/button';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { CalendarDays } from 'lucide-react';
-import {
-  Popover,
-  PopoverContent,
-  PopoverTrigger,
-} from '@/components/ui/popover';
-import Map from '@/components/Map';
 import Link from 'next/link';
 import {
   Card,
@@ -225,34 +219,6 @@ export default async function AboutMe() {
             myself and my work. I hope you enjoy your stay. I am passionate
             about technology and I want to pursue a career in tech.
           </p>
-          <Popover>
-            <p className='leading-7 [&:not(:first-child)]:mt-6'>
-              I was born in 2003 and live in{' Beerse(Belgium) '}
-              {/* <PopoverTrigger className='underline'>Beerse</PopoverTrigger> with */}
-              with my parents and brother. I study Applied Computer Science at
-              Thomas More in Geel. I&apos;ve always been into tech and computers
-              when growing up, that is why I chose to study ACS (Applied
-              Computer Science) at Thomas More. If you would like to check out
-              some of my work, you can look at the{' '}
-              <Link
-                className='underline hover:text-slate-500'
-                href={'/projects'}
-              >
-                projects
-              </Link>{' '}
-              page or at my{' '}
-              <Link
-                className='underline hover:text-slate-500'
-                href={'https://github.com/DaanMichielsen'}
-              >
-                github profile
-              </Link>
-              .
-            </p>
-            <PopoverContent className='w-[334px]'>
-              <Map></Map>
-            </PopoverContent>
-          </Popover>
           <p className='leading-7 [&:not(:first-child)]:mt-6'>
             In case you want to know more about me, you can check out me CV
             below.
