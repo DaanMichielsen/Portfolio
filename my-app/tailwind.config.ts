@@ -19,7 +19,7 @@ const config = {
       },
       colors: {
         'primary-dark': '#323b4c',
-        'primary-light': '#10b981',
+        'primary-light': '#cbd5e1',
       },
       keyframes: {
         'accordion-down': {

@@ -13,6 +13,7 @@ import {
 } from '@/components/ui/dialog';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDownload } from '@fortawesome/free-solid-svg-icons';
+import { H2 } from '@/components/common/typography/H2';
 
 const actions = [
   {
@@ -71,9 +72,7 @@ function PDFModal({ src, title }: { src: string; title: string }) {
 export default function DocumentSection() {
   return (
     <>
-      <h2 className='mt-10 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0'>
-        Documents
-      </h2>
+      <H2>Documents</H2>
       <div className='divide-y divide-gray-300 gap-1 my-8 dark:divide-slate-500 overflow-hidden rounded-lg shadow sm:grid sm:grid-cols-3 sm:gap-px sm:divide-y-0'>
         {actions.map((action, actionIdx) => (
           <div
@@ -87,7 +86,7 @@ export default function DocumentSection() {
               actionIdx === actions.length - 1
                 ? 'rounded-bl-lg rounded-br-lg sm:rounded-bl-none'
                 : '',
-              'group relative bg-white hover:bg-gray-200 transition-all dark:bg-slate-700 p-4 focus-within:ring-2 focus-within:ring-inset focus-within:ring-primary-dark',
+              'group relative bg-white hover:bg-gray-200 dark:hover:bg-slate-800 transition-all dark:bg-slate-700 p-4 focus-within:ring-2 focus-within:ring-inset focus-within:ring-primary-dark',
             )}
           >
             <div>

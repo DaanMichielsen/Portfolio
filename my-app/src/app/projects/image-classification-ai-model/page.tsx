@@ -30,6 +30,9 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import PDFModal from '@/components/common/PDFModal';
 import TechnologyGallery from '@/components/common/TechnologyGallery';
 import NextAndPreviousProjectButton from '../_components/NextAndPrevProjectButton';
+import { H1 } from '@/components/common/typography/H1';
+import { H2 } from '@/components/common/typography/H2';
+import { H3 } from '@/components/common/typography/H3';
 
 export const metadata = {
   title: 'Daan Michielsen | Image classification AI model',
@@ -139,9 +142,7 @@ const technologies: ImageType[] = [
 export default function JustPilsWebsitePage() {
   return (
     <div className='mx-auto max-w-7xl px-6 pb-24 pt-16 sm:pt-16 lg:px-8 lg:pt-16 bg-white bg-opacity-90 dark:bg-primary-dark dark:bg-opacity-80'>
-      <h1 className='scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl'>
-        Big Data | Image classification AI model
-      </h1>
+      <H1>Big Data | Image classification AI model</H1>
 
       <div className='mt-4 flex space-y-2 flex-col md:flex-row text-gray-500 dark:text-slate-400 gap-x-4'>
         <TechnologyGallery technologies={technologies} />
@@ -156,10 +157,8 @@ export default function JustPilsWebsitePage() {
 
       <ImageGallery images={heroImage} />
 
-      <h2 className='mt-10 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0'>
-        Description
-      </h2>
-      <p className='leading-7 [&:not(:first-child)]:mt-6'>
+      <H2>Description</H2>
+      <p className='leading-7 [&:not(:first-child)]:mt-2'>
         This project started of with one goal in mind, to create an AI model to
         beat Google Teachable Machine using advanced techniques. The model would
         need to differentiate similar objects(5) and classify them correctly.
@@ -169,20 +168,14 @@ export default function JustPilsWebsitePage() {
         this part since the project was meant to be made with groups of 3
         students, but our group contained 2 students.
       </p>
-      <h2 className='mt-10 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0'>
-        Tasks to complete
-      </h2>
-      {/* <p className='leading-7 [&:not(:first-child)]:mt-6'>
-        All of the technologies were new to me, so I had to do some
-        preparation...
-      </p> */}
+      <H2>Tasks to complete</H2>
       <ul className='my-6 ml-6 list-disc [&>li]:mt-6'>
         <li className='font-semibold'>Choose category:</li>
         <p className='leading-7 [&:not(:first-child)]:mt-2'>
           First we needed to settle on a topic of similar objects to classify.
           The main factor that decided the topic was the availability of a
           dataset. We chose to classify different types of tomatoes since there
-          seemed to be sufficient types and data to chooose from. More
+          seemed to be sufficient types and data to choose from. More
           specifically we chose for the following types of tomatoes:
         </p>
         <ul className='list-decimal [&>li]:mt-2 [&>li]:ml-8 flex flex-col lg:flex-row'>
@@ -219,9 +212,9 @@ export default function JustPilsWebsitePage() {
         <li className='font-semibold'>Training the model:</li>
         <p className='leading-7 [&:not(:first-child)]:mt-2'>
           To train the model we used FastAI which is a high-level library built
-          on top of PyTorch. We used a pretrained model and fine-tuned it to our
-          dataset. We tried using the following pretrained models for transfer
-          learning with our dataset:
+          on top of PyTorch. We used a pre-trained model and fine-tuned it to
+          our dataset. We tried using the following pre-trained models for
+          transfer learning with our dataset:
         </p>
         <ul className='list-disc [&>li]:ml-8'>
           <li>Resnet-34</li>
@@ -232,16 +225,16 @@ export default function JustPilsWebsitePage() {
         <p className='leading-7 [&:not(:first-child)]:mt-2'>
           To train and test the models we used data augmentation to increase the
           amount of data we have to train. For the advanced techniques we
-          applied something called disciminative learning rates which adjusts
+          applied something called discriminative learning rates which adjusts
           the learning rate throughout the layers of the neural network to tweak
-          the pretrained model as good as possible to our data. We also used the
-          confusion matrix to see how well the model was performing. The model
-          was trained on Google Colab since it has free GPU compute available.
-          After testing the models we noticed 2 things: The Resnet-50 model was
-          performing the best and there were 2 classes that were performing
-          worse than the others. The classes were Celebrity tomato and Super
-          sweet 100 tomato, the reason being the similarities in shape and
-          color.
+          the pre-trained model as good as possible to our data. We also used
+          the confusion matrix to see how well the model was performing. The
+          model was trained on Google Colab since it has free GPU compute
+          available. After testing the models we noticed 2 things: The Resnet-50
+          model was performing the best and there were 2 classes that were
+          performing worse than the others. The classes were Celebrity tomato
+          and Super sweet 100 tomato, the reason being the similarities in shape
+          and color.
         </p>
         <li className='font-semibold'>
           Training a model using Google&apos;s Teachable Machine:
@@ -301,9 +294,7 @@ export default function JustPilsWebsitePage() {
           within Roboflow.
         </p>
       </ul>
-      <h3 className='scroll-m-20 text-2xl font-semibold tracking-tight'>
-        Report
-      </h3>
+      <H3>Report</H3>
       <p className='leading-7 [&:not(:first-child)]:mt-2'>
         In case you are interested in the full report of the project I would
         recommend you to check it out below.
@@ -313,18 +304,16 @@ export default function JustPilsWebsitePage() {
         title='Image classification AI model report'
         newTab
       />
-      <h2 className='mt-10 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0'>
-        What have I learned?
-      </h2>
-      <p className='leading-7 [&:not(:first-child)]:mt-6'>
-        I learned about the power of pretrained models and how to fine-tune
-        them. The amount of data you need for pretrained models is significantly
-        lower than training from scratch. I also learned how to create a project
-        on Google Cloud Plaftorm, create a dataset and train a model. I also had
-        to create an API and create credentials to access the model throught the
-        Google Python SDK. And yet again the power of Streamlit to create an
-        awesome application that integrates all of the models and makes it easy
-        to use.
+      <H2>What have I learned?</H2>
+      <p className='leading-7 [&:not(:first-child)]:mt-2'>
+        I learned about the power of pre-trained models and how to fine-tune
+        them. The amount of data you need for pre-trained models is
+        significantly lower than training from scratch. I also learned how to
+        create a project on Google Cloud Platform, create a dataset and train a
+        model. I also had to create an API and create credentials to access the
+        model through the Google Python SDK. And yet again the power of
+        Streamlit to create an awesome application that integrates all of the
+        models and makes it easy to use.
       </p>
       <NextAndPreviousProjectButton
         previousProject={{

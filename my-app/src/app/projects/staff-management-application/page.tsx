@@ -20,6 +20,12 @@ import { Image as ImageType } from '@/components/common/ImageGallery';
 import NextAndPreviousProjectButton from '../_components/NextAndPrevProjectButton';
 import StaffManagementHomePage from '../../../../public/staff-management-home-page.png';
 import ImageGallery from '@/components/common/ImageGallery';
+import { H2 } from '@/components/common/typography/H2';
+import { H1 } from '@/components/common/typography/H1';
+import { H3 } from '@/components/common/typography/H3';
+import Link from 'next/link';
+import Image from 'next/image';
+import StaffManagementLogo from '../../../../public/staff-management-logo.png';
 
 export const metadata = {
   title: 'Daan Michielsen | Staff Management Application',
@@ -73,20 +79,29 @@ const InvoiceImages = [InvoicesCreate, InvoicesFilter, InvoicesSuccess];
 export default function JustPilsWebsitePage() {
   return (
     <div className='mx-auto max-w-7xl px-6 pb-24 pt-16 sm:pt-16 lg:px-8 lg:pt-16 bg-white bg-opacity-90 dark:bg-primary-dark dark:bg-opacity-80'>
-      <h1 className='scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl'>
-        Project PHP | Staff Management Application
-      </h1>
+      <H1>Project PHP | Staff Management Application</H1>
 
       <div className='mt-4 flex space-y-2 flex-col md:flex-row text-gray-500 dark:text-slate-400 gap-x-4'>
         <TechnologyGallery technologies={technologies} />
+        <Link
+          href={'https://justpils.netlify.app/'}
+          target='_blank'
+          className='p-2 rounded-full flex items-center gap-x-2 transition-all hover:bg-slate-300 bg-slate-200 text-slate-800'
+        >
+          <Image
+            src={StaffManagementLogo}
+            height={30}
+            width={30}
+            alt='Staff management application logo'
+          />{' '}
+          Staff management application
+        </Link>
       </div>
 
       <ImageGallery images={homePageImage} />
 
-      <h2 className='mt-10 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0'>
-        Background
-      </h2>
-      <p className='leading-7 [&:not(:first-child)]:mt-6'>
+      <H2>Background</H2>
+      <p className='leading-7 [&:not(:first-child)]:mt-2'>
         There is an elderly couple that has a lot of staff members and an au
         pair helping them out to do tasks around the house as well as schedule
         visits for their grand child. Doing all of these things can be a bit
@@ -94,28 +109,24 @@ export default function JustPilsWebsitePage() {
         with an application that can help manage all of these tasks within a
         user-friendly environment.
       </p>
-      <h3 className='scroll-m-20 text-2xl font-semibold tracking-tight'>
-        Preparation
-      </h3>
-      <p className='leading-7 [&:not(:first-child)]:mt-6'>
+      <H3>Preparation</H3>
+      <p className='leading-7 [&:not(:first-child)]:mt-2'>
         The blueprint for this application was already made by other students
         during the course &quot;Requirements Analysis&quot;. We just had to take
         all of the different interpretations and put them together to decide how
         we want to achieve the goal. With we I mean the team of 5 students.{' '}
         <br /> All of us took the course &quot;Web Development in PHP&quot;
       </p>
-      <h2 className='mt-10 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0'>
-        Requirements
-      </h2>
-      <p className='leading-7 [&:not(:first-child)]:mt-6'>
+      <H2>Requirements</H2>
+      <p className='leading-7 [&:not(:first-child)]:mt-2'>
         The requirements had some priotity levels based on the Moscow principle.
       </p>
       <div className='flex flex-row justify-between'>
         <div>
-          <h4 className='scroll-m-20 text-xl font-semibold tracking-tight'>
+          <h4 className='scroll-m-20 text-xl font-semibold tracking-tight mt-6'>
             Must have
           </h4>
-          <ul className='my-6 ml-6 list-disc [&>li]:mt-2'>
+          <ul className='mb-6 ml-6 list-disc [&>li]:mt-2'>
             <li className='font-semibold'>Authentication</li>
             <li className='font-semibold'>Manage users</li>
             <li className='font-semibold'>User roles</li>
@@ -127,34 +138,30 @@ export default function JustPilsWebsitePage() {
           </ul>
         </div>
         <div>
-          <h4 className='scroll-m-20 text-xl font-semibold tracking-tight'>
+          <h4 className='scroll-m-20 text-xl font-semibold tracking-tight mt-6'>
             Should have
           </h4>
-          <ul className='my-6 ml-6 list-disc [&>li]:mt-2'>
+          <ul className='mb-6 ml-6 list-disc [&>li]:mt-2'>
             <li className='font-semibold'>User manual</li>
             <li className='font-semibold'>Tags</li>
           </ul>
         </div>
         <div>
-          <h4 className='scroll-m-20 text-xl font-semibold tracking-tight'>
+          <h4 className='scroll-m-20 text-xl font-semibold tracking-tight mt-6'>
             Could have
           </h4>
-          <ul className='my-6 ml-6 list-disc [&>li]:mt-2'>
+          <ul className='mb-6 ml-6 list-disc [&>li]:mt-2'>
             <li className='font-semibold'>Customization (colors, ...)</li>
           </ul>
         </div>
       </div>
-      <h2 className='mt-10 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0'>
-        Contribution
-      </h2>
-      <p className='leading-7 [&:not(:first-child)]:mt-6'>
+      <H2>Contribution</H2>
+      <p className='leading-7 [&:not(:first-child)]:mt-2'>
         I contributed a moderate amount to the project. I was responsible for
         the following parts:
       </p>
-      <h3 className='scroll-m-20 text-2xl font-semibold tracking-tight'>
-        Manage absences page
-      </h3>
-      <p className='leading-7 [&:not(:first-child)]:mt-6 font-normal'>
+      <H3>Manage absences page</H3>
+      <p className='leading-7 [&:not(:first-child)]:mt-2'>
         On this page the user could declare absences for a certain period. The
         admin would then be able to see all of the absences to take them into
         account for planning visits, tasks, ... It also contains a filter pane
@@ -164,10 +171,8 @@ export default function JustPilsWebsitePage() {
       <div className='w-5/6 my-2 flex mx-auto'>
         <PageCarousel images={absenceImages} />
       </div>
-      <h3 className='scroll-m-20 text-2xl font-semibold tracking-tight'>
-        Manage invoices page
-      </h3>
-      <p className='leading-7 [&:not(:first-child)]:mt-6 font-normal'>
+      <H3>Manage invoices page</H3>
+      <p className='leading-7 [&:not(:first-child)]:mt-2 font-normal'>
         On this page a user could submit invoices. The admin would then be able
         to repay the user that submitted the invoice fot the work they did. The
         user could also see the status of the invoice. The admin could also see
@@ -178,18 +183,14 @@ export default function JustPilsWebsitePage() {
       <div className='w-5/6 my-2 flex mx-auto'>
         <PageCarousel images={InvoiceImages} />
       </div>
-      <h3 className='scroll-m-20 text-2xl font-semibold tracking-tight'>
-        Layout
-      </h3>
-      <p className='leading-7 [&:not(:first-child)]:mt-6 font-normal'>
+      <H3>Layout</H3>
+      <p className='leading-7 [&:not(:first-child)]:mt-2 font-normal'>
         I worked on the footer and the navbar as well as some of the reused
         components like buttons, inputs, ...
       </p>
 
-      <h2 className='mt-10 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0'>
-        What have I learned?
-      </h2>
-      <p className='leading-7 [&:not(:first-child)]:mt-6'>
+      <H2>What have I learned?</H2>
+      <p className='leading-7 [&:not(:first-child)]:mt-2'>
         I will start of by saying that I&apos;ve learned a lot during this
         project, including negative things. The groups of this project were made
         based on marks on the &quot;Web Development in PHP&quot; course. I
@@ -206,6 +207,21 @@ export default function JustPilsWebsitePage() {
         first time we had to interact with a real client. Adapting to feedback
         and making proposals based on that feedback was a new experience for me.
       </p>
+      <div className='mt-4 flex space-y-2 flex-col md:flex-row text-gray-500 dark:text-slate-400 gap-x-4'>
+        <Link
+          href={'https://justpils.netlify.app/'}
+          target='_blank'
+          className='p-2 rounded-full flex items-center gap-x-2 transition-all hover:bg-slate-300 bg-slate-200 text-slate-800'
+        >
+          <Image
+            src={StaffManagementLogo}
+            height={30}
+            width={30}
+            alt='Staff management application logo'
+          />{' '}
+          Staff management application
+        </Link>
+      </div>
       <NextAndPreviousProjectButton
         nextProject={{
           title: 'Justpils website',

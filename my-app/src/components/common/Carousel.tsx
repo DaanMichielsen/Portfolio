@@ -18,7 +18,7 @@ export default function PageCarousel({
 }) {
   return (
     <Carousel
-      className='my-8'
+      className='my-8 shadow-lg rounded-lg'
       opts={{
         align: 'center',
         loop: true,
@@ -32,7 +32,7 @@ export default function PageCarousel({
       <CarouselContent>
         {images.map((image, index) => (
           <CarouselItem key={index}>
-            <Image src={image} alt={`image-${index}`} className='rounded-md' />
+            <Image src={image} alt={`image-${index}`} className='rounded-lg' />
           </CarouselItem>
         ))}
       </CarouselContent>

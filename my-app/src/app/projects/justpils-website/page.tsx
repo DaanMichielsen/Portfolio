@@ -29,6 +29,8 @@ export const metadata = {
 import { Image as ImageType } from '@/components/common/ImageGallery';
 import BackToTopButton from './_components/BackToTopButton';
 import TechnologyGallery from '@/components/common/TechnologyGallery';
+import { H1 } from '@/components/common/typography/H1';
+import { H2 } from '@/components/common/typography/H2';
 
 const imagesPages: ImageType[] = [
   { src: JustPilsOrigin, name: 'Justpils origin page' },
@@ -87,9 +89,7 @@ const homePageImage: ImageType[] = [
 export default function JustPilsWebsitePage() {
   return (
     <div className='mx-auto max-w-7xl px-6 pb-24 pt-16 sm:pt-16 lg:px-8 lg:pt-16 bg-white bg-opacity-90 dark:bg-primary-dark dark:bg-opacity-80'>
-      <h1 className='scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl'>
-        Webdesign Advanced | JustPils Website
-      </h1>
+      <H1>Webdesign Advanced | JustPils Website</H1>
 
       <div className='mt-4 flex space-y-2 flex-col md:flex-row text-gray-500 dark:text-slate-400 gap-x-4'>
         <TechnologyGallery technologies={technologies} />
@@ -105,20 +105,16 @@ export default function JustPilsWebsitePage() {
 
       <ImageGallery images={homePageImage} />
 
-      <h2 className='mt-10 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0'>
-        Description
-      </h2>
-      <p className='leading-7 [&:not(:first-child)]:mt-6'>
+      <H2>Description</H2>
+      <p className='leading-7 [&:not(:first-child)]:mt-2'>
         The goal of the project was to create a website in a team using version
         control and the basics of web design. The website had to be responsive
         and had to be made with HTML(Bootstrap 5), CSS(SASS) and JavaScript. To
         set up te project we also learned how to use Gulp and npm. For the
         hosting we had to use Netlify.
       </p>
-      <h2 className='mt-10 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0'>
-        Tasks to complete
-      </h2>
-      <p className='leading-7 [&:not(:first-child)]:mt-6'>
+      <H2>Tasks to complete</H2>
+      <p className='leading-7 [&:not(:first-child)]:mt-2'>
         The first task for our group of 4 was to come up with a subject for the
         website. We ended up choosing beer as our subject.The group had to come
         up with a color palette, a logo and a name for the website. Each student
@@ -157,7 +153,7 @@ export default function JustPilsWebsitePage() {
           button for the origin page and a section with national beer dates in
           different countries with a countdown to the next date for the
           ingredients page. The back to top button is also available on this
-          page :) But as you can probably tell, the behaviour is not flawless.
+          page :) But as you can probably tell, the behavior is not flawless.
         </p>
         <div>
           <ImageGallery images={imagesJS} />
@@ -169,17 +165,25 @@ export default function JustPilsWebsitePage() {
           factors into account :(
         </p>
       </ul>
-      <h2 className='mt-10 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0'>
-        What have I learned?
-      </h2>
-      <p className='leading-7 [&:not(:first-child)]:mt-6'>
+      <H2>What have I learned?</H2>
+      <p className='leading-7 [&:not(:first-child)]:mt-2'>
         I learned that there is more than just plain HTML, CSS and JavaScript. I
         also had to work with version control for the first time in a team of 4
-        students which was a bit of a challange at first. The use of Netlify was
+        students which was a bit of a challenge at first. The use of Netlify was
         also new to me since I had only hosted a static page on a normal web
         server before and never used a hosting platform that takes care of all
         of that.
       </p>
+      <div className='mt-4 flex space-y-2 flex-col md:flex-row text-gray-500 dark:text-slate-400 gap-x-4'>
+        <Link
+          href={'https://justpils.netlify.app/'}
+          target='_blank'
+          className='p-2 rounded-full flex items-center gap-x-2 transition-all hover:bg-slate-300 bg-slate-200 text-slate-800'
+        >
+          <Image src={JustPilsLogo} height={30} width={30} alt='Instagram' />{' '}
+          Justpils Website
+        </Link>
+      </div>
       <BackToTopButton />
       <NextAndPreviousProjectButton
         nextProject={{

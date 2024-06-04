@@ -47,6 +47,8 @@ import Energy from '../../public/ismart-energy.svg';
 import { Project } from './projects/page';
 import { Badge } from '@/components/ui/badge';
 import TypeWriter from './_components/TypeWriter';
+import { H1 } from '@/components/common/typography/H1';
+import { H2 } from '@/components/common/typography/H2';
 
 const projects: Project[] = [
   {
@@ -158,9 +160,9 @@ export default function Home() {
         <div className='container px-4 md:px-6 grid gap-8 lg:grid-cols-2 lg:gap-16'>
           <div className='flex flex-col justify-center space-y-4'>
             <div className='space-y-2'>
-              <h1 className='text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl xl:text-6xl/none'>
+              <H1 className='text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl xl:text-6xl/none'>
                 Welcome to my Portfolio
-              </h1>
+              </H1>
               <div className='text-xl font-bold tracking-tighter sm:text-2xl md:text-3xl xl:text-4xl/none flex gap-3'>
                 <span>I am</span>{' '}
                 <span className='text-blue-500'>
@@ -203,9 +205,9 @@ export default function Home() {
         <div className='container px-4 md:px-6 space-y-12'>
           <div className='flex flex-col items-center justify-center space-y-4 text-center'>
             <div className='space-y-2'>
-              <h2 className='text-3xl font-bold tracking-tighter sm:text-5xl'>
+              <H2 className='text-3xl font-bold tracking-tighter sm:text-5xl'>
                 Featured Projects
-              </h2>
+              </H2>
               <p className='max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-slate-300'>
                 Check out some of my best work and see what I can do.
               </p>

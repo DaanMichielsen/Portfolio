@@ -22,6 +22,8 @@ import { useEffect, useState } from 'react';
 import { TagIcon, FilterIcon } from 'lucide-react';
 import { ProjectTag } from '@/app/projects/page';
 import { Badge } from '../ui/badge';
+import { H1 } from '../common/typography/H1';
+import { H2 } from '../common/typography/H2';
 
 const filterOptions: ProjectTag[] = [
   'AI/ML/DL',
@@ -79,9 +81,7 @@ export function ProjectsCarousel({ projects }: { projects: Project[] }) {
     });
   return (
     <main>
-      <h1 className='scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl'>
-        Projects I have worked on
-      </h1>
+      <H1>Projects I have worked on</H1>
       <p className='leading-7 [&:not(:first-child)]:mt-6 text-lg mb-8'>
         These are the projects that I am proud of and stuck with me the most
         throughout my career in software development. I have worked on many more
@@ -184,8 +184,10 @@ export function ProjectsCarousel({ projects }: { projects: Project[] }) {
               </div>
               <Link href={project.href}>
                 <div className='p-4 md:p-6 hover:bg-gray-100 dark:hover:bg-slate-900 transition-colors h-full'>
-                  <h2 className='text-xl font-bold mb-2'>{project.title}</h2>
-                  <div className='flex items-center flex-wrap gap-2 text-sm'>
+                  <H2 className='text-xl font-bold mb-2 border-none'>
+                    {project.title}
+                  </H2>
+                  <div className='flex items-center flex-wrap gap-2 text-sm mb-2'>
                     {project.tags.map((tag, index: number) => (
                       <Badge
                         key={index}

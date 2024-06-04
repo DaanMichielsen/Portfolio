@@ -30,6 +30,10 @@ import ConfusionMatrix from '../../../../public/confusion-matrix.png';
 import SkyGuard from '../../../../public/SkyGuard.png';
 import TechnologyGallery from '@/components/common/TechnologyGallery';
 import NextAndPreviousProjectButton from '../_components/NextAndPrevProjectButton';
+import { H1 } from '@/components/common/typography/H1';
+import { H2 } from '@/components/common/typography/H2';
+import { H3 } from '@/components/common/typography/H3';
+import { H4 } from '@/components/common/typography/H4';
 
 export const metadata = {
   title: 'Daan Michielsen | Yellow nutsedge detection application',
@@ -61,7 +65,7 @@ function Vito() {
               </a>
             </h4>
             <p className='text-sm'>
-              Flamish Institution for Technological Research - Turning earth
+              Flemish Institution for Technological Research - Turning earth
               observation data into practical answers
             </p>
           </div>
@@ -175,9 +179,7 @@ const technologies: ImageType[] = [
 export default function JustPilsWebsitePage() {
   return (
     <div className='mx-auto max-w-7xl px-6 pb-24 pt-16 sm:pt-16 lg:px-8 lg:pt-16 bg-white bg-opacity-90 dark:bg-primary-dark dark:bg-opacity-80'>
-      <h1 className='scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl'>
-        Project 4.0 | Yellow nutsedge detection application
-      </h1>
+      <H1>Project 4.0 | Yellow nutsedge detection application</H1>
 
       <div className='mt-4 flex space-y-2 flex-col md:flex-row text-gray-500 dark:text-slate-400 gap-x-4'>
         <TechnologyGallery technologies={technologies} />
@@ -195,13 +197,8 @@ export default function JustPilsWebsitePage() {
         </div>
       </div>
 
-      <h2
-        id='description'
-        className='mt-10 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0'
-      >
-        Description
-      </h2>
-      <p className='leading-7 [&:not(:first-child)]:mt-6'>
+      <H2 id='description'>Description</H2>
+      <p className='leading-7 [&:not(:first-child)]:mt-2'>
         This project was a group project in which we had to create a solution
         for a client. The groups were formed with different branches of our
         IT-Factory. There was a distribution of 3 Application Development
@@ -212,13 +209,8 @@ export default function JustPilsWebsitePage() {
         problem we could solve using their data in the form of images taken with
         a drone.
       </p>
-      <h3
-        id='the-problem'
-        className='scroll-m-20 text-2xl font-semibold tracking-tight mt-8'
-      >
-        The problem
-      </h3>
-      <p className='leading-7 [&:not(:first-child)]:mt-6'>
+      <H3 id='the-problem'>The problem</H3>
+      <p className='leading-7 [&:not(:first-child)]:2'>
         In Belgium, there has been a problem that is arising in agriculture
         where the fields are containing more and more yellow nutsedge. This is a
         problem because the nutsedge is a weed that is hard to get rid of and it
@@ -229,13 +221,8 @@ export default function JustPilsWebsitePage() {
         of the ground since the moving of the soil could help the weed to spread
         even faster.
       </p>
-      <h3
-        id='the-solution'
-        className='scroll-m-20 text-2xl font-semibold tracking-tight mt-8'
-      >
-        The solution
-      </h3>
-      <p className='leading-7 [&:not(:first-child)]:mt-6'>
+      <H3 id='the-solution'>The solution</H3>
+      <p className='leading-7 [&:not(:first-child)]:mt-2'>
         The solution they came up with was to use drones to fly over the fields
         and take images of the fields to then process the images to detect the
         yellow nutsedge. The images would be processed by a machine learning
@@ -245,26 +232,21 @@ export default function JustPilsWebsitePage() {
         the sense that he can prove that certain parts of the fields contain no
         nutsedge and that he can still plant crops there.
       </p>
-      <h2
-        id='tasks-to-complete'
-        className='mt-10 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0'
-      >
-        Tasks to complete
-      </h2>
-      <p className='leading-7 [&:not(:first-child)]:mt-6'>
+      <H2 id='tasks-to-complete'>Tasks to complete</H2>
+      <p className='leading-7 [&:not(:first-child)]:mt-2'>
         The project was divided into 3 parts. The first phases
       </p>
-      <ul className='list-decimal [&>li]:ml-8 [&>li]:mt-4 [&>li]:font-semibold'>
+      <ul className='list-decimal [&>li]:ml-8 [&>li]:mt-4 [&>li]:font-semibold [&>p]:ml-8'>
         <li>Preparation phase</li>
         <p className='leading-7 [&:not(:first-child)]:mt-2'>
-          During this phase we started of by makeing an identity for our team by
+          During this phase we started of by making an identity for our team by
           choosing a name and branding. Since our solution aims to protect the
           crops by use of images taken from the sky we settled on SkyGuard. The
           logo we chose can be found below. The rest of the time was spent on
           the making of the project plan, with focus on the{' '}
           <b>Who? What? Why?</b>. We also presented the plan to the other teams
           and Project Coach for feedback. With all the best parts of each
-          presentation we creaed one final presentation to deliver to the
+          presentation we created one final presentation to deliver to the
           client. The making of this was done one a lesson block of 4 hours,
           each Monday for a couple of weeks.
         </p>
@@ -281,11 +263,14 @@ export default function JustPilsWebsitePage() {
           this was done one a lesson block of 4 hours, each Monday for a couple
           of weeks. You can checkout the full report of the concept phase below.
         </p>
-        <PDFModal
-          src='/pdf/report-concept-phase.pdf'
-          title='Concept Phase Report (Dutch)'
-          newTab
-        />
+        <div className='ml-8 mt-2 mb-6'>
+          <PDFModal
+            src='/pdf/report-concept-phase.pdf'
+            title='Concept Phase Report (Dutch)'
+            newTab
+          />
+        </div>
+
         <p className='leading-7 [&:not(:first-child)]:mt-2'>
           During the concept we had to create something called the &quot;Product
           Breakdown Structure&quot; (PBS), which contains all the things we need
@@ -303,12 +288,7 @@ export default function JustPilsWebsitePage() {
           full-time weeks of 5 days.
         </p>
       </ul>
-      <h2
-        id='realisation-phase'
-        className='scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0'
-      >
-        Realisation phase
-      </h2>
+      <H2 id='realisation-phase'>Realisation phase</H2>
       <p className='leading-7 [&:not(:first-child)]:mt-2'>
         The realisation phase was the time to shine and make it work over a
         <b> period of 3 weeks</b>, where each week consisted of{' '}
@@ -325,18 +305,15 @@ export default function JustPilsWebsitePage() {
         </b>{' '}
         to discuss what went well and what could be improved.
       </p>
-      <h3
-        id='my-contribution-to-the-project'
-        className='scroll-m-20 text-2xl font-semibold tracking-tight mt-4'
-      >
+      <H3 id='my-contribution-to-the-project'>
         My contribution to the project
-      </h3>
-      <h4
-        id='choosing-the-model'
-        className='scroll-m-20 text-xl font-semibold tracking-tight mt-4'
-      >
-        Choosing the model
-      </h4>
+      </H3>
+      <p className='leading-7 [&:not(:first-child)]:mt-2'>
+        Since I am the was the only AI student in the group I was responsible
+        for all AI related things. I tried to help out in other departments as
+        well as those are great opportunities to learn.
+      </p>
+      <H4 id='choosing-the-model'>Choosing the model</H4>
       <p className='leading-7 [&:not(:first-child)]:mt-2'>
         During the concept phase I was responsible for looking into the options
         for the models that we could use to detect the nutsedge. Where the other
@@ -358,16 +335,13 @@ export default function JustPilsWebsitePage() {
         <li>Split image into 77 smaller images</li>
         <li>Extract location and rotation from TIFF image</li>
         <li>Put images through AI model</li>
-        <li>Store resulsts in database</li>
+        <li>Store results in database</li>
         <li>Visualize results on heatmap</li>
       </ul>
       <ImageGallery images={AIModelWorkingImages} />
-      <h4
-        id='orchestrating-the-data-pipeline'
-        className='scroll-m-20 text-xl font-semibold tracking-tight mt-4'
-      >
+      <H4 id='orchestrating-the-data-pipeline'>
         Orchestrating the data pipeline
-      </h4>
+      </H4>
       <p className='leading-7 [&:not(:first-child)]:mt-2'>
         The amount and the size of the images we got from Vito was too much to
         just wing it and start labeling, so we needed a proper strategy to
@@ -390,10 +364,10 @@ export default function JustPilsWebsitePage() {
         <li>Ask the user for the label of the image</li>
       </ul>
       <p className='leading-7 [&:not(:first-child)]:mt-2'>
-        To make it easier to understand, there is a demo below of how the tool
-        would work.
+        To make it easier to understand, you can checkout the demo below to see
+        how the tool works:
       </p>
-      <div className='max-w-5/6 w-5/6 mx-auto'>
+      <div className='max-w-5/6 w-5/6 mx-auto my-4'>
         <div className='overflow-hidden h-0 pb-[56.25%] relative'>
           <iframe
             className='aspect-video w-full'
@@ -404,7 +378,7 @@ export default function JustPilsWebsitePage() {
           ></iframe>
         </div>
       </div>
-      <p className='leading-7 [&:not(:first-child)]:mt-2'>
+      <p className='leading-7 [&:not(:first-child)]:mt-8'>
         The result of the labeling would be put into 2 folders, one for the true
         cases and one for the false cases. The images would be put into a folder
         with the same name as the label. This way we could easily use the images
@@ -416,19 +390,14 @@ export default function JustPilsWebsitePage() {
       <ImageGallery images={FieldImages} />
 
       <ImageGallery images={labelingImages} />
-      <h4
-        id='training-the-model'
-        className='scroll-m-20 text-xl font-semibold tracking-tight mt-4'
-      >
-        Training the model
-      </h4>
+      <H4 id='training-the-model'>Training the model</H4>
       <p className='leading-7 [&:not(:first-child)]:mt-2'>
         To train the model we combined all labeled data we had and put it into
         one dataset with 2 folders of the 2 labels. We trained the model using a
         ResNet-50 model with transfer leaning by using the package FastAI in
         Python on Google Colab so we can take advantage of a GPU since this
         speeds up the training process by a lot. After training the model and
-        testing it we pretty wuickly realised that using alle images together
+        testing it we pretty quickly realized that using alle images together
         was not a good idea. This is because we have 2 different categories of
         images so to speak: half grown and recently planted. So we adapted our
         strategy and trained 2 models, one for each category. Our final models
@@ -509,12 +478,7 @@ export default function JustPilsWebsitePage() {
         all fields are different and some of the images are hard to label as a
         human.
       </p>
-      <h4
-        id='api-wrapper-for-the-model'
-        className='scroll-m-20 text-xl font-semibold tracking-tight mt-4'
-      >
-        API wrapper for the model
-      </h4>
+      <H4 id='api-wrapper-for-the-model'>API wrapper for the model</H4>
       <p className='leading-7 [&:not(:first-child)]:mt-2'>
         In order to use the model from an external application in Angular we
         would want to use an API wrapper for the model so we can send a request
@@ -523,12 +487,7 @@ export default function JustPilsWebsitePage() {
         responsible for creating the API, we used Flask for this and we put the
         API behind a waitress server so we could easily run multiple instances.
       </p>
-      <h4
-        id='containerize-the-model'
-        className='scroll-m-20 text-xl font-semibold tracking-tight mt-4'
-      >
-        Containerize API
-      </h4>
+      <H4 id='containerize-the-model'>Containerize API</H4>
       <p className='leading-7 [&:not(:first-child)]:mt-2'>
         In order to have a scalable solution we would want to containerize the
         API so we can spin up as many containers as we need when demand is high.
@@ -541,7 +500,7 @@ export default function JustPilsWebsitePage() {
         all. Below is a video of the API working in an AWS ECS instance behind a
         load balancer.
       </p>
-      <div className='max-w-5/6 w-5/6 mx-auto'>
+      <div className='max-w-5/6 w-5/6 mx-auto my-4'>
         <div className='overflow-hidden h-0 pb-[56.25%] relative'>
           <iframe
             className='aspect-video w-full'
@@ -555,28 +514,19 @@ export default function JustPilsWebsitePage() {
       <p className='leading-7 [&:not(:first-child)]:mt-2'>
         In a perfect world all of our code would be tested, built and pushed to
         a registry in AWS and then deployed to an ECS instance, on every push to
-        the productuon environment but as I said before, the learner lab was
-        restricting is quite a lot. But since we were dealing with a learner lab
+        the production environment but as I said before, the learner lab was
+        restricting us quite a lot. But since we were dealing with a learner lab
         we could not do this. We did however have a pipeline in GitLab that
         would build the Docker image and push it to the registry.
       </p>
-      <h4
-        id='promotion-video'
-        className='scroll-m-20 text-xl font-semibold tracking-tight mt-4'
-      >
-        Promotion video
-      </h4>
+      <H4 id='promotion-video'>Promotion video</H4>
       <p className='leading-7 [&:not(:first-child)]:mt-2'>
         And last but not least we had to create a promotion video for the
         product. This was done using free AI tools such as ChatGPT and Kapwing
-        which makes it pretty easy to create a basic video for free.
+        which makes it pretty easy to create a basic video for free, including:
+        sub titles, stock footage and voiceover.
       </p>
-      <h2
-        id='what-have-i-learned'
-        className='mt-10 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0'
-      >
-        What have I learned?
-      </h2>
+      <H2 id='what-have-i-learned'>What have I learned?</H2>
       <p className='leading-7 [&:not(:first-child)]:mt-2'>
         I have learned a lot during this project. I have learned how to properly
         apply SCRUM and agile when working in team. I got more experience
@@ -584,7 +534,7 @@ export default function JustPilsWebsitePage() {
         to work with a team that has different backgrounds and how to
         communicate with them. Working with a team that has different
         backgrounds is really eyeopening and it shows the lack of knowledge
-        about eachothers field. This is something that I will take with me in
+        about each others field. This is something that I will take with me in
         the future. Planning is also something that I have learned a lot about
         since every task needed to be planned and estimated for us to fill our
         sprint backlog.

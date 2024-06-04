@@ -30,6 +30,8 @@ import ImagesLoading from '@/components/loading/ImagesLoading';
 import PDFModal from '@/components/common/PDFModal';
 import Image from 'next/image';
 import Daan from '../../../public/daan.jpg';
+import { H1 } from '@/components/common/typography/H1';
+import { H2 } from '@/components/common/typography/H2';
 
 export const metadata = {
   title: 'Daan Michielsen | About me',
@@ -165,10 +167,10 @@ export default async function AboutMe() {
 
   return (
     <div className='mx-auto max-w-7xl px-6 pb-24 pt-16 sm:pt-16 lg:px-8 lg:pt-16 bg-white bg-opacity-90 dark:bg-primary-dark dark:bg-opacity-80'>
-      <h1 className='scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl'>
+      <H1 className='scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl'>
         Personal information
-      </h1>
-      <div className='container px-4 md:px-6 grid gap-8 lg:grid-cols-[3fr_1fr] lg:gap-16 mt-8 items-center'>
+      </H1>
+      <div className='container px-4 md:px-6 grid gap-8 lg:grid-cols-[3fr_1fr] lg:gap-16 items-center'>
         <div>
           <p className='leading-7 [&:not(:first-child)]:mt-6'>
             My name is Daan and I am a student in Applied Computer Science at
@@ -210,8 +212,8 @@ export default async function AboutMe() {
               </HoverCardContent>
             </HoverCard>{' '}
             in Geel (Belgium). This page serves as a place where I can express
-            myself and my work. I hope you enjoy your stay. I am passionate
-            about technology and I want to pursue a career in tech.
+            myself and my work. I am passionate about technology and I want to
+            pursue a career in tech. I hope you enjoy your stay.
           </p>
           <p className='leading-7 [&:not(:first-child)]:mt-6'>
             In case you want to know more about me, you can check out my CV
@@ -241,7 +243,7 @@ export default async function AboutMe() {
         />
       </div>
 
-      <div className='grid grid-cols-1 gap-8 mt-12'>
+      <div className='grid grid-cols-1 gap-8 mt-8'>
         <div className='w-full'>
           <Card>
             <CardHeader>
@@ -337,9 +339,7 @@ export default async function AboutMe() {
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <h2 className='scroll-m-20 border-b pb-2 text-xl font-semibold tracking-tight first:mt-0 my-4'>
-                Favorite technologies
-              </h2>
+              <H2>Favorite technologies</H2>
               <TooltipProvider>
                 {hardSkills.map((skill, index) => (
                   <div key={index}>
@@ -367,9 +367,7 @@ export default async function AboutMe() {
                   </div>
                 ))}
               </TooltipProvider>
-              <h2 className='scroll-m-20 border-b pb-2 text-xl font-semibold tracking-tight first:mt-0 my-4'>
-                All technnologies I have worked with
-              </h2>
+              <H2>All technnologies I have worked with</H2>
               <Suspense fallback={<ImagesLoading />}>
                 <ImageGallery imagePaths={imagePaths}></ImageGallery>
               </Suspense>

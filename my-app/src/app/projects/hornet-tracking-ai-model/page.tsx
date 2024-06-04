@@ -27,6 +27,8 @@ import PDFModal from '@/components/common/PDFModal';
 import TechnologyGallery from '@/components/common/TechnologyGallery';
 import NextAndPreviousProjectButton from '../_components/NextAndPrevProjectButton';
 import TrackingResult from '../../../../public/tracking-result.gif';
+import { H1 } from '@/components/common/typography/H1';
+import { H2 } from '@/components/common/typography/H2';
 
 const labelCarousel: ImageType[] = [
   {
@@ -119,9 +121,7 @@ const technologies: ImageType[] = [
 export default function HornetTrackingAiModelPage() {
   return (
     <div className='mx-auto max-w-7xl px-6 pb-24 pt-16 sm:pt-16 lg:px-8 lg:pt-16 bg-white bg-opacity-90 dark:bg-primary-dark dark:bg-opacity-80'>
-      <h1 className='scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl'>
-        Artificial Intelligence | Hornet tracking AI model
-      </h1>
+      <H1>Artificial Intelligence | Hornet tracking AI model</H1>
 
       <div className='mt-4 flex space-y-2 flex-col md:flex-row text-gray-500 dark:text-slate-400 gap-x-4'>
         <TechnologyGallery technologies={technologies} />
@@ -144,9 +144,7 @@ export default function HornetTrackingAiModelPage() {
 
       <ImageGallery images={trackingGif} />
 
-      <h2 className='mt-10 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0'>
-        Description
-      </h2>
+      <H2>Description</H2>
       <p className='leading-7 [&:not(:first-child)]:mt-2'>
         The project all starts with a little story. Our teacher told us that
         there was a beekeeper who was having issues with hornets feasting on his
@@ -158,21 +156,19 @@ export default function HornetTrackingAiModelPage() {
         would be that the camera can find the hornet and track the motion of it,
         so that is what we did. With we, I mean me and my 2 teammates.
       </p>
-      <h2 className='mt-10 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0'>
-        Tasks to complete
-      </h2>
-      <ul className='my-6 ml-6 list-disc [&>li]:mt-6'>
+      <H2>Tasks to complete</H2>
+      <ul className='my-6 ml-6 list-disc [&>li]:mt-2'>
         <li className='font-semibold'>Gather data to train:</li>
         <p className='leading-7 [&:not(:first-child)]:mt-2'>
           The first task we had to complete was to gathering images of Asian
-          hornets as these we&apos;re the type of hornet we would be targetting.
+          hornets as these we&apos;re the type of hornet we would be targeting.
           We gathered images through web scraping using Selenium and Python and
           through YouTube videos. Roboflow has the ability to split up videos
           into frames which we used to gather more data.
         </p>
         <li className='font-semibold'>Labeling & training:</li>
         <p className='leading-7 [&:not(:first-child)]:mt-2'>
-          All of this data would have to be labled since we need to train a
+          All of this data would have to be labeled since we need to train a
           model using Yolov5 which is an object detection model. With labeling
           data I mean the following:
         </p>
@@ -197,7 +193,7 @@ export default function HornetTrackingAiModelPage() {
           images with the object we want to detect in it. The model will learn
           the features of the object and will be able to detect it in other
           images as well. The model was trained on Google Colab which is a free
-          platform that allows you to utilize a powerfull graphics card to train
+          platform that allows you to utilize a powerful graphics card to train
           your models. The package used for training the model is FastAI.
         </p>
 
@@ -213,15 +209,15 @@ export default function HornetTrackingAiModelPage() {
         <li className='font-semibold'>Object tracking(extra):</li>
         <p className='leading-7 [&:not(:first-child)]:mt-2'>
           In the ideal scenario, the model would be able to track the hornet,
-          that way we could even apply calculation based on the direction of the
-          camera to predict the location of the nest so it can be removed. Doing
-          this did not require a new model as Yolo is already capable of
+          that way we could even apply calculations based on the direction of
+          the camera to predict the location of the nest so it can be removed.
+          Doing this did not require a new model as Yolo is already capable of
           detecting them. All we have to do is put the detection of video in
           sequence and apply some mathematical calculations to track the center
-          of the bounding boxes over time and draw a line that correpsonds to
+          of the bounding boxes over time and draw a line that corresponds to
           the center.
         </p>
-        <div className='max-w-5/6 w-5/6 mx-auto'>
+        <div className='max-w-5/6 w-5/6 mx-auto my-4'>
           <div className='overflow-hidden h-0 pb-[56.25%] relative'>
             <iframe
               className='aspect-video w-full'
@@ -239,10 +235,10 @@ export default function HornetTrackingAiModelPage() {
           would be able to choose for detection or tracking. The results would
           be downloadable as well. There were also some more options for colors
           to choose from or confidence thresholds to set. Hosting the
-          application was not possible due to the complexicty and the resource
+          application was not possible due to the complexity and the resource
           requirements of the model.
         </p>
-        <div className='max-w-5/6 w-5/6 mx-auto'>
+        <div className='max-w-5/6 w-5/6 mx-auto my-4'>
           <div className='overflow-hidden h-0 pb-[56.25%] relative'>
             <iframe
               className='aspect-video w-full'
@@ -256,7 +252,7 @@ export default function HornetTrackingAiModelPage() {
         <li className='font-semibold'>Roboflow model(extra):</li>
         <p className='leading-7 [&:not(:first-child)]:mt-2'>
           We also trained a model on Roboflow which was already housing our
-          lebeled dataset. Roboflow lets you use 3 free credits to train models
+          labeled dataset. Roboflow lets you use 3 free credits to train models
           and we had the chance to compare it to our model. I won&apos;t go too
           much into detail. If you are interested in the code you can find it on
           GitHub. You can also read the report below.
@@ -267,9 +263,7 @@ export default function HornetTrackingAiModelPage() {
           newTab={true}
         />
       </ul>
-      <h2 className='mt-10 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0'>
-        What have I learned?
-      </h2>
+      <H2>What have I learned?</H2>
       <p className='leading-7 [&:not(:first-child)]:mt-2'>
         The thing that stands out the most is the importance of data. The more
         and the better the data, the better the model. We had some struggles

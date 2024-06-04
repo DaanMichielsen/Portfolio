@@ -27,13 +27,16 @@ import TechnologyAccordion, {
 } from './_components/TechnologyAccordion';
 import ImageGallery from '@/components/common/ImageGallery';
 import architecture from '../../../../public/architecture.png';
-import PDFModal from '@/components/common/PDFModal';
 import { Tabs, TabsContent, TabsTrigger, TabsList } from '@/components/ui/tabs';
 import NextAndPreviousProjectButton from '../_components/NextAndPrevProjectButton';
 import SaasHomePage from '../../../../public/saas-homepage.png';
 import SaasGraph from '../../../../public/saas-graph.png';
+import SaasEImport from '../../../../public/saas-eimport.png';
 import PageCarousel from '@/components/common/Carousel';
 import DocumentSection from './_components/DocumentSection';
+import { H1 } from '@/components/common/typography/H1';
+import { H2 } from '@/components/common/typography/H2';
+import { H3 } from '@/components/common/typography/H3';
 
 export const metadata = {
   title: 'Daan Michielsen | Energy SaaS Platform',
@@ -45,7 +48,7 @@ type Document = {
   url: string;
 };
 
-const heroImages = [SaasHomePage, SaasGraph];
+const heroImages = [SaasHomePage, SaasGraph, SaasEImport];
 
 const architectureImages: ImageType[] = [
   {
@@ -230,8 +233,8 @@ const technologiesAccordion: AccordionTechnology[] = [
         CSS. Tailwind also has a lot of <b>features</b> like <b>dark mode</b>,{' '}
         <b>hover states</b> and <b>many more</b>. We also used Tailwind UI which
         is a Tailwind component library that has a lot of components that we can
-        use in our application that provide accessibility and respoinsiveness
-        out of the box. We also use ShadCN/UI which is an open source component
+        use in our application that provide accessibility and responsiveness out
+        of the box. We also use ShadCN/UI which is an open source component
         library based on radix-ui and also styled using tailwind.
       </>
     ),
@@ -305,10 +308,10 @@ function Ismart() {
 export default function EnergySaasPage() {
   return (
     <div className='mx-auto max-w-7xl px-6 pb-24 pt-16 sm:pt-16 lg:px-8 lg:pt-16 bg-white bg-opacity-90 dark:bg-primary-dark dark:bg-opacity-80'>
-      <h1 className='scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl'>
+      <H1>
         Internship | Developing of a SaaS platform for energy management in
         buildings
-      </h1>
+      </H1>
 
       <div className='mt-4 flex space-y-2 flex-col md:flex-row text-gray-500 dark:text-slate-400 gap-x-4'>
         <TechnologyGallery technologies={technologies} />
@@ -325,19 +328,15 @@ export default function EnergySaasPage() {
         <PageCarousel images={heroImages} />
       </div>
 
-      <h2 className='mt-10 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0'>
-        Description
-      </h2>
-      <p className='leading-7 [&:not(:first-child)]:mt-4'>
+      <H2>Description</H2>
+      <p className='leading-7 [&:not(:first-child)]:mt-2'>
         I did my internship at a company called <Ismart />. iSmart is a small
         company located in Westerlo (Belgium), their expertise is in creating
         websites and applications for other businesses. They also do IoT
-        integrations and Mircosoft365 environment customizations. During the
+        integrations and Microsoft365 environment customizations. During the
         internship, I had the role of a full-stack developer.
       </p>
-      <h3 className='scroll-m-20 text-2xl font-semibold tracking-tight mt-4'>
-        What?
-      </h3>
+      <H3>What?</H3>
       <p className='leading-7 [&:not(:first-child)]:mt-4'>
         During the internship, I and one other intern worked on a SaaS platform
         that would allow owners of buildings with sensors to monitor energy
@@ -349,16 +348,14 @@ export default function EnergySaasPage() {
         creating an account comes access to our API which can be implemented in
         other applications to customize the experience of monitoring data.
       </p>
-      <h3 className='scroll-m-20 text-2xl font-semibold tracking-tight'>
-        How?
-      </h3>
+      <H3>How?</H3>
       <p className='leading-7 [&:not(:first-child)]:mt-4'>
         To create the solution, we used a combination of some of the most
         popular technologies at the moment. With we, I mean me and one other
         student that is in her last year of Application Development at Thomas
         More. The following technologies were used:
       </p>
-      <Tabs defaultValue='technologies' className='w-full'>
+      <Tabs defaultValue='technologies' className='w-full mt-6'>
         <TabsList className='h-auto w-full'>
           <TabsTrigger className='py-3 px-4 w-full' value='technologies'>
             Technologies
@@ -378,20 +375,17 @@ export default function EnergySaasPage() {
           </div>
         </TabsContent>
       </Tabs>
-
-      {/* <div>
-        {documents.map((document, index) => (
-          <div key={index}>
-            <PDFModal
-              src={document.url}
-              newTab
-              download
-              title={document.name}
-            ></PDFModal>
-          </div>
-        ))}
-      </div> */}
       <DocumentSection />
+      <div className='mt-4 flex space-y-2 flex-col md:flex-row text-gray-500 dark:text-slate-400 gap-x-4'>
+        <Link
+          href={'https://stage-energy.vercel.app/'}
+          target='_blank'
+          className='p-2 rounded-full flex items-center gap-x-2 transition-all hover:bg-slate-300 bg-slate-200 text-slate-800'
+        >
+          <Image src={Energy} height={30} width={30} alt='Energy logo' /> Energy
+          SaaS Platform
+        </Link>
+      </div>
       <NextAndPreviousProjectButton
         previousProject={{
           title: 'Yellow nutsedge detection application',

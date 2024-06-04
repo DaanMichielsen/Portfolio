@@ -26,6 +26,8 @@ import {
   AccordionTrigger,
 } from '@/components/ui/accordion';
 import TechnologyGallery from '@/components/common/TechnologyGallery';
+import { H1 } from '@/components/common/typography/H1';
+import { H2 } from '@/components/common/typography/H2';
 
 export const metadata = {
   title: 'Daan Michielsen | Web scraper',
@@ -124,9 +126,7 @@ function HLTV() {
 export default function WebscraperPage() {
   return (
     <div className='mx-auto max-w-7xl px-6 pb-24 pt-16 sm:pt-16 lg:px-8 lg:pt-16 bg-white bg-opacity-90 dark:bg-primary-dark dark:bg-opacity-80'>
-      <h1 className='scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl'>
-        DevOps & Security | Web scraper using C# and Selenium
-      </h1>
+      <H1>DevOps & Security | Web scraper using C# and Selenium</H1>
 
       <div className='mt-4 flex space-y-2 flex-col md:flex-row text-gray-500 dark:text-slate-400 gap-x-4'>
         <TechnologyGallery technologies={technologies} />
@@ -155,9 +155,7 @@ export default function WebscraperPage() {
         <ImageGallery images={scrapingResults} />
       </div>
 
-      <h2 className='mt-10 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0'>
-        Description
-      </h2>
+      <H2>Description</H2>
       <p className='leading-7 [&:not(:first-child)]:mt-6'>
         I was challenged to create a web scraper that can take one of 3 options
         from a website and return search results in text, JSON and CSV. The
@@ -172,9 +170,7 @@ export default function WebscraperPage() {
         tags. By finding the correct elements, you can retrieve the data within
         the tags and save them to e.g. JSON, CSV. Or use the data in other ways.
       </p>
-      <h2 className='mt-10 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0'>
-        Tasks to complete
-      </h2>
+      <H2>Tasks to complete</H2>
       <p className='leading-7 [&:not(:first-child)]:mt-6'>
         All of the technologies were new to me, so I had to do some
         preparation...
@@ -195,9 +191,7 @@ export default function WebscraperPage() {
           amount of results to return.
         </p>
       </ul>
-      <h2 className='mt-10 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0'>
-        Results
-      </h2>
+      <H2>Results</H2>
       <div className='w-5/6 mx-auto mt-4'>
         <Accordion type='single' collapsible>
           <AccordionItem value='item-1'>
@@ -252,9 +246,7 @@ export default function WebscraperPage() {
           </AccordionItem>
         </Accordion>
       </div>
-      <h2 className='mt-10 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0'>
-        What have I learned?
-      </h2>
+      <H2>What have I learned?</H2>
       <p className='leading-7 [&:not(:first-child)]:mt-6'>
         I learned about C# which I had not used before. I got to learn about
         Selenium and some law-related stuff about web-scraping which is not an
