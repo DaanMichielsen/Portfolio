@@ -96,14 +96,13 @@ export function ProjectsCarousel({ projects }: { projects: Project[] }) {
           {filterOptions.map((option, index) => (
             <button
               key={index}
-              className={`justify-start px-4 py-2 border dark:border-slate-500 rounded flex items-center ${
+              className={`justify-start px-4 py-2 border dark:border-slate-500 rounded flex items-center transition-colors ${
                 selectedFilters.includes(option)
-                  ? 'bg-gray-100 dark:bg-slate-700'
-                  : 'bg-white dark:bg-slate-900'
+                  ? 'bg-gray-100 dark:bg-slate-700 hover:bg-gray-300 border-green-500 dark:border-green-500 hover:border-red-500'
+                  : 'bg-white dark:bg-slate-900 hover:bg-gray-300'
               }`}
               onMouseDown={() => handleFilterClick(option)}
             >
-              {/* <TagIcon className='w-4 h-4 mr-2' /> */}
               {option}
             </button>
           ))}

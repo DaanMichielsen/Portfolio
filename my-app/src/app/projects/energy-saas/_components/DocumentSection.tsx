@@ -78,15 +78,7 @@ export default function DocumentSection() {
           <div
             key={action.title}
             className={classNames(
-              actionIdx === 0
-                ? 'rounded-tl-lg rounded-tr-lg sm:rounded-tr-none'
-                : '',
-              actionIdx === 1 ? 'sm:rounded-tr-lg' : '',
-              actionIdx === actions.length - 2 ? 'sm:rounded-bl-lg' : '',
-              actionIdx === actions.length - 1
-                ? 'rounded-bl-lg rounded-br-lg sm:rounded-bl-none'
-                : '',
-              'group relative bg-white hover:bg-gray-200 dark:hover:bg-slate-800 transition-all dark:bg-slate-700 p-4 focus-within:ring-2 focus-within:ring-inset focus-within:ring-primary-dark',
+              'group relative bg-white hover:bg-gray-300 dark:hover:bg-slate-800 transition-all dark:bg-slate-700 p-4 focus-within:ring-2 focus-within:ring-inset focus-within:ring-primary-dark',
             )}
           >
             <div>

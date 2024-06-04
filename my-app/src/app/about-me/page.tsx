@@ -213,7 +213,7 @@ export default async function AboutMe() {
             </HoverCard>{' '}
             in Geel (Belgium). This page serves as a place where I can express
             myself and my work. I am passionate about technology and I want to
-            pursue a career in tech. I hope you enjoy your stay.
+            pursue a career in tech. Enjoy your stay!
           </p>
           <p className='leading-7 [&:not(:first-child)]:mt-6'>
             In case you want to know more about me, you can check out my CV

@@ -331,23 +331,85 @@ export default function EnergySaasPage() {
       <H2>Description</H2>
       <p className='leading-7 [&:not(:first-child)]:mt-2'>
         I did my internship at a company called <Ismart />. iSmart is a small
-        company located in Westerlo (Belgium), their expertise is in creating
-        websites and applications for other businesses. They also do IoT
-        integrations and Microsoft365 environment customizations. During the
-        internship, I had the role of a full-stack developer.
+        company located in Westerlo (Belgium), their{' '}
+        <b>
+          expertise is in creating websites and applications for other
+          businesses
+        </b>
+        . They also do{' '}
+        <b>IoT integrations and Microsoft365 environment customizations</b>.
+        During the internship, I had the role of a full-stack developer.
       </p>
       <H3>What?</H3>
       <p className='leading-7 [&:not(:first-child)]:mt-4'>
-        During the internship, I and one other intern worked on a SaaS platform
-        that would allow owners of buildings with sensors to monitor energy
-        usage and other metrics. The users would be member of an organization
-        which has roles to manage permissions. An organization can have sites,
-        sites contain buildings, buildings contain location, locations contain
-        devices and finally devices contain sensors. The application also has
-        different tiers of subscriptions to fit every kind of organization. With
-        creating an account comes access to our API which can be implemented in
-        other applications to customize the experience of monitoring data.
+        During the internship,{' '}
+        <b>I and one other intern worked on a SaaS platform</b> that would{' '}
+        <b>
+          allow owners of buildings with sensors to monitor energy usage and
+          other metrics
+        </b>
+        . The users would be member of an organization which has roles to manage
+        permissions. An <b>organization</b> can have <b>sites</b>, sites contain{' '}
+        <b>buildings</b>, buildings contain location, <b>locations</b> contain
+        <b>devices</b> and finally devices contain <b>sensors</b>. The
+        application also has different{' '}
+        <b>tiers of subscriptions to fit every kind of organization</b>. With
+        creating an account comes access to our{' '}
+        <b>API which can be implemented in other applications</b> to customize
+        the experience of monitoring data.
       </p>
+      <H3>Scope</H3>
+      <p className='leading-7 [&:not(:first-child)]:mt-4'>
+        For the scope of the projects, we handled all the following aspects:
+      </p>
+      <ul className='list-disc [&>li]:ml-8 flex justify-around'>
+        <li>
+          Application{' '}
+          <ul className='list-disc [&>li]:ml-8'>
+            <li>Authentication</li>
+            <li>Database</li>
+            <li>Subscriptions</li>
+            <li>Displaying Charts</li>
+            <li>API</li>
+            <li>Testing</li>
+            <li>User interface</li>
+            <li>Send notifications</li>
+            <li>Business logic</li>
+          </ul>
+        </li>
+        <li>
+          Sensors{' '}
+          <ul className='list-disc [&>li]:ml-8'>
+            <li>Catch MQTT messages</li>
+            <li>Store sensor values in CosmosDB</li>
+            <li>Retrieve new sensors</li>
+            <li>Send notifications</li>
+          </ul>
+        </li>
+      </ul>
+      <p className='leading-7 [&:not(:first-child)]:mt-4'>
+        Things we did <span className='underline'>not</span> do:
+      </p>
+      <ul className='list-disc [&>li]:ml-8 flex justify-around'>
+        <li>
+          Application{' '}
+          <ul className='list-disc [&>li]:ml-8'>
+            <li>Onboarding customer</li>
+            <li>Market research</li>
+            <li>Creating a business plan</li>
+            <li>Provide hosting</li>
+            <li>Logging</li>
+          </ul>
+        </li>
+        <li>
+          Sensors{' '}
+          <ul className='list-disc [&>li]:ml-8'>
+            <li>Install sensors</li>
+            <li>Write logic to send messages</li>
+            <li>Link to MQTT broker</li>
+          </ul>
+        </li>
+      </ul>
       <H3>How?</H3>
       <p className='leading-7 [&:not(:first-child)]:mt-4'>
         To create the solution, we used a combination of some of the most
@@ -375,6 +437,47 @@ export default function EnergySaasPage() {
           </div>
         </TabsContent>
       </Tabs>
+      <H3>Purpose</H3>
+      <p className='leading-7 [&:not(:first-child)]:mt-4'>
+        The aim of the proof of concept is to <b>show to potential customers</b>{' '}
+        that it is <b>easy to sign up</b> for the platform,{' '}
+        <b>create an organization</b>, add sites, buildings, locations, devices
+        and sensors. The <b>insights that the platform provides are useful</b>{' '}
+        for the organization <b>to monitor energy usage and other metrics</b>.
+        For <b>iSmart there are also benefits</b> since they{' '}
+        <b>now have a proof of concept</b> that they can show to potential
+        customers and <b>build upon</b> to create an actual platform if there is
+        a market for it. And of course there is a <b>climate benefit</b> since
+        the platform can <b>help organizations to monitor their energy usage</b>{' '}
+        and <b>reduce their carbon footprint</b>.
+      </p>
+      <H2>My contribution</H2>
+      <p className='leading-7 [&:not(:first-child)]:mt-2'>
+        I handled the following aspects of the project:
+        <ul className='list-disc [&>li]:ml-8'>
+          <li>
+            Drill-down Structure of sites, buildings, locations, devices and
+            sensors including creating, updating and deleting
+          </li>
+          <li>Log/notification page for everything in the application</li>
+          <li>Database schema</li>
+          <li>
+            Subscriptions in Stripe, payment flow and notifications for
+            subscriptions
+          </li>
+          <li>Displaying sensor data in charts</li>
+          <li>
+            Live connection to sensors to receive the newest data in real-time
+          </li>
+          <li>Business logic for subscriptions</li>
+          <li>API Documentation user interface</li>
+          <li>
+            API endpoints for: sites, locations, devices, sensors, subscriptions
+            and notifications
+          </li>
+          <li>Dark mode</li>
+        </ul>
+      </p>
       <DocumentSection />
       <div className='mt-4 flex space-y-2 flex-col md:flex-row text-gray-500 dark:text-slate-400 gap-x-4'>
         <Link
