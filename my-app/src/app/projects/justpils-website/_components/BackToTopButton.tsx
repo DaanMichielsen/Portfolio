@@ -52,7 +52,7 @@ export default function BackToTopButton() {
     <>
       <button
         id='back-to-top-btn'
-        className='fixed bottom-[20px] right-[20px] w-[32px] h-[32px] md:w-[40px] md:h-[40px] lg:w-[50px] lg:h-[50px] bg-[#f6c101] text-[#fff897] border-[3px] border-[#df8d03] rounded-full transition-colors animate-exit duration-200 ease-in-out hover:bg-[#fff897] hover:text-[#df8d03]'
+        className='fixed bottom-[20px] right-0 origin-right w-[32px] -translate-x-[20px] h-[32px] md:w-[40px] md:h-[40px] lg:w-[50px] lg:h-[50px] bg-[#f6c101] text-[#fff897] border-[3px] border-[#df8d03] rounded-full transition-colors animate-exit duration-200 ease-in-out hover:bg-[#fff897] hover:text-[#df8d03]'
       >
         <FontAwesomeIcon className='w-6 h-6' icon={faAnglesUp} />
       </button>
