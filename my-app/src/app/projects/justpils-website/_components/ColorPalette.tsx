@@ -1,6 +1,6 @@
 export default function ColorPalette() {
   return (
-    <div className='w-full flex flex-row items-center h-20 rounded-lg text-sm lg:text-normal text-black'>
+    <div className='w-full flex flex-row items-center h-20 rounded-lg text-sm text-[0.5rem] lg:text-normal text-black'>
       <div className='h-full w-full text-center bg-[#fff897]'>#fff897</div>
       <div className='h-full w-full text-center bg-[#fae96f]'>#fae96f</div>
       <div className='h-full w-full text-center bg-[#efde5c]'>#efde5c</div>
