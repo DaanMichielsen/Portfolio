@@ -27,7 +27,7 @@ import { H2 } from '../common/typography/H2';
 
 const filterOptions: ProjectTag[] = [
   'AI/ML/DL',
-  'BI',
+  // 'BI',
   'Internship',
   'Scripting',
   'Web development',
