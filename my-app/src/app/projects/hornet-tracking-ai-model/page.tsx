@@ -151,25 +151,25 @@ export default function HornetTrackingAiModelPage() {
         bee hives. This would lead to a lot of bees dying and the beekeeper
         losing a lot of money. The beekeeper asked our teacher if we could help
         him with this problem. The reason an AI model could be viable is that
-        after a hornet eats, it usually flies back to it&apos;s nest in a
-        straight line. This would be easy to notice on camera. But even better
-        would be that the camera can find the hornet and track the motion of it,
-        so that is what we did. With we, I mean me and my 2 teammates.
+        after a hornet eats, it usually flies back to its nest in a straight
+        line. This would be easy to notice on camera. But even better would be
+        that the camera can find the hornet and track the motion of it, so that
+        is what we did. With we, I mean me and my 2 teammates.
       </p>
       <H2>Tasks to complete</H2>
       <ul className='my-6 ml-6 list-disc [&>li]:mt-2'>
         <li className='font-semibold'>Gather data to train:</li>
         <p className='leading-7 [&:not(:first-child)]:mt-2'>
-          The first task we had to complete was to gathering images of Asian
-          hornets as these we&apos;re the type of hornet we would be targeting.
+          The first task we had to complete was to gather images of Asian
+          hornets, as these we&apos;re the type of hornet we would be targeting.
           We gathered images through web scraping using Selenium and Python and
           through YouTube videos. Roboflow has the ability to split up videos
-          into frames which we used to gather more data.
+          into frames, which we used to gather more data.
         </p>
         <li className='font-semibold'>Labeling & training:</li>
         <p className='leading-7 [&:not(:first-child)]:mt-2'>
           All of this data would have to be labeled since we need to train a
-          model using Yolov5 which is an object detection model. With labeling
+          model using Yolov5, which is an object detection model. With labeling
           data I mean the following:
         </p>
         <div className='w-5/6 mx-auto'>
@@ -181,7 +181,7 @@ export default function HornetTrackingAiModelPage() {
           notice purple boxes as well, these boxes are bees. The reason we also
           tell the model what bees are is because it can learn the differences
           between the 2 which makes the model better at differentiating them.
-          This process is tedious as good accuracy will require a lot of images
+          This process is tedious, as good accuracy will require a lot of images
           to be labeled. Our final dataset contained <b>893 labeled images</b>{' '}
           in which <b>1787 labels</b> were drawn of which{' '}
           <b>946 were hornets and 841 were bees</b>.
@@ -199,19 +199,20 @@ export default function HornetTrackingAiModelPage() {
 
         <li className='font-semibold'>Object detection:</li>
         <p className='leading-7 [&:not(:first-child)]:mt-2'>
-          We had to start with the basics which is object detection. This was
+          We had to start with the basics, which is object detection. This was
           quite easy as long as the images were not too busy and clear. When
           introducing bees and hornets the model did get a little less certain
-          sometimes but we counteracted that by gathering more data and cleaning
-          the data over and over until we were satisfied with the results.
+          sometimes, but we counteracted that by gathering more data and
+          cleaning the data over and over until we were satisfied with the
+          results.
         </p>
         <ImageGallery images={detectionImages} />
-        <li className='font-semibold'>Object tracking(extra):</li>
+        <li className='font-semibold'>Object tracking (extra):</li>
         <p className='leading-7 [&:not(:first-child)]:mt-2'>
           In the ideal scenario, the model would be able to track the hornet,
           that way we could even apply calculations based on the direction of
           the camera to predict the location of the nest so it can be removed.
-          Doing this did not require a new model as Yolo is already capable of
+          Doing this did not require a new model, as Yolo is already capable of
           detecting them. All we have to do is put the detection of video in
           sequence and apply some mathematical calculations to track the center
           of the bounding boxes over time and draw a line that corresponds to
@@ -228,7 +229,7 @@ export default function HornetTrackingAiModelPage() {
             ></iframe>
           </div>
         </div>
-        <li className='font-semibold'>Streamlit application(extra):</li>
+        <li className='font-semibold'>Streamlit application (extra):</li>
         <p className='leading-7 [&:not(:first-child)]:mt-2'>
           As an extra we created a Streamlit application that allows you to
           upload an image, a video or even a live webcam feed on which the model
@@ -252,10 +253,10 @@ export default function HornetTrackingAiModelPage() {
         <li className='font-semibold'>Roboflow model(extra):</li>
         <p className='leading-7 [&:not(:first-child)]:mt-2'>
           We also trained a model on Roboflow which was already housing our
-          labeled dataset. Roboflow lets you use 3 free credits to train models
+          labeled dataset. Roboflow lets you use 3 free credits to train models,
           and we had the chance to compare it to our model. I won&apos;t go too
-          much into detail. If you are interested in the code you can find it on
-          GitHub. You can also read the report below.
+          much into detail. If you are interested in the code, you can find it
+          on GitHub. You can also read the report below.
         </p>
         <PDFModal
           src='/pdf/Hornet-tracking-report.pdf'

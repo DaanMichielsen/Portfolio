@@ -84,7 +84,7 @@ export default function JustPilsWebsitePage() {
       <div className='mt-4 flex space-y-2 flex-col md:flex-row text-gray-500 dark:text-slate-400 gap-x-4'>
         <TechnologyGallery technologies={technologies} />
         <Link
-          href={'https://justpils.netlify.app/'}
+          href={'https://lstc.lst-cstaffmanagement.be/'}
           target='_blank'
           className='p-2 rounded-full flex items-center gap-x-2 transition-all hover:bg-slate-300 bg-slate-200 text-slate-800'
         >
@@ -113,13 +113,13 @@ export default function JustPilsWebsitePage() {
       <p className='leading-7 [&:not(:first-child)]:mt-2'>
         The blueprint for this application was already made by other students
         during the course &quot;Requirements Analysis&quot;. We just had to take
-        all of the different interpretations and put them together to decide how
-        we want to achieve the goal. With we I mean the team of 5 students.{' '}
-        <br /> All of us took the course &quot;Web Development in PHP&quot;
+        all the different interpretations and put them together to decide how we
+        want to achieve the goal. With we I mean the team of 5 students. <br />{' '}
+        All of us took the course &quot;Web Development in PHP&quot;
       </p>
       <H2>Requirements</H2>
       <p className='leading-7 [&:not(:first-child)]:mt-2'>
-        The requirements had some priotity levels based on the Moscow principle.
+        The requirements had some priority levels based on the Moscow principle.
       </p>
       <div className='flex flex-row justify-between'>
         <div>
@@ -162,22 +162,22 @@ export default function JustPilsWebsitePage() {
       </p>
       <H3>Manage absences page</H3>
       <p className='leading-7 [&:not(:first-child)]:mt-2'>
-        On this page the user could declare absences for a certain period. The
-        admin would then be able to see all of the absences to take them into
+        On this page, the user could declare absences for a certain period. The
+        admin would then be able to see all the absences to take them into
         account for planning visits, tasks, ... It also contains a filter pane
         which is useful for the user to find absences quickly. There is also
-        pagination which is useful when there are a lot of absences.
+        pagination, which is useful when there are a lot of absences.
       </p>
       <div className='w-5/6 my-2 flex mx-auto'>
         <PageCarousel images={absenceImages} />
       </div>
       <H3>Manage invoices page</H3>
       <p className='leading-7 [&:not(:first-child)]:mt-2 font-normal'>
-        On this page a user could submit invoices. The admin would then be able
-        to repay the user that submitted the invoice fot the work they did. The
+        On this page, a user could submit invoices. The admin would then be able
+        to repay the user that submitted the invoice for the work they did. The
         user could also see the status of the invoice. The admin could also see
         all of the invoices and filter them based on the status of the invoice.
-        There is also pagination which is useful when there are a lot of
+        There is also pagination, which is useful when there are a lot of
         invoices.
       </p>
       <div className='w-5/6 my-2 flex mx-auto'>
@@ -185,13 +185,13 @@ export default function JustPilsWebsitePage() {
       </div>
       <H3>Layout</H3>
       <p className='leading-7 [&:not(:first-child)]:mt-2 font-normal'>
-        I worked on the footer and the navbar as well as some of the reused
+        I worked on the footer and the nav bar, as well as some of the reused
         components like buttons, inputs, ...
       </p>
 
       <H2>What have I learned?</H2>
       <p className='leading-7 [&:not(:first-child)]:mt-2'>
-        I will start of by saying that I&apos;ve learned a lot during this
+        I will start off by saying that I&apos;ve learned a lot during this
         project, including negative things. The groups of this project were made
         based on marks on the &quot;Web Development in PHP&quot; course. I
         happened to score pretty bad for that course because of some technical
@@ -204,12 +204,12 @@ export default function JustPilsWebsitePage() {
         hosting, planning, and working in a group. I&apos;ve also learned that I
         need to be more assertive and take the lead in a group when I see that
         things are not going the way they should. This project was also the
-        first time we had to interact with a real client. Adapting to feedback
+        first time, we had to interact with a real client. Adapting to feedback
         and making proposals based on that feedback was a new experience for me.
       </p>
       <div className='mt-4 flex space-y-2 flex-col md:flex-row text-gray-500 dark:text-slate-400 gap-x-4'>
         <Link
-          href={'https://justpils.netlify.app/'}
+          href={'https://lstc.lst-cstaffmanagement.be/'}
           target='_blank'
           className='p-2 rounded-full flex items-center gap-x-2 transition-all hover:bg-slate-300 bg-slate-200 text-slate-800'
         >

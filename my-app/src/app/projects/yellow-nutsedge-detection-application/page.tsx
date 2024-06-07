@@ -202,24 +202,23 @@ export default function JustPilsWebsitePage() {
         This project was a group project in which we had to create a solution
         for a client. The groups were formed with different branches of our
         IT-Factory. There was a distribution of 3 Application Development
-        students, 2 Cloud & Cybersecurity students and one Artificial
-        Intelligence student(me). In our case the client was <Vito />, Vito is a
-        company that spends their time researching technology to help the
-        environment through processing images from earth. They came to us with a
-        problem we could solve using their data in the form of images taken with
-        a drone.
+        students, 2 Cloud & Cybersecurity students and 1 Artificial Intelligence
+        student (me). In our case the client was <Vito />, Vito is a company
+        that spends their time researching technology to help the environment
+        through processing images from earth. They came to us with a problem we
+        could solve using their data in the form of images taken with a drone.
       </p>
       <H3 id='the-problem'>The problem</H3>
       <p className='leading-7 [&:not(:first-child)]:2'>
-        In Belgium, there has been a problem that is arising in agriculture
-        where the fields are containing more and more yellow nutsedge. This is a
-        problem because the nutsedge is a weed that is hard to get rid of and it
-        is taking over the fields. The government has been monitoring the fields
-        closely and is handing out sanction to the farmers with the contaminated
-        fields in the form of a prevention of planting any crops on the fields.
-        Especially for the fields that contain crops that need to be taken out
-        of the ground since the moving of the soil could help the weed to spread
-        even faster.
+        In Belgium, there has been a problem that is arising in agriculture,
+        where the fields contain more and more yellow nutsedge. This is a
+        problem because the nutsedge is a weed that is hard to get rid of, and
+        it is taking over the fields. The government has been monitoring the
+        fields closely and is handing out sanction to the farmers with the
+        contaminated fields in the form of a prevention of planting any crops on
+        the fields. Especially for the fields that contain crops that need to be
+        taken out of the ground, since the moving of the soil could help the
+        weed to spread even faster.
       </p>
       <H3 id='the-solution'>The solution</H3>
       <p className='leading-7 [&:not(:first-child)]:mt-2'>
@@ -239,16 +238,16 @@ export default function JustPilsWebsitePage() {
       <ul className='list-decimal [&>li]:ml-8 [&>li]:mt-4 [&>li]:font-semibold [&>p]:ml-8'>
         <li>Preparation phase</li>
         <p className='leading-7 [&:not(:first-child)]:mt-2'>
-          During this phase we started of by making an identity for our team by
-          choosing a name and branding. Since our solution aims to protect the
-          crops by use of images taken from the sky we settled on SkyGuard. The
-          logo we chose can be found below. The rest of the time was spent on
-          the making of the project plan, with focus on the{' '}
+          During this phase, we started off by making an identity for our team
+          by choosing a name and branding. Since our solution aims to protect
+          the crops by use of images taken from the sky, we settled on SkyGuard.
+          The logo we chose can be found below. The rest of the time was spent
+          on the making of the project plan, with focus on the{' '}
           <b>Who? What? Why?</b>. We also presented the plan to the other teams
           and Project Coach for feedback. With all the best parts of each
-          presentation we created one final presentation to deliver to the
-          client. The making of this was done one a lesson block of 4 hours,
-          each Monday for a couple of weeks.
+          presentation, we created one final presentation to deliver to the
+          client. The making of this was done on a lesson block of 4 hours, each
+          Monday, for a couple of weeks.
         </p>
         <div className='max-w-lg mx-auto'>
           <ImageGallery images={SkyGuardImages} />
@@ -256,12 +255,13 @@ export default function JustPilsWebsitePage() {
 
         <li>Concept phase</li>
         <p className='leading-7 [&:not(:first-child)]:mt-2'>
-          In this phase we layed out the design of the concept, we made an
+          In this phase we laid out the design of the concept, we made an
           overview of what would be needed to create the solution. We also made
           a list of the technologies we would use and the roles of each team
           member. All of this is with focus on the <b>How?</b>. The making of
-          this was done one a lesson block of 4 hours, each Monday for a couple
-          of weeks. You can checkout the full report of the concept phase below.
+          this was done on a lesson block of 4 hours, each Monday for a couple
+          of weeks. You can check out the full report of the concept phase
+          below.
         </p>
         <div className='ml-8 mt-2 mb-6'>
           <PDFModal
@@ -272,36 +272,37 @@ export default function JustPilsWebsitePage() {
         </div>
 
         <p className='leading-7 [&:not(:first-child)]:mt-2'>
-          During the concept we had to create something called the &quot;Product
-          Breakdown Structure&quot; (PBS), which contains all the things we need
-          to do before actually making the solution.
+          During the concept phase, we had to create something called the
+          &quot;Product Breakdown Structure&quot; (PBS), which contains all the
+          things we need to do before actually making the solution.
         </p>
         <ImageGallery images={PBSImages} />
         <p className='leading-7 [&:not(:first-child)]:mt-2'>
-          The top part are the requirements, the parts branching of are the
+          The top part are the requirements, the parts branching off are the
           different parts of the solution.
         </p>
-        <li>Realisation phase</li>
+        <li>Realization phase</li>
         <p className='leading-7 [&:not(:first-child)]:mt-2'>
-          In this phase we actually start with creating the solution. This phase
-          will be explained in more detail down below. The phase lasted for 3
-          full-time weeks of 5 days.
+          In this phase, we actually started with creating the solution. This
+          phase will be explained in more detail down below. The phase lasted
+          for 3 full-time weeks of 5 days.
         </p>
       </ul>
-      <H2 id='realisation-phase'>Realisation phase</H2>
+      <H2 id='realization-phase'>Realization phase</H2>
       <p className='leading-7 [&:not(:first-child)]:mt-2'>
-        The realisation phase was the time to shine and make it work over a
+        The realization phase was the time to shine and make it work over a
         <b> period of 3 weeks</b>, where each week consisted of{' '}
-        <b>8 hours of work per day for 5 days</b>. During this period we would
+        <b>8 hours of work per day for 5 days</b>. During this period, we would
         work in an <b>agile manner</b> by making use of{' '}
         <b>SCRUM and Prince 2</b>. We would have a <b>daily stand-up</b> meeting
         to discuss what we did the day before, what we are going to do today and
         if we have any blockers. We would also have a{' '}
         <b>weekly sprint review and sprint planning meeting</b>. The sprint
-        review would be to show the client what we have done and the sprint
+        review would be to show the client what we have done, and the sprint
         planning would be to plan the next sprint.{' '}
         <b>
-          After each sprint review meeting we would have a retrospective meeting
+          After each sprint review meeting, we would have a retrospective
+          meeting
         </b>{' '}
         to discuss what went well and what could be improved.
       </p>
@@ -309,18 +310,18 @@ export default function JustPilsWebsitePage() {
         My contribution to the project
       </H3>
       <p className='leading-7 [&:not(:first-child)]:mt-2'>
-        Since I am the was the only AI student in the group I was responsible
-        for all AI related things. I tried to help out in other departments as
-        well as those are great opportunities to learn.
+        Since I was the only AI student in the group, I was responsible for all
+        AI related things. I tried to help out in other departments as well as
+        those are great opportunities to learn.
       </p>
       <H4 id='choosing-the-model'>Choosing the model</H4>
       <p className='leading-7 [&:not(:first-child)]:mt-2'>
-        During the concept phase I was responsible for looking into the options
+        During the concept phase, I was responsible for looking into the options
         for the models that we could use to detect the nutsedge. Where the other
         2 groups settled on YoloV8 for the object detection route. I got some
         more information from the AI and Big Data teacher and based on the size
         of the images and the visibility on the images he would lean towards
-        doing classification on small parts of the images to see weather a weed
+        doing classification on small parts of the images to see whether a weed
         was present or not. So I took that route and went with a ResNet-50 model
         by doing transfer learning.
       </p>
@@ -333,7 +334,7 @@ export default function JustPilsWebsitePage() {
       <ul className='list-decimal [&>li]:ml-8'>
         <li>Convert TIFF to JPG and resize</li>
         <li>Split image into 77 smaller images</li>
-        <li>Extract location and rotation from TIFF image</li>
+        <li>Extract the location and rotation from TIFF image</li>
         <li>Put images through AI model</li>
         <li>Store results in database</li>
         <li>Visualize results on heatmap</li>
@@ -348,14 +349,14 @@ export default function JustPilsWebsitePage() {
         handle the data. I was responsible for creating a data pipeline that
         would handle the images and the labels. The data we got all came from a
         tool that Vito has called Mapeo. This is where all the images are
-        stored. So first we had to download them which was already a challenge
+        stored. So first we had to download them, which was already a challenge
         since one field of images could be between 60GB and 130GB.
       </p>
       <p className='leading-7 [&:not(:first-child)]:mt-2'>
-        To create the actual pipeline I created a tool in Python using a Jupyter
-        notebook so my teammates can follow the instruction and easily run the
-        tool. They would only have to put the path to the folder where the
-        images were stored and the tool would do the following:
+        To create the actual pipeline, I created a tool in Python using a
+        Jupyter notebook, so my teammates can follow the instruction and easily
+        run the tool. They would only have to put the path to the folder where
+        the images were stored, and the tool would do the following:
       </p>
       <ul className='list-decimal [&>li]:ml-8'>
         <li>Convert TIFF to JPG</li>
@@ -364,7 +365,7 @@ export default function JustPilsWebsitePage() {
         <li>Ask the user for the label of the image</li>
       </ul>
       <p className='leading-7 [&:not(:first-child)]:mt-2'>
-        To make it easier to understand, you can checkout the demo below to see
+        To make it easier to understand, you can check out the demo below to see
         how the tool works:
       </p>
       <div className='max-w-5/6 w-5/6 mx-auto my-4'>
@@ -382,26 +383,26 @@ export default function JustPilsWebsitePage() {
         The result of the labeling would be put into 2 folders, one for the true
         cases and one for the false cases. The images would be put into a folder
         with the same name as the label. This way we could easily use the images
-        for training the model. When the labeler is done with labeling there is
-        also a functionality to report the last session by telling the user how
-        many labels have been assigned and to which classes. This way we could
-        track the progress of the labeling in an Excel sheet.
+        for training the model. When the person labeling is done with labeling,
+        there is also a functionality to report the last session by telling the
+        user how many labels have been assigned and to which classes. This way
+        we could track the progress of the labeling in an Excel sheet.
       </p>
       <ImageGallery images={FieldImages} />
 
       <ImageGallery images={labelingImages} />
       <H4 id='training-the-model'>Training the model</H4>
       <p className='leading-7 [&:not(:first-child)]:mt-2'>
-        To train the model we combined all labeled data we had and put it into
+        To train the model, we combined all labeled data we had and put it into
         one dataset with 2 folders of the 2 labels. We trained the model using a
         ResNet-50 model with transfer leaning by using the package FastAI in
         Python on Google Colab so we can take advantage of a GPU since this
         speeds up the training process by a lot. After training the model and
-        testing it we pretty quickly realized that using alle images together
-        was not a good idea. This is because we have 2 different categories of
-        images so to speak: half grown and recently planted. So we adapted our
-        strategy and trained 2 models, one for each category. Our final models
-        use the following amount of data and training parameters:
+        testing it, we quickly realized that using all images together was not a
+        good idea. This is because we have 2 different categories of images so
+        to speak: half grown and recently planted. So we adapted our strategy
+        and trained 2 models, one for each category. Our final models use the
+        following amount of data and training parameters:
       </p>
       <div className='my-6 w-full overflow-y-auto'>
         <table className='w-full'>
@@ -474,28 +475,28 @@ export default function JustPilsWebsitePage() {
       <p className='leading-7 [&:not(:first-child)]:mt-2'>
         Looking at the results we can definitely say that the model is working
         but not to the extent that we would like it to. Looking at some of the
-        data that the model has to predict on I am not really surprised since
+        data that the model has to predict on, I am not really surprised since
         all fields are different and some of the images are hard to label as a
         human.
       </p>
       <H4 id='api-wrapper-for-the-model'>API wrapper for the model</H4>
       <p className='leading-7 [&:not(:first-child)]:mt-2'>
-        In order to use the model from an external application in Angular we
+        In order to use the model from an external application in Angular, we
         would want to use an API wrapper for the model so we can send a request
         with images and the model type in the payload to then get back the
         results of all the images sent. I and one other teammate were
-        responsible for creating the API, we used Flask for this and we put the
+        responsible for creating the API, we used Flask for this, and we put the
         API behind a waitress server so we could easily run multiple instances.
       </p>
       <H4 id='containerize-the-model'>Containerize API</H4>
       <p className='leading-7 [&:not(:first-child)]:mt-2'>
-        In order to have a scalable solution we would want to containerize the
+        In order to have a scalable solution, we would want to containerize the
         API so we can spin up as many containers as we need when demand is high.
-        Doing this was not too hard since all we needed was a Dockerfile that
+        Doing this was not too hard, since all we needed was a Dockerfile that
         installed the dependencies and used the proper AWS credentials from an
         environment variable in our GitLab Environment. The biggest issue with
         the running of the API in AWS is that we have a learner lab which has
-        vary limited resources and permission so we were dealing with quite a
+        very limited resources and permissions, so we were dealing with quite a
         lot of restrictions which lead us to not even host the project after
         all. Below is a video of the API working in an AWS ECS instance behind a
         load balancer.
@@ -514,30 +515,30 @@ export default function JustPilsWebsitePage() {
       <p className='leading-7 [&:not(:first-child)]:mt-2'>
         In a perfect world all of our code would be tested, built and pushed to
         a registry in AWS and then deployed to an ECS instance, on every push to
-        the production environment but as I said before, the learner lab was
-        restricting us quite a lot. But since we were dealing with a learner lab
-        we could not do this. We did however have a pipeline in GitLab that
+        the production environment, but as I said before, the learner lab was
+        restricting us quite a lot. But since we were dealing with a learner
+        lab, we could not do this. We did however have a pipeline in GitLab that
         would build the Docker image and push it to the registry.
       </p>
       <H4 id='promotion-video'>Promotion video</H4>
       <p className='leading-7 [&:not(:first-child)]:mt-2'>
-        And last but not least we had to create a promotion video for the
+        And last but not least, we had to create a promotion video for the
         product. This was done using free AI tools such as ChatGPT and Kapwing
         which makes it pretty easy to create a basic video for free, including:
-        sub titles, stock footage and voiceover.
+        subtitles, stock footage and voiceover.
       </p>
       <H2 id='what-have-i-learned'>What have I learned?</H2>
       <p className='leading-7 [&:not(:first-child)]:mt-2'>
         I have learned a lot during this project. I have learned how to properly
-        apply SCRUM and agile when working in team. I got more experience
-        talking to clients and adapting to the feedback. I have also learned how
-        to work with a team that has different backgrounds and how to
-        communicate with them. Working with a team that has different
-        backgrounds is really eyeopening and it shows the lack of knowledge
-        about each others field. This is something that I will take with me in
-        the future. Planning is also something that I have learned a lot about
-        since every task needed to be planned and estimated for us to fill our
-        sprint backlog.
+        apply SCRUM and agile when working in team. Not only that, but I got
+        more experience talking to clients and adapting to the feedback. I have
+        also learned how to work with a team that has different backgrounds and
+        how to communicate with them. Working with a team that has different
+        backgrounds is really eyeopening, and it shows the lack of knowledge
+        about each other&apos;s field. This is something that I will take with
+        me in the future. Planning is also something that I have learned a lot
+        about, since every task needed to be planned and estimated for us to
+        fill our sprint backlog.
       </p>
       <NextAndPreviousProjectButton
         nextProject={{

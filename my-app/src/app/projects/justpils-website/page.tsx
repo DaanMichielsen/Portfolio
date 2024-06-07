@@ -109,14 +109,14 @@ export default function JustPilsWebsitePage() {
       <p className='leading-7 [&:not(:first-child)]:mt-2'>
         The goal of the project was to create a website in a team using version
         control and the basics of web design. The website had to be responsive
-        and had to be made with HTML(Bootstrap 5), CSS(SASS) and JavaScript. To
-        set up te project we also learned how to use Gulp and npm. For the
-        hosting we had to use Netlify.
+        and had to be made with HTML (Bootstrap 5), CSS (SASS) and JavaScript.
+        To set up the project we also learned how to use Gulp and npm. For the
+        hosting, we had to use Netlify.
       </p>
       <H2>Tasks to complete</H2>
       <p className='leading-7 [&:not(:first-child)]:mt-2'>
         The first task for our group of 4 was to come up with a subject for the
-        website. We ended up choosing beer as our subject.The group had to come
+        website. We ended up choosing beer as our subject. The group had to come
         up with a color palette, a logo and a name for the website. Each student
         was also responsible for 2 pages on the website, each about a different
         topic and with at least one JavaScript implementation.
@@ -125,8 +125,8 @@ export default function JustPilsWebsitePage() {
         <li className='font-semibold'>Branding:</li>
         <p>
           We decided to use some common colors in beers for our color palette.
-          For the logo we chose a beer glass with the text &quot;Just pils&quot;
-          on it.
+          For the logo, we chose a beer glass with the text &quot;Just
+          pils&quot; on it.
         </p>
         <div className='flex flex-col lg:flex-row items-center gap-2'>
           <ColorPalette></ColorPalette>
@@ -134,7 +134,9 @@ export default function JustPilsWebsitePage() {
             <Logo></Logo>
           </div>
         </div>
-        <li className='font-semibold'>Creating 2 pages about certain topic:</li>
+        <li className='font-semibold'>
+          Creating 2 pages about a certain topic:
+        </li>
         <p>
           I had to come up with 2 topics that were not yet used within out
           website. I picked the topics &quot;ingredients&quot; and
@@ -149,11 +151,11 @@ export default function JustPilsWebsitePage() {
         </div>
         <li className='font-semibold'>JavaScript implementation:</li>
         <p>
-          For the JavaScript implementation I decided to make a back to top
+          For the JavaScript implementation, I decided to make a back to top
           button for the origin page and a section with national beer dates in
           different countries with a countdown to the next date for the
           ingredients page. The back to top button is also available on this
-          page :) But as you can probably tell, the behavior is not flawless.
+          page :), But as you can probably tell, the behavior is not flawless.
         </p>
         <div>
           <ImageGallery images={imagesJS} />
@@ -169,8 +171,8 @@ export default function JustPilsWebsitePage() {
       <p className='leading-7 [&:not(:first-child)]:mt-2'>
         I learned that there is more than just plain HTML, CSS and JavaScript. I
         also had to work with version control for the first time in a team of 4
-        students which was a bit of a challenge at first. The use of Netlify was
-        also new to me since I had only hosted a static page on a normal web
+        students, which was a bit of a challenge at first. The use of Netlify
+        was also new to me since I had only hosted a static page on a normal web
         server before and never used a hosting platform that takes care of all
         of that.
       </p>

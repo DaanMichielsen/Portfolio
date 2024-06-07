@@ -19,7 +19,7 @@ import { cn } from '@/lib/utils';
 import Link from 'next/link';
 import { useTheme } from 'next-themes';
 import { useEffect, useState } from 'react';
-import { TagIcon, FilterIcon } from 'lucide-react';
+import { FilterIcon } from 'lucide-react';
 import { ProjectTag } from '@/app/projects/page';
 import { Badge } from '../ui/badge';
 import { H1 } from '../common/typography/H1';

@@ -80,7 +80,7 @@ export default async function AboutMe() {
     },
     {
       name: 'NextJS',
-      description: 'Web development with React, Next.js, TailwindCSS.',
+      description: 'Web development with React, Next.js, Tailwind CSS.',
       value: 80,
     },
 
@@ -105,8 +105,8 @@ export default async function AboutMe() {
       value: 70,
     },
     {
-      name: 'PHP(Laravel)',
-      description: 'Developping web application using Laravel.',
+      name: 'PHP (Laravel)',
+      description: 'Developing web application using Laravel.',
       value: 65,
     },
   ];
@@ -123,7 +123,7 @@ export default async function AboutMe() {
     {
       name: 'Professional communication',
       description:
-        'The ability to communicate in a professional manner with team members, teachers, colleagues...',
+        'The ability to communicate professionally with team members, teachers, colleagues...',
     },
     {
       name: 'Research',
@@ -136,7 +136,7 @@ export default async function AboutMe() {
         'The ability to work together with a team to achieve a common goal.',
     },
     {
-      name: 'Problem solving',
+      name: 'Problem-solving',
       description:
         'The ability to solve technical problems in an application or project.',
     },
@@ -173,7 +173,7 @@ export default async function AboutMe() {
       <div className='container px-4 md:px-6 grid gap-8 lg:grid-cols-[3fr_1fr] lg:gap-16 items-center'>
         <div>
           <p className='leading-7 [&:not(:first-child)]:mt-6'>
-            My name is Daan and I am a student in Applied Computer Science at
+            My name is Daan, and I am a student in Applied Computer Science at
             <HoverCard>
               <HoverCardTrigger asChild className='px-2 py-0 h-0'>
                 <Button className='px-0 py-0 underline h-4' variant='link'>
@@ -197,7 +197,7 @@ export default async function AboutMe() {
                       </a>
                     </h4>
                     <p className='text-sm'>
-                      The largest university of applied sciences in Flanders. A
+                      The largest University of Applied Sciences in Flanders. A
                       community of almost 22,000 students, employees and
                       researchers.
                     </p>
@@ -249,7 +249,7 @@ export default async function AboutMe() {
             <CardHeader>
               <CardTitle>Soft Skills</CardTitle>
               <CardDescription>
-                The skills I have developped as a person through communications,
+                The skills I have developed as a person through communications,
                 projects and teamwork.
               </CardDescription>
             </CardHeader>

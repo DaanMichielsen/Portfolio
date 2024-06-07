@@ -159,24 +159,24 @@ export default function JustPilsWebsitePage() {
 
       <H2>Description</H2>
       <p className='leading-7 [&:not(:first-child)]:mt-2'>
-        This project started of with one goal in mind, to create an AI model to
+        This project started off with one goal in mind, to create an AI model to
         beat Google Teachable Machine using advanced techniques. The model would
-        need to differentiate similar objects(5) and classify them correctly.
-        There was supposed to be one more part to the project which would be
+        need to differentiate similar objects (5) and classify them correctly.
+        There was supposed to be one more part to the project, which would be
         about the toxic comments dataset on Kaggle. This part would require NLP
-        to do multilabel classification on the dataset. Sadly we did not get to
-        this part since the project was meant to be made with groups of 3
+        to do multi-label classification on the dataset. Sadly, we did not get
+        to this part since the project was meant to be made with groups of 3
         students, but our group contained 2 students.
       </p>
       <H2>Tasks to complete</H2>
       <ul className='my-6 ml-6 list-disc [&>li]:mt-6'>
         <li className='font-semibold'>Choose category:</li>
         <p className='leading-7 [&:not(:first-child)]:mt-2'>
-          First we needed to settle on a topic of similar objects to classify.
+          First, we needed to settle on a topic of similar objects to classify.
           The main factor that decided the topic was the availability of a
-          dataset. We chose to classify different types of tomatoes since there
+          dataset. We chose to classify different types of tomatoes, since there
           seemed to be sufficient types and data to choose from. More
-          specifically we chose for the following types of tomatoes:
+          specifically, we chose for the following types of tomatoes:
         </p>
         <ul className='list-decimal [&>li]:mt-2 [&>li]:ml-8 flex flex-col lg:flex-row'>
           <li>Celebrity tomato</li>
@@ -190,7 +190,7 @@ export default function JustPilsWebsitePage() {
         </div>
         <li className='font-semibold'>Gathering data (web scraper):</li>
         <p className='leading-7 [&:not(:first-child)]:mt-2'>
-          To gather data for the model we needed to scrape images of the
+          To gather data for the model, we needed to scrape images of the
           internet using several search terms. For the scraping we used Selenium
           since I had already used it in my{' '}
           <Link
@@ -223,18 +223,18 @@ export default function JustPilsWebsitePage() {
           <li>VGG-19</li>
         </ul>
         <p className='leading-7 [&:not(:first-child)]:mt-2'>
-          To train and test the models we used data augmentation to increase the
-          amount of data we have to train. For the advanced techniques we
+          To train and test the models, we used data augmentation to increase
+          the amount of data we have to train. For the advanced techniques we
           applied something called discriminative learning rates which adjusts
           the learning rate throughout the layers of the neural network to tweak
           the pre-trained model as good as possible to our data. We also used
           the confusion matrix to see how well the model was performing. The
           model was trained on Google Colab since it has free GPU compute
-          available. After testing the models we noticed 2 things: The Resnet-50
-          model was performing the best and there were 2 classes that were
-          performing worse than the others. The classes were Celebrity tomato
-          and Super sweet 100 tomato, the reason being the similarities in shape
-          and color.
+          available. After testing the models, we noticed 2 things: The
+          Resnet-50 model was performing the best and there were 2 classes that
+          were performing worse than the others. The classes were Celebrity
+          tomato and Super sweet 100 tomato, the reason being the similarities
+          in shape and color.
         </p>
         <li className='font-semibold'>
           Training a model using Google&apos;s Teachable Machine:
@@ -243,8 +243,8 @@ export default function JustPilsWebsitePage() {
           To compare our model with Google Teachable Machine we also trained a
           model on it which is really easy to do. All you have to do is create
           the 5 classes and upload the images for the classes. Then you can
-          choose the learning rate which we left on default and we let it run
-          for 100 epochs. The model performed really well as expected but 100
+          choose the learning rate, which we left on default, and we let it run
+          for 100 epochs. The model performed really well as expected, but 100
           epochs might have been a bit overkill.
         </p>
         <li className='font-semibold'>Hosting a web app via Streamlit:</li>
@@ -252,7 +252,7 @@ export default function JustPilsWebsitePage() {
           The goal of this task was to access the model through the web app and
           do prediction that way. We could not get the application hosted
           because of the size of the model and the packages required to load the
-          model so I only have some screenshots of the application.
+          model, so I only have some screenshots of the application.
         </p>
         <p className='leading-7 [&:not(:first-child)]:mt-2'>
           The application had an image gallery to explore the images we used to
@@ -262,33 +262,33 @@ export default function JustPilsWebsitePage() {
           <StreamlitCarousel images={streamlitCarousel} />
         </div>
         <p className='leading-7 [&:not(:first-child)]:mt-2'>
-          From the image you can tell that Teachable Machine is still beating
+          From the image, you can tell that Teachable Machine is still beating
           our own model :(. This might be because we trained it for 100 epochs
-          while our model only did 3 with with a discriminative learning rate.
+          while our model only did 3 with a discriminative learning rate.
         </p>
         <li className='font-semibold'>Accessing model through API (extra):</li>
         <p className='leading-7 [&:not(:first-child)]:mt-2'>
           One of the extras was that the trained model could be accessed through
-          an API. In our case we chose to do that through a <b>Flask API</b>.
-          The API was not deployed anywhere since it was not a requirement for
+          an API. In our case, we chose to do that through a <b>Flask API</b>.
+          The API was not deployed anywhere, since it was not a requirement for
           the project. The API would{' '}
           <b>take in an image and return the predicted class from the model</b>.
         </p>
         <li className='font-semibold'>Training Vertex AI model (extra):</li>
         <p className='leading-7 [&:not(:first-child)]:mt-2'>
-          As one of the extras we had the choice to{' '}
+          As one of the extras, we had the choice to{' '}
           <b>train a model using Vertex AI on Google Cloud Platform</b> with the
           free credits we got from our teacher. We decided to do this since it
           was a good opportunity to learn about the platform. We used the{' '}
           <b>same dataset as the FastAI model</b> and trained a classification
           model using the AutoML feature. This model was also hosted on an{' '}
-          <b>API endpoint within Google Cloud Platform</b> so we could access it
-          through the GCP API or using the model directly in the cloud.
+          <b>API endpoint within Google Cloud Platform</b>, so we could access
+          it through the GCP API or using the model directly in the cloud.
         </p>
         <li className='font-semibold'>Training Roboflow AI model (extra):</li>
         <p className='leading-7 [&:not(:first-child)]:mt-2'>
           Another extra was to train a classification model using
-          Roboflow&apos;s built in AI model training feature. We used the same
+          Roboflow&apos;s built-in AI model training feature. We used the same
           dataset as the FastAI model and trained a classification model using
           the Roboflow platform. This model was also hosted on an API endpoint
           within Roboflow.
@@ -296,7 +296,7 @@ export default function JustPilsWebsitePage() {
       </ul>
       <H3>Report</H3>
       <p className='leading-7 [&:not(:first-child)]:mt-2'>
-        In case you are interested in the full report of the project I would
+        In case you are interested in the full report of the project, I would
         recommend you to check it out below.
       </p>
       <PDFModal
@@ -312,7 +312,7 @@ export default function JustPilsWebsitePage() {
         create a project on Google Cloud Platform, create a dataset and train a
         model. I also had to create an API and create credentials to access the
         model through the Google Python SDK. And yet again the power of
-        Streamlit to create an awesome application that integrates all of the
+        Streamlit to create an awesome application that integrates all the
         models and makes it easy to use.
       </p>
       <NextAndPreviousProjectButton

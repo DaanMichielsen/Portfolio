@@ -164,21 +164,21 @@ export default function WebscraperPage() {
         option was to retrieve all possible items on a website called <HLTV />{' '}
         based on title of an article, name of a player, name of an event or name
         of a team. HLTV is a website that covers e-sports news about a game
-        called Counter-Strike:Global Offensive which is a tactical shooter game.
-        In case you don&apos;t know, a web scraper is an application that
-        scrapes data of the internet by using the way a website is built up with
-        tags. By finding the correct elements, you can retrieve the data within
-        the tags and save them to e.g. JSON, CSV. Or use the data in other ways.
+        called Counter-Strike:Global Offensive, which is a tactical shooter
+        game. In case you don&apos;t know, a web scraper is an application that
+        scrapes data off the internet by using the way a website is built up
+        with tags. By finding the correct elements, you can retrieve the data
+        within the tags and save them to e.g. JSON, CSV. Or use the data in
+        other ways.
       </p>
       <H2>Tasks to complete</H2>
       <p className='leading-7 [&:not(:first-child)]:mt-6'>
-        All of the technologies were new to me, so I had to do some
-        preparation...
+        All the technologies were new to me, so I had to do some preparation...
       </p>
       <ul className='my-6 ml-6 list-disc [&>li]:mt-2'>
         <li className='font-semibold'>Learning about c# and Selenium:</li>
         <p>
-          In our course we have not learned about C# or Selenium so my first
+          In our course we have not learned about C# or Selenium, so my first
           step was looking up tutorials on YouTube on how to create a web
           scraper with Selenium in C#.
         </p>
@@ -187,7 +187,7 @@ export default function WebscraperPage() {
           I had to decide on how to implement the web scraper, I chose to use a
           Chrome browser based web scraper. When running the application the
           user is prompted to choose between getting YouTube videos ICT-Jobs
-          offers or HLTV information. After that the user could choose the
+          offers or HLTV information. After that, the user could choose the
           amount of results to return.
         </p>
       </ul>
@@ -237,7 +237,7 @@ export default function WebscraperPage() {
                   width={30}
                   alt={'HLTV logo'}
                 ></Image>
-                <span>HLTV | Search term: rain(name of a player)</span>
+                <span>HLTV | Search term: rain (name of a player)</span>
               </div>
             </AccordionTrigger>
             <AccordionContent className='overflow-x-scroll'>

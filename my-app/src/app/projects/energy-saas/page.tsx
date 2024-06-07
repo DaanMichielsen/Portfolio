@@ -125,7 +125,7 @@ const technologiesAccordion: AccordionTechnology[] = [
     url: 'https://nextjs.org/',
     description: (
       <>
-        We use NextJS as a fullstack framework to create the backend, frontend
+        We use NextJS as a full-stack framework to create the backend, frontend
         and even the API. Tied in with NextJS we already use <b>React</b>,{' '}
         <b>Tailwind</b>, <b>TypeScript</b>. By using Vercel we can easily opt in
         to using the Vercel <b>Blob Storage</b> and the{' '}
@@ -139,7 +139,7 @@ const technologiesAccordion: AccordionTechnology[] = [
     url: 'https://stripe.com/',
     description: (
       <>
-        We use Stripe for the <b>Subscriptions</b> aspect of the application,
+        We use Stripe for the <b>Subscription</b> aspect of the application,
         Stripe allows us to create <b>products</b> with different{' '}
         <b>plans and prices</b> which we can offer as <b>monthly</b> (or yearly){' '}
         <b>subscriptions</b>. Stripe also has <b>webhooks</b> that we can{' '}
@@ -155,7 +155,7 @@ const technologiesAccordion: AccordionTechnology[] = [
     description: (
       <>
         We use Prisma as our{' '}
-        <b>ORM to communicate with our postgreSQL database</b>. This makes it
+        <b>ORM to communicate with our PostgreSQL database</b>. This makes it
         very easy to <b>define a schema</b> in programming-like syntax and then
         generate the database from that. Prisma also has a lot of features that
         make it easy to work with the database, like <b>relations</b>,{' '}
@@ -190,8 +190,8 @@ const technologiesAccordion: AccordionTechnology[] = [
         <b>document database from Azure</b> that is very scalable and has a lot
         of features that make it easy to work with. CosmosDB is a{' '}
         <b>NoSQL database that can store JSON documents</b> and has a{' '}
-        <b>SQL-like query language to query the data</b>. CosmosDB is easy to
-        use in our application through API keys and the CosmosDB JavaScript SDK.
+        <b>SQL-like query language to query the data</b>. We can use CosmosDB in
+        our app using API keys and the CosmosDB JavaScript SDK.
       </>
     ),
     image: CosmosDB,
@@ -218,7 +218,7 @@ const technologiesAccordion: AccordionTechnology[] = [
         easily <b>authenticate users</b> and <b>authorize them</b> to access
         certain parts of the application. Auth0 also has a lot of{' '}
         <b>features</b> like <b>social logins</b>,{' '}
-        <b>multi-factor authentication</b> and <b>many more</b>.
+        <b>multifactor authentication</b> and <b>many more</b>.
       </>
     ),
     image: Auth0,
@@ -231,11 +231,12 @@ const technologiesAccordion: AccordionTechnology[] = [
         We use Tailwind as our <b>styling framework</b>, Tailwind allows us to
         easily create <b>beautiful designs</b> without having to write a lot of
         CSS. Tailwind also has a lot of <b>features</b> like <b>dark mode</b>,{' '}
-        <b>hover states</b> and <b>many more</b>. We also used Tailwind UI which
-        is a Tailwind component library that has a lot of components that we can
-        use in our application that provide accessibility and responsiveness out
-        of the box. We also use ShadCN/UI which is an open source component
-        library based on radix-ui and also styled using tailwind.
+        <b>hover states</b> and <b>many more</b>. We also used Tailwind UI,
+        which is a Tailwind component library that has a lot of components that
+        we can use in our application that provide accessibility and
+        responsiveness out of the box. We also use ShadCN/UI, which is an open
+        source component library based on radix-ui and also styled using
+        tailwind.
       </>
     ),
     image: Tailwind,
@@ -259,7 +260,8 @@ const technologiesAccordion: AccordionTechnology[] = [
     description: (
       <>
         To test our API we use Postman, Postman is a very popular tool to test
-        API&apos;s.
+        API&apos;s. It also has some benchmarking features and workspaces that
+        can be shared in a team.
       </>
     ),
     image: Postman,
@@ -337,7 +339,7 @@ export default function EnergySaasPage() {
           businesses
         </b>
         . They also do{' '}
-        <b>IoT integrations and Microsoft365 environment customizations</b>.
+        <b>IoT integrations and Microsoft 365 environment customizations</b>.
         During the internship, I had the role of a full-stack developer.
       </p>
       <H3>What?</H3>
@@ -348,14 +350,14 @@ export default function EnergySaasPage() {
           allow owners of buildings with sensors to monitor energy usage and
           other metrics
         </b>
-        . The users would be member of an organization which has roles to manage
-        permissions. An <b>organization</b> can have <b>sites</b>, sites contain{' '}
-        <b>buildings</b>, buildings contain location, <b>locations</b> contain
-        <b>devices</b> and finally devices contain <b>sensors</b>. The
+        . The users would be a member of an organization which has roles to
+        manage permissions. An <b>organization</b> can have <b>sites</b>, sites
+        contain <b>buildings</b>, buildings contain location, <b>locations</b>{' '}
+        contain <b>devices</b> and finally devices contain <b>sensors</b>. The
         application also has different{' '}
         <b>tiers of subscriptions to fit every kind of organization</b>. With
         creating an account comes access to our{' '}
-        <b>API which can be implemented in other applications</b> to customize
+        <b>API, which can be implemented in other applications</b> to customize
         the experience of monitoring data.
       </p>
       <H3>Scope</H3>

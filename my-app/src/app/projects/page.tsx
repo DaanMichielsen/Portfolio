@@ -115,7 +115,7 @@ const projects: Project[] = [
   {
     title: 'Web scraper',
     description:
-      'A webscraper for videos, job applications and e-sports data using C# and Selenium',
+      'A web scraper for videos, job applications and e-sports data using C# and Selenium',
     href: '/projects/web-scraper',
     heroImages: [WebscraperJSON],
     tags: ['Scripting'],
