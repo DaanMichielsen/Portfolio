@@ -10,6 +10,7 @@ export default function TypeWriter() {
           'a full-stack developer',
           'a machine learning engineer',
           'a data scientist',
+          'a data engineer',
         ],
         autoStart: true,
         loop: true,
