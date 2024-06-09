@@ -126,7 +126,7 @@ function HLTV() {
 export default function WebscraperPage() {
   return (
     <div className='mx-auto max-w-7xl px-6 pb-24 pt-16 sm:pt-16 lg:px-8 lg:pt-16 bg-white bg-opacity-90 dark:bg-primary-dark dark:bg-opacity-80'>
-      <H1>DevOps & Security | Web scraper using C# and Selenium</H1>
+      <H1>DevOps & Security (EN) | Web scraper using C# and Selenium</H1>
 
       <div className='mt-4 flex space-y-2 flex-col md:flex-row text-gray-500 dark:text-slate-400 gap-x-4'>
         <TechnologyGallery technologies={technologies} />

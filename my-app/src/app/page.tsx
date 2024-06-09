@@ -172,10 +172,25 @@ export default function Home() {
               <p className='max-w-[600px] text-gray-500 md:text-xl dark:text-slate-300'>
                 My name is Daan, I was born in 2003, and currently I study at
                 the Thomas More University of Applied Sciences in Belgium. I am
-                finishing my last year of Applied Computer Science in the
-                division Artificial Intelligence. I am excited to start my
-                career as a Software Engineer or Machine Learning Engineer, so I
-                can contribute to the world of tomorrow.
+                finishing my last year of{' '}
+                <a
+                  className='underline'
+                  target='_blank'
+                  href='https://thomasmore.be/en/educations/degree-students/applied-computer-science'
+                >
+                  Applied Computer Science
+                </a>{' '}
+                in the division{' '}
+                <a
+                  className='underline'
+                  target='_blank'
+                  href='https://thomasmore.be/en/educations/degree-students/applied-computer-science/artificial-intelligence/geel/full-programme'
+                >
+                  Artificial Intelligence
+                </a>
+                . I am excited to start my career as a Software Engineer or
+                Machine Learning Engineer, so I can contribute to the world of
+                tomorrow.
               </p>
             </div>
             <div className='flex flex-col gap-2 min-[400px]:flex-row'>

@@ -2,8 +2,6 @@
 import {
   CarouselItem,
   CarouselContent,
-  CarouselPrevious,
-  CarouselNext,
   Carousel,
 } from '@/components/ui/carousel';
 import Autoplay from 'embla-carousel-autoplay';
@@ -15,7 +13,6 @@ import {
   TooltipContent,
   TooltipTrigger,
 } from '../ui/tooltip';
-import { cn } from '@/lib/utils';
 import Link from 'next/link';
 import { useTheme } from 'next-themes';
 import { useEffect, useState } from 'react';
@@ -27,7 +24,6 @@ import { H2 } from '../common/typography/H2';
 
 const filterOptions: ProjectTag[] = [
   'AI/ML/DL',
-  // 'BI',
   'Internship',
   'Scripting',
   'Web development',
@@ -132,57 +128,40 @@ export function ProjectsCarousel({ projects }: { projects: Project[] }) {
               className='bg-white rounded-lg overflow-hidden shadow-lg dark:bg-gray-800 hover:scale-105 transition-transform duration-300 ease-in-out'
               key={index}
             >
-              <div className='relative'>
-                <Carousel
-                  className='w-full sm:h-72 md:h-64 group'
-                  opts={{
-                    align: 'center',
-                    loop: true,
-                  }}
-                  plugins={[
-                    Autoplay({
-                      delay: 2500,
-                    }),
-                  ]}
-                >
-                  <CarouselContent>
-                    {project.heroImages.map((image, index) => (
-                      <CarouselItem key={index}>
-                        <Image
-                          alt={project.title + ' Image'}
-                          className='w-full h-full object-cover'
-                          height='320'
-                          src={image.src}
-                          style={{
-                            aspectRatio: '480/320',
-                            objectFit: 'cover',
-                          }}
-                          width='480'
-                        />
-                      </CarouselItem>
-                    ))}
-                  </CarouselContent>
-                  {/* {project.heroImages.length > 1 && ()} */}
-                  <CarouselPrevious
-                    className={cn(
-                      'translate-x-12 lg:hidden top-1/2',
-                      project.heroImages.length > 1
-                        ? 'lg:group-hover:inline-block'
-                        : 'hidden',
-                    )}
-                  />
-                  <CarouselNext
-                    className={cn(
-                      '-translate-x-12 lg:hidden top-1/2',
-                      project.heroImages.length > 1
-                        ? 'lg:group-hover:inline-block'
-                        : 'hidden',
-                    )}
-                  />
-                </Carousel>
-              </div>
-              <Link href={project.href}>
-                <div className='p-4 md:p-6 hover:bg-gray-100 dark:hover:bg-slate-900 transition-colors h-full'>
+              <Link href={project.href} className='group'>
+                <div className='relative'>
+                  <Carousel
+                    className='w-full sm:h-72 md:h-64'
+                    opts={{
+                      align: 'center',
+                      loop: true,
+                    }}
+                    plugins={[
+                      Autoplay({
+                        delay: 2500,
+                      }),
+                    ]}
+                  >
+                    <CarouselContent>
+                      {project.heroImages.map((image, index) => (
+                        <CarouselItem key={index}>
+                          <Image
+                            alt={project.title + ' Image'}
+                            className='w-full h-full object-cover'
+                            height='320'
+                            src={image.src}
+                            style={{
+                              aspectRatio: '480/320',
+                              objectFit: 'cover',
+                            }}
+                            width='480'
+                          />
+                        </CarouselItem>
+                      ))}
+                    </CarouselContent>
+                  </Carousel>
+                </div>
+                <div className='p-4 md:p-6 h-full group-hover:bg-gray-100 dark:group-hover:bg-slate-900 transition-colors'>
                   <H2 className='text-xl font-bold mb-2 border-none'>
                     {project.title}
                   </H2>
