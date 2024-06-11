@@ -323,7 +323,7 @@ export default function EnergySaasPage() {
           className='p-2 rounded-full flex items-center gap-x-2 transition-all hover:bg-slate-300 bg-slate-200 text-slate-800'
         >
           <Image src={Energy} height={30} width={30} alt='Energy logo' /> Energy
-          SaaS Platform
+          SaaS Platform (Dutch)
         </Link>
       </div>
       <div className='w-5/6 my-2 flex mx-auto'>
