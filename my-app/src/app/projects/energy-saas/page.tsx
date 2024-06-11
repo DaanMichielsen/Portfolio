@@ -401,6 +401,7 @@ export default function EnergySaasPage() {
             <li>Creating a business plan</li>
             <li>Provide hosting</li>
             <li>Logging</li>
+            <li>Race conditions</li>
           </ul>
         </li>
         <li>
