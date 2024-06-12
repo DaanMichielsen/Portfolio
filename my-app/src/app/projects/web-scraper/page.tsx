@@ -249,7 +249,7 @@ export default function WebscraperPage() {
       <H2>What have I learned?</H2>
       <p className='leading-7 [&:not(:first-child)]:mt-6'>
         I learned about C# which I had not used before. I got to learn about
-        Selenium and some law-related stuff about web-scraping which is not an
+        Selenium and some law-related stuff about web-scraping, which is not an
         easy topic. It also gave me a good insight in how web scraping works and
         why it is so powerful.
       </p>
